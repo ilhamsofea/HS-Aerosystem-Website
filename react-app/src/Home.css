@@ -193,10 +193,22 @@
   color: white;
 }
 
+.slide-description-temp {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: white;
+}
+
 .slide-description {
   font-size: 1.25rem;
   line-height: 1.6;
   color: white;
+  outline: 5px solid red;
+}
+
+.temp {
+  color: red;
+  font-size: xx-large;
 }
 
 .image-section {
@@ -313,6 +325,7 @@
 
 .approach-card p {
   font-size: 1rem;
+  outline: 5px solid red;
 }
 
 .approach-card:hover {

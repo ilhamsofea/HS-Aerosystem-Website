@@ -245,6 +245,7 @@
 .certificate-track-wrapper {
   overflow: hidden;
   position: relative;
+  outline: 5px solid red;
 }
 
 .scroll-enabled .certificate-track {

@@ -142,6 +142,7 @@ function AboutUs() {
               certificates.length > 5 ? "scroll-enabled" : ""
             }`}
           >
+            <p className="temp"> ????? </p> <br />
             <div className="certificate-track">
               {certificates.map((src, idx) => (
                 <div

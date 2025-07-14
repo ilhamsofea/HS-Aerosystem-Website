@@ -80,6 +80,7 @@
   font-size: 18px;
   line-height: 1.6;
   color: #444;
+  outline: 5px solid red;
 }
 
 ul.list1 {

@@ -80,7 +80,7 @@ const Home = () => {
             <div className="slide-content">
               <div className="text-section">
                 <h2 className="slide-title">Why Choose Us?</h2>
-                <p className="slide-description">
+                <p className="slide-description-temp">
                   Engineering aerospace solutions that meet industry demands
                   with accuracy and consistency.
                 </p>
@@ -94,6 +94,7 @@ const Home = () => {
                 <p className="slide-number">01</p>
                 <h2 className="slide-title">Process Capability</h2>
                 <p className="slide-description">
+                  <p className="temp"> ????? </p> <br />
                   In terms of sheet metal production, it covers from the start
                   of thin plates to the final product. By using cutting CNC
                   punching machines and other equipment, parts with micron-level
@@ -121,6 +122,7 @@ const Home = () => {
                 <p className="slide-number">02</p>
                 <h2 className="slide-title">Assembly Capacity</h2>
                 <p className="slide-description">
+                  <p className="temp"> ????? </p> <br />
                   We have reached the assembly capacty of 500 types and 50000
                   parts per month, which can help customers reduce the cost and
                   complexity of supply chain management, and at the same time
@@ -144,6 +146,7 @@ const Home = () => {
                 <p className="slide-number">03</p>
                 <h2 className="slide-title">Special Process Capability</h2>
                 <p className="slide-description">
+                  <p className="temp"> ????? </p> <br />
                   We have non-destructive testing, chemical surface treatment,
                   powder spraying, painting and other metal surface treatment
                   equipment. We also have carbon dioxide welding, argon arc
@@ -167,6 +170,7 @@ const Home = () => {
                 <p className="slide-number">04</p>
                 <h2 className="slide-title">Testing Center</h2>
                 <p className="slide-description">
+                  <p className="temp"> ????? </p> <br />
                   NitonXL3t Portable Alloy Analyzer, Webster Hardness Tester,
                   Rockwell Hardness Tester, 2D/2.5D/3D Tester,
                   Spectrophotometer, Coating Thickness Gauge, Color Difference
@@ -176,10 +180,7 @@ const Home = () => {
               </div>
               <div className="image-wrapper">
                 <div className="image-frame">
-                  <img
-                    src="./assets/Home/testing2.JPG"
-                    alt="Testing Center"
-                  />
+                  <img src="./assets/Home/testing2.JPG" alt="Testing Center" />
                 </div>
               </div>
             </div>
@@ -207,6 +208,7 @@ const Home = () => {
             </div>
             <h3>Mission</h3> <br />
             <p>
+              <p className="temp"> ????? </p> <br />
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
@@ -225,6 +227,7 @@ const Home = () => {
             </div>
             <h3>Vision</h3> <br />
             <p>
+              <p className="temp"> ????? </p> <br />
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
@@ -243,6 +246,7 @@ const Home = () => {
             </div>
             <h3>Value</h3> <br />
             <p>
+              <p className="temp"> ????? </p> <br />
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
