@@ -1,7 +1,7 @@
 .hero {
   position: relative;
   height: 80vh;
-  background: url("./assets/ProductApp/hero-img.JPG")
+  background: url("/assets/ProductApp/hero-img.JPG")
     center/cover no-repeat;
   display: flex;
   justify-content: center;
