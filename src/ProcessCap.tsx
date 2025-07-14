@@ -3,7 +3,7 @@ import Footer from "./Footer";
 
 function ProcessCap() {
   return (
-    <section className="process-cap-slide">
+    <section className="process-cap-slide" style={{ paddingTop: "30px" }}>
       <div className="process-cap-intro" id="process-cap">
         <h1>Explore Our Process</h1>
         <p>

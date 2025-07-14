@@ -47,7 +47,7 @@ const Career = () => {
       <section className="career-hero-slider">
         <div
           className="career-hero-track"
-          style={{ width: `${backgroundImages.length * 2 * 100}vw` }}
+          style={{ width: `${backgroundImages.length * 2 * 100}vw`}}
         >
           {backgroundImages.map((src, i) => (
             <img

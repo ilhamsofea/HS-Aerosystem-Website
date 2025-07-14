@@ -52,7 +52,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="process-cap-slide1">
+      <div className="process-cap-slide1" style={{ paddingTop: "30px" }}>
         <div className="slideshow-background"></div>
         <h1 className="aboutus-title">
           Commited to Quality <br /> Driven by Passion

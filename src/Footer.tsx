@@ -20,13 +20,11 @@ function Footer() {
             <br />
             71950 Seremban, Negeri Sembilan
           </p>
-          <p className="temp2">
-            Phone: +86-573-8701 9163
-          </p>
-          <p className="temp2">
+          <p>Phone: +60 6 7921886</p>
+          <p>
             E-mail:{" "}
             <a href="mailto:Contactus@hongshi-group.com">
-              Contactus@hongshi-group.com
+              admin@hsaerosystem.com
             </a>
           </p>
         </div>

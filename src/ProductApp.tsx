@@ -50,7 +50,7 @@ const productImages: Record<Category, string[]> = {
 function ProductApp() {
   return (
     <div>
-      <section className="hero">
+      <section className="hero" style={{ paddingTop: "30px" }}>
         <div className="overlay" id="product-app-start"></div>
         <div className="hero-text">
           <h1>Engineered for Impact</h1>
