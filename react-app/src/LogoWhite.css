@@ -1,0 +1,7 @@
+.logo-white {
+  width: 250px; /* or adjust as needed */
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+}

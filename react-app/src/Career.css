@@ -1,0 +1,281 @@
+.career-hero-slider {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
+}
+
+/*scroll or not?*/
+.career-hero-track {
+  display: flex;
+  animation: scrollHero 150s linear infinite;
+}
+
+.career-hero-image {
+  width: 100vw;
+  height: 60vh;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+@keyframes scrollHero {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.career-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.career-hero-content {
+  color: white;
+  text-align: center;
+  z-index: 2;
+}
+
+.career-hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+}
+
+.career-hero-content p {
+  font-size: 1.25rem;
+  color: white  ;
+}
+
+.career-box {
+  padding: 80px 20px;
+  background-color: #f4f4f4;
+}
+
+.career-box-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.career-contact-box {
+  flex: 1;
+  min-width: 280px;
+  background-color: white;
+  border-radius: 16px;
+  padding: 40px 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  border: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.career-contact-box h2 {
+  font-size: 1.75rem;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+.career-contact-box p {
+  font-size: 1rem;
+  color: #444;
+  margin: 0;
+}
+
+.contact-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-list li {
+  display: flex;
+  gap: 8px;
+  font-size: 0.95rem;
+  color: #222;
+  align-items: center;
+}
+
+.label {
+  font-weight: 600;
+  min-width: 100px;
+  display: inline-block;
+}
+
+.career-contact-box a {
+  color: #a50b0b;
+  text-decoration: none;
+  word-break: break-word;
+}
+
+.career-contact-box a:hover {
+  text-decoration: underline;
+}
+
+.career-note {
+  font-style: italic;
+  color: #666;
+  margin-top: 12px;
+}
+
+.vacancy-panel {
+  flex: 2;
+  min-width: 300px;
+  background-color: white;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.vacancy-panel h2 {
+  margin-bottom: 20px;
+  font-size: 1.75rem;
+  color: #222;
+}
+
+.vacancy-panel h3, 
+.vacancy-panel p {
+  color: #222;
+}
+
+.vacancy-item {
+  background-color: #f9f9f9;
+  padding: 16px 20px;
+  border-left: 4px solid #a50b0b;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.vacancy-item:hover {
+  background-color: #f1eaea;
+  transform: translateX(5px);
+}
+
+.job-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.job-modal h2,
+.job-modal p
+{
+  color: #222;
+  padding: 10px;
+}
+
+.job-modal-content {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 90%;
+  position: relative;
+  animation: fadeIn 0.3s ease;
+}
+
+.job-modal-close {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  background: #a50b0b;
+  color: white;
+  border: none;
+  font-size: 18px;
+  padding: 6px 12px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.apply-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #a50b0b;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.apply-btn:hover {
+  background: #850909;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .career-box-wrapper {
+    flex-direction: column;
+  }
+
+  .career-hero-content h1 {
+    font-size: 2.2rem;
+  }
+}
+
+.career-section-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 60px;
+}
+
+.career-section-header h2 {
+  font-size: 2.5rem;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+.career-section-header p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.vacancy-panel h3,
+.career-contact-box h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.vacancy-item h4 {
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+    color: #333;
+
+}
+
+.vacancy-item p {
+  font-size: 0.95rem;
+  color: #444;
+}
