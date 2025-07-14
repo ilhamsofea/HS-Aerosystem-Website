@@ -104,7 +104,6 @@ const Career = () => {
       <h3>📩 Reach Out to Us</h3>
       <p>For any inquiries or direct applications, email the respective team:</p>
       <ul className="contact-list">
-        <p className="temp"> ????? </p> <br />
         <li><span className="label">HR:</span><a href="mailto:hr@company.com">hr@company.com</a></li>
         <li><span className="label">Recruitment:</span><a href="mailto:recruitment@company.com">recruitment@company.com</a></li>
         <li><span className="label">Internship:</span><a href="mailto:internship@company.com">internship@company.com</a></li>

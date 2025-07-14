@@ -18,7 +18,6 @@ function ProcessCap() {
               <p className="process-cap-slide-number">01</p>
               <h2 className="process-cap-slide-title">Precision Sheet Metal</h2>
               <p className="process-cap-slide-description">
-                <p className="temp"> ????? </p> <br />
                 We are equipped with advanced sheet metal processing machines of
                 Japanese AMADA, Swedish Quintus Hydroforming machine and
                 SWITZERLAND BYSTRONIC BySmart Fiber high-speed maglev laser,
@@ -53,7 +52,6 @@ function ProcessCap() {
               <p className="process-cap-slide-number">02</p>
               <h2 className="process-cap-slide-title">CNC Machining</h2>
               <p className="process-cap-slide-description">
-                <p className="temp"> ????? </p> <br />
                 The superior equipment suppliers of Japanese MAKINO and DMG
                 MORI, Korean HYUNDAI WIA provided us stability of the hardware
                 equipments and technical services, so that we can offer products
@@ -82,7 +80,6 @@ function ProcessCap() {
               <p className="process-cap-slide-number">03</p>
               <h2 className="process-cap-slide-title">Assembly and Testing</h2>
               <p className="process-cap-slide-description">
-                <p className="temp"> ????? </p> <br />
                 <ul className="list1">
                   <br />
                   <li>Riveting assembly</li>
@@ -94,7 +91,7 @@ function ProcessCap() {
             </div>
             <div className="process-cap-image-section">
               <img
-                src="./assets/ProcessCap/assembly-testing3.JPG"
+                src="./assets/ProcessCap/assembly-testing5.JPG"
                 alt="Assembly and Testing"
               />
             </div>
@@ -107,7 +104,6 @@ function ProcessCap() {
               <p className="process-cap-slide-number">04</p>
               <h2 className="process-cap-slide-title">Quality Capability</h2>
               <p className="process-cap-slide-description">
-                <p className="temp"> ????? </p> <br />
                 As an independent testing and calibration department,
                 Experimental Testing Center has gradually improved its functions
                 after years of construction, covering most of the testing and
@@ -133,7 +129,7 @@ function ProcessCap() {
             </div>
             <div className="process-cap-image-section">
               <img
-                src="./assets/ProcessCap/DSCF1603.JPG"
+                src="./assets/ProcessCap/quality-cap.JPG"
                 alt="Experimental Capability"
               />
             </div>

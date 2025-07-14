@@ -134,7 +134,7 @@
 
 .why-choose-slide {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("./assets/Home/hs-company2.JPG");
+    url("/assets/Home/hs-company.JPG");
   background-size: cover;
   object-fit: contain;
   background-repeat: no-repeat;

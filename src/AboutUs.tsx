@@ -46,7 +46,7 @@ function AboutUs() {
                 <br />
                 <img
                   alt="big image"
-                  src="./assets/AboutUs/model-image1.JPG"
+                  src="./assets/AboutUs/model-image3.JPG"
                   className="img-1"
                 />
                 <br />
@@ -142,7 +142,6 @@ function AboutUs() {
               certificates.length > 5 ? "scroll-enabled" : ""
             }`}
           >
-            <p className="temp"> ????? </p> <br />
             <div className="certificate-track">
               {certificates.map((src, idx) => (
                 <div

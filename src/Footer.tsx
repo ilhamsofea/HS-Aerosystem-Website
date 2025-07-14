@@ -21,11 +21,9 @@ function Footer() {
             71950 Seremban, Negeri Sembilan
           </p>
           <p className="temp2">
-            <p className="temp"> ????? </p> <br />
             Phone: +86-573-8701 9163
           </p>
           <p className="temp2">
-            <p className="temp"> ????? </p> <br />
             E-mail:{" "}
             <a href="mailto:Contactus@hongshi-group.com">
               Contactus@hongshi-group.com
