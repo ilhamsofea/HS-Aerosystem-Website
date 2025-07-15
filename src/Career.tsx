@@ -25,6 +25,7 @@ const Career = () => {
   const [vacancies, setVacancies] = useState<Vacancy[]>([]);
   const [selectedJob, setSelectedJob] = useState<Vacancy | null>(null);
   const [currentBg, setCurrentBg] = useState(0);
+  const [loading, setLoading] = useState(true); 
 
   useEffect(() => {
     fetch(
@@ -32,7 +33,8 @@ const Career = () => {
     )
       .then((res) => res.json())
       .then((data) => setVacancies(data))
-      .catch(console.error);
+      .catch(console.error)
+      .finally(() => setLoading(false)); 
   }, []);
 
   useEffect(() => {
@@ -47,7 +49,7 @@ const Career = () => {
       <section className="career-hero-slider">
         <div
           className="career-hero-track"
-          style={{ width: `${backgroundImages.length * 2 * 100}vw`}}
+          style={{ width: `${backgroundImages.length * 2 * 100}vw` }}
         >
           {backgroundImages.map((src, i) => (
             <img
@@ -74,43 +76,72 @@ const Career = () => {
         </div>
       </section>
 
-<section className="career-box">
-  <div className="career-section-header">
-    <h2>🚀 Career Opportunities</h2>
-    <p>Explore roles and connect with our recruitment team.</p>
-  </div>
+      <section className="career-box">
+        <div className="career-section-header">
+          <h2>🚀 Career Opportunities</h2>
+          <p>Explore roles and connect with our recruitment team.</p>
+        </div>
 
-  <div className="career-box-wrapper">
-    <div className="vacancy-panel">
-      <h3>📌 Open Positions</h3>
-      {vacancies.length === 0 ? (
-        <p>Fetching job openings...</p>
-      ) : (
-        vacancies.map((job, idx) => (
-          <div
-            className="vacancy-item"
-            key={idx}
-            onClick={() => setSelectedJob(job)}
-          >
-            <h4>{job.Position}</h4>
-            <p><strong>Location:</strong> {job.Location}</p>
+        <div className="career-box-wrapper">
+          <div className="vacancy-panel">
+            <h3>📌 Open Positions</h3>
+            {loading ? (
+              <p>Fetching job openings...</p>
+            ) : (
+              (() => {
+                const validJobs = vacancies.filter((job) =>
+                  job.Position?.trim()
+                );
+                if (validJobs.length === 0) {
+                  return <p>No job openings currently.</p>;
+                }
+                return validJobs.map((job, idx) => (
+                  <div
+                    className="vacancy-item"
+                    key={idx}
+                    onClick={() => setSelectedJob(job)}
+                  >
+                    <h4>{job.Position}</h4>
+                    <p>
+                      <strong>Location:</strong> {job.Location}
+                    </p>
+                  </div>
+                ));
+              })()
+            )}
           </div>
-        ))
-      )}
-    </div>
 
-    <div className="career-contact-box">
-      <h3>📩 Reach Out to Us</h3>
-      <p>For any inquiries or direct applications, email the respective team:</p>
-      <ul className="contact-list">
-        <li><span className="label">HR:</span><a href="mailto:hr@company.com">hr@company.com</a></li>
-        <li><span className="label">Recruitment:</span><a href="mailto:recruitment@company.com">recruitment@company.com</a></li>
-        <li><span className="label">Internship:</span><a href="mailto:internship@company.com">internship@company.com</a></li>
-      </ul>
-      <p className="career-note">Attach your CV and a short introduction. We’ll get back to you soon.</p>
-    </div>
-  </div>
-</section>
+          <div className="career-contact-box">
+            <h3>📩 Reach Out to Us</h3>
+            <p>
+              For any inquiries or direct applications, email the respective
+              team:
+            </p>
+            <ul className="contact-list">
+              <li>
+                <span className="label">HR:</span>
+                <a href="mailto:hr@company.com">hr@company.com</a>
+              </li>
+              <li>
+                <span className="label">Recruitment:</span>
+                <a href="mailto:recruitment@company.com">
+                  recruitment@company.com
+                </a>
+              </li>
+              <li>
+                <span className="label">Internship:</span>
+                <a href="mailto:internship@company.com">
+                  internship@company.com
+                </a>
+              </li>
+            </ul>
+            <p className="career-note">
+              Attach your CV and a short introduction. We’ll get back to you
+              soon.
+            </p>
+          </div>
+        </div>
+      </section>
 
       {selectedJob && (
         <div className="job-modal" onClick={() => setSelectedJob(null)}>
@@ -129,7 +160,6 @@ const Career = () => {
               <strong>Location:</strong> {selectedJob.Location}
             </p>
             <p>{selectedJob.Description}</p>
-            {/*Here to update layout in case need to add more columns in excel*/}
             <a className="apply-btn" href={`mailto:${selectedJob.Email}`}>
               Apply Now
             </a>

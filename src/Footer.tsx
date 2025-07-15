@@ -97,7 +97,7 @@ function Footer() {
       </div>
 
       <div className="footer-bottom">
-        <p>© 2025 by pengkyu</p>
+        <p>© 2025 pengkyu</p>
       </div>
     </footer>
   );

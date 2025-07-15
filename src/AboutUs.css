@@ -88,7 +88,7 @@
 }
 
 .value-card:hover {
-  background-color: #a50b0b; 
+  background-color: #a50b0b;
   color: white;
   transform: translateY(-6px);
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
@@ -250,7 +250,7 @@
   width: auto;
   height: auto;
   max-width: 100%;
-  max-height: 300px; 
+  max-height: 300px;
   border-radius: 8px;
   object-fit: contain;
   display: block;
