@@ -5,13 +5,13 @@ import { Link } from "react-router-dom";
 
 const clientLogos = [
   "https://static.wixstatic.com/media/58d4da_05e93af3775642978dde831b88722959~mv2.png/v1/fill/w_244,h_69,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/collinsaero.png",
-  // Add more logo URLs here when available
+  // Add more client logo here when available
 ];
 
 const Home = () => {
   const [submitted, setSubmitted] = useState(false);
   const [formKey, setFormKey] = useState(0);
-  const shouldScroll = useMemo(() => clientLogos.length > 5, []); //only scroll if clien > 5
+  const shouldScroll = useMemo(() => clientLogos.length > 5, []); //only scroll if client > 5
 
   const handleFormSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -37,10 +37,10 @@ const Home = () => {
         console.log("Success", res);
         setSubmitted(true);
 
-        // Delay reset and rerender slightly to ensure visible update
+        // Logics for Contact Us form
         setTimeout(() => {
           setSubmitted(false);
-          setFormKey((prev) => prev + 1); // triggers form reset by rerendering
+          setFormKey((prev) => prev + 1); 
         }, 2000);
       } else {
         console.error("Form submission failed:", res);
@@ -52,8 +52,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="process-cap-slide1" style={{ paddingTop: "30px" }}>
-        <div className="slideshow-background"></div>
+      <div className="home-intro" style={{ paddingTop: "30px" }}>
         <h1 className="aboutus-title">
           Commited to Quality <br /> Driven by Passion
         </h1>
@@ -67,7 +66,7 @@ const Home = () => {
         />
       </div>
 
-      <section className="process-cap-slide2">
+      <section className="home-about-us">
         <div className="sticky-header">
           <h1 className="sticky-title">About Us</h1>
           <Link to="/aboutus#about-us" className="learn-more-btn">
@@ -186,7 +185,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="approach-section">
+      <section className="home-approach">
         <h2 className="approach-title">Driven by Vision, Powered by Values</h2>
         <p className="approach-description">
           We align innovation, precision, and performance to deliver tailored
@@ -251,47 +250,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* <section className="process-cap-slide4">
-        <div className="our-clients">
-          <h1 className="clients-title">Our Clients</h1>
-          <p className="clients-subtitle">
-            We believe every client is a valuable, long-term partner.
-          </p>
-
-          <div className="client-marquee">
-            <div className="client-track">
-              <img
-                src="https://static.wixstatic.com/media/58d4da_05e93af3775642978dde831b88722959~mv2.png/v1/fill/w_244,h_69,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/collinsaero.png"
-                alt="Collins Aerospace"
-              />
-              <img
-                src="https://static.wixstatic.com/media/58d4da_522c081e1ce84a8087e7328c4a9aa255~mv2.png/v1/fill/w_244,h_51,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Safran_2016_logo_svg.png"
-                alt="SAFRAN"
-              />
-              <img
-                src="https://static.wixstatic.com/media/58d4da_f62e0110b8c34bc789dd8fe944027739~mv2.png/v1/fill/w_120,h_93,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/commercial-aircraft-corporation-of-china-comac-logo-vector.png"
-                alt="COMAC"
-              />
-
-
-              <img
-                src="https://static.wixstatic.com/media/58d4da_05e93af3775642978dde831b88722959~mv2.png/v1/fill/w_244,h_69,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/collinsaero.png"
-                alt="Collins Aerospace"
-              />
-              <img
-                src="https://static.wixstatic.com/media/58d4da_522c081e1ce84a8087e7328c4a9aa255~mv2.png/v1/fill/w_244,h_51,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Safran_2016_logo_svg.png"
-                alt="SAFRAN"
-              />
-              <img
-                src="https://static.wixstatic.com/media/58d4da_f62e0110b8c34bc789dd8fe944027739~mv2.png/v1/fill/w_120,h_93,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/commercial-aircraft-corporation-of-china-comac-logo-vector.png"
-                alt="COMAC"
-              />
-            </div>
-          </div>
-        </div>
-      </section> */}
-
-      <section className="process-cap-slide4">
+      <section className="home-our-clients">
         <div className="our-clients">
           <h1 className="clients-title">Our Clients</h1>
           <p className="clients-subtitle">
@@ -308,7 +267,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="process-cap-slide5" id="contact-us">
+      <section className="home-contact-us" id="contact-us">
         <div className="contact-layout">
           <div className="contact-info">
             <h3>Let’s Work Together</h3>

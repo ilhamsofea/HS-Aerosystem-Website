@@ -57,7 +57,6 @@ const Career = () => {
               className="career-hero-image"
             />
           ))}
-          {/* Duplicate images for smooth infinite scroll */}
           {backgroundImages.map((src, i) => (
             <img
               key={`dup-${i}`}
@@ -113,8 +112,6 @@ const Career = () => {
   </div>
 </section>
 
-
-      {/* Vacancy Popup Modal */}
       {selectedJob && (
         <div className="job-modal" onClick={() => setSelectedJob(null)}>
           <div

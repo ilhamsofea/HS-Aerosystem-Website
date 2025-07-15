@@ -1,8 +1,6 @@
 import "./AboutUs.css";
 import Footer from "./Footer";
-import { motion, useAnimation } from "framer-motion";
-import { useState, useRef, useEffect } from "react";
-import { useInView } from "react-intersection-observer";
+import { useState} from "react";
 
 const certificates = [
   "/assets/AboutUs/cert1.png",
@@ -56,7 +54,7 @@ function AboutUs() {
         </div>
       </div>
 
-      <section className="core-values-section" id="core-values">
+      <section className="aboutus-core-values" id="core-values">
         <h1 className="core-values-title">Our Core Values</h1>
         <p className="core-values-subtext">What drives us forward every day.</p>
 
@@ -96,7 +94,7 @@ function AboutUs() {
         </div>
       </section>
 
-      <section className="slide3" id="our-journey">
+      <section className="aboutus-journey" id="our-journey">
         <h1 className="journey-title">Our Journey So Far</h1>
         <h2 className="journey-subheader">
           From bold ideas to real-world impact
@@ -134,7 +132,7 @@ function AboutUs() {
         </div>
       </section>
 
-      <section className="certificate-section" id="cert">
+      <section className="aboutus-certificate" id="cert">
         <div className="certificate-container">
           <h1 className="certificate-title">Certifications</h1>
           <div

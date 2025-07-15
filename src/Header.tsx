@@ -4,7 +4,6 @@ import ScrollToHash from "./ScrollToHash";
 import Home from "./Home";
 import AboutUs from "./AboutUs";
 import ProductApp from "./ProductApp";
-import News from "./News";
 import ProcessCap from "./ProcessCap";
 import Career from "./Career";
 import ContactUs from "./ContactUs";
@@ -33,9 +32,6 @@ function App() {
             <li>
               <Link to="/product">Product Application</Link>
             </li>
-            {/* <li>
-              <Link to="/news">News</Link>
-            </li> */}
             <li>
               <Link to="/career">Career</Link>
             </li>
@@ -53,7 +49,6 @@ function App() {
         <Route path="aboutus" element={<AboutUs />} />
         <Route path="/process" element={<ProcessCap />} />
         <Route path="/product" element={<ProductApp />} />
-        {/* <Route path="/news" element={<News />} /> */}
         <Route path="/career" element={<Career />} />
       </Routes>
     </div>

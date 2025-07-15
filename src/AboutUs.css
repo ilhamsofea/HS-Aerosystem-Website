@@ -4,19 +4,16 @@
 }
 
 .scroll-aboutus {
-  /* height: 100vh; */
   overflow-y: auto;
   scroll-behavior: smooth;
 }
 
 .aboutus-wrapper {
-  /* min-height: 100vh; */
   position: relative;
 }
 
 .aboutus-bg {
   position: relative;
-  /* height: 100vh; */
   background: 2c2c2c;
   z-index: 1;
 }
@@ -28,7 +25,6 @@
 .aboutus-intro h1 {
   font-size: 4.5rem;
   font-weight: bold;
-  /* margin-bottom: 20px; */
 }
 
 .aboutus-intro p {
@@ -36,30 +32,9 @@
   color: #ddd;
 }
 
-.row {
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 50px;
-  padding: 0 150px;
-  margin-top: 50px;
-}
-
 .col .main-p {
   font-size: 20px;
   padding: 20px 230px;
-  /* outline: 2px solid red; */
-}
-
-.gif-1 {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-  object-fit: contain;
-  border-radius: 10px;
-  display: block;
-  margin: 0 auto;
 }
 
 .img-1 {
@@ -69,7 +44,7 @@
   padding: 20px;
 }
 
-.core-values-section {
+.aboutus-core-values {
   padding: 80px 20px;
   background-color: #ffffff;
   text-align: center;
@@ -113,7 +88,7 @@
 }
 
 .value-card:hover {
-  background-color: #a50b0b; /* Red on hover */
+  background-color: #a50b0b; 
   color: white;
   transform: translateY(-6px);
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
@@ -159,8 +134,7 @@
   }
 }
 
-/* Journey Section Styles */
-.slide3#our-journey {
+.aboutus-journey {
   background-color: #f9f9f9;
   padding: 80px 40px;
   text-align: center;
@@ -224,7 +198,7 @@
   line-height: 1.5;
 }
 
-.certificate-section {
+.aboutus-certificate {
   background-color: white;
   padding: 80px 20px;
   text-align: center;

@@ -83,20 +83,6 @@ function Footer() {
             </ul>
           </div>
 
-          {/* <div>
-            <h4>
-              <Link to="/news#news-page">News</Link>
-            </h4>
-            <ul>
-              <li>
-                <Link to="/news#news-page">Company News</Link>
-              </li>
-              <li>
-                <Link to="/news#news-page">Industry News</Link>
-              </li>
-            </ul>
-          </div> */}
-
           <div>
             <h4>
               <Link to="/career#career-page">Career</Link>
