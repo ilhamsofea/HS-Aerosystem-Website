@@ -1,7 +1,15 @@
 .logo-white {
-  width: 250px; /* or adjust as needed */
+  width: 250px;
+  max-width: 80vw;
   height: auto;
   object-fit: contain;
   object-position: center;
   display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 480px) {
+  .logo-white {
+    width: 180px;
+  }
 }

@@ -3,10 +3,10 @@
   color: white;
 }
 
-.scroll-aboutus {
+/* .scroll-aboutus {
   overflow-y: auto;
   scroll-behavior: smooth;
-}
+} */
 
 .aboutus-wrapper {
   position: relative;
@@ -18,7 +18,7 @@
   z-index: 1;
 }
 
-.aboutus-intro {
+.aboutus-intro  {
   padding: 20px 230px;
 }
 
@@ -42,6 +42,48 @@
   height: fit-content;
   object-fit: cover;
   padding: 20px;
+}
+
+@media (max-width: 800px) {
+  .aboutus-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .aboutus-bg {
+    padding: 20px;
+  }
+
+  .aboutus-intro {
+    padding: 0;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .aboutus-intro h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .aboutus-intro p {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin-bottom: 10px;
+  }
+
+  .col .main-p {
+    padding: 0;
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: justify;
+  }
+
+  .img-1 {
+    padding: 10px 0;
+    border-radius: 8px;
+    max-height: 300px;
+    object-fit: cover;
+  }
 }
 
 .aboutus-core-values {
@@ -217,9 +259,11 @@
 }
 
 .certificate-track-wrapper {
-  overflow: hidden;
-  position: relative;
+  overflow-x: auto;
+  overflow-y: hidden;
+  /* position: relative; */
   outline: 5px solid red;
+  -webkit-overflow-scrolling: touch;
 }
 
 .scroll-enabled .certificate-track {
@@ -227,6 +271,14 @@
   gap: 30px;
   animation: scroll-cert 20s linear infinite;
   width: max-content;
+}
+
+@media (max-width: 800px) {
+  .scroll-enabled .certificate-track {
+    animation: none;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+  }
 }
 
 .certificate-track {
@@ -306,8 +358,8 @@
   background: #a50b0b;
   color: white;
   border: none;
-  font-size: 20px;
-  padding: 4px 10px;
+  font-size: 24px;
+  padding: 8px 12px;
   border-radius: 50%;
   cursor: pointer;
   transition: background 0.4s ease;
@@ -325,5 +377,13 @@
   to {
     opacity: 1;
     transform: scale(1);
+  }
+}
+
+@media (max-width: 800px) {
+  .aboutus-core-values,
+  .aboutus-journey,
+  .aboutus-certificate {
+    padding: 40px 20px;
   }
 }

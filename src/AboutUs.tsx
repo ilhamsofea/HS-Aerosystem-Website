@@ -17,7 +17,6 @@ function AboutUs() {
 
   return (
     <div className="aboutus-container" style={{ paddingTop: "30px" }}>
-      <div className="scroll-aboutus">
         <div className="aboutus-wrapper">
           <div className="aboutus-bg" id="about-us">
             <div className="aboutus-intro">
@@ -51,7 +50,6 @@ function AboutUs() {
               </p>
             </div>
           </div>
-        </div>
       </div>
 
       <section className="aboutus-core-values" id="core-values">
