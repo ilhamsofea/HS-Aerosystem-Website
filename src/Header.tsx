@@ -1,5 +1,6 @@
 import "./Header.css";
 import { Routes, Route, Link } from "react-router-dom";
+import { useState } from "react";
 import ScrollToHash from "./ScrollToHash";
 import Home from "./Home";
 import AboutUs from "./AboutUs";
@@ -10,6 +11,16 @@ import ContactUs from "./ContactUs";
 import LogoWhite from "./LogoWhite";
 
 function App() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <div>
       <header className="navbar">
@@ -18,25 +29,40 @@ function App() {
             <LogoWhite />
           </Link>
         </div>
-        <nav>
+        <div className="hamburger" onClick={toggleMenu}>
+          ☰
+        </div>
+        <nav className={menuOpen ? "mobile-open" : ""}>
           <ul>
             <li>
-              <Link to="/home">Home</Link>
+              <Link to="/home" onClick={closeMenu}>
+                Home
+              </Link>
             </li>
             <li>
-              <Link to="/aboutus">About Us</Link>
+              <Link to="/aboutus" onClick={closeMenu}>
+                About Us
+              </Link>
             </li>
             <li>
-              <Link to="/process">Process Capability</Link>
+              <Link to="/process" onClick={closeMenu}>
+                Process Capability
+              </Link>
             </li>
             <li>
-              <Link to="/product">Product Application</Link>
+              <Link to="/product" onClick={closeMenu}>
+                Product Application
+              </Link>
             </li>
             <li>
-              <Link to="/career">Career</Link>
+              <Link to="/career" onClick={closeMenu}>
+                Career
+              </Link>
             </li>
             <li>
-              <Link to="/home#contact-us">Contact Us</Link>
+              <Link to="/home#contact-us" onClick={closeMenu}>
+                Contact Us
+              </Link>
             </li>
           </ul>
         </nav>

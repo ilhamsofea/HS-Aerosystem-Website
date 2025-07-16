@@ -1,9 +1,7 @@
 import "./ProductApp.css";
 import Footer from "./Footer";
 
-const categories = [
-  "Aircraft Seats System",
-] as const;
+const categories = ["Aircraft Seats System"] as const;
 
 type Category = (typeof categories)[number];
 
@@ -12,7 +10,6 @@ const productImages: Record<Category, string[]> = {
     "assets/ProductApp/seatsystem1.png",
     "assets/ProductApp/seatsystem2.png",
   ],
-
 };
 
 function ProductApp() {
