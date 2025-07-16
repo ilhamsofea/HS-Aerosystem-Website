@@ -40,7 +40,7 @@ const Home = () => {
         // Logics for Contact Us form
         setTimeout(() => {
           setSubmitted(false);
-          setFormKey((prev) => prev + 1); 
+          setFormKey((prev) => prev + 1);
         }, 2000);
       } else {
         console.error("Form submission failed:", res);
