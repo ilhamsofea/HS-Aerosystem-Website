@@ -102,59 +102,6 @@ ul.list1 {
   object-fit: cover;
 }
 
-/* @media (max-width: 800px) {
-  .pricess-cap-intro {
-    padding: 4rem 2rem;
-  }
-
-  .pricess-cap-intro h1 {
-    font-size: 2.5rem;
-  }
-
-  .process-cap-intro p {
-    font-size: 1.2rem;
-  }
-  .process-cap-inner-slide,
-  .process-cap-inner-slide2 {
-    flex-direction: column;
-    padding: 40px 20px;
-  }
-
-  .process-cap-slide-content {
-    flex-direction: column;
-    gap: 30px;
-  }
-
-  .process-cap-text-section {
-    width: 100%;
-  }
-
-  .process-cap-slide-number,
-  .process-cap-slide-title {
-    font-size: 1.8rem;
-  }
-
-  .process-cap-slide-description {
-    font-size: 1rem;
-    outline: none;
-  }
-
-  .process-cap-image-section {
-    width: 100%;
-    height: auto;
-  }
-
-  .process-cap-image-section img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-  }
-
-  ul.list1 {
-    padding-left: 1rem;
-  }
-} */
-
 @media (max-width: 800px) {
   .process-cap-intro {
     padding: 4rem 2rem;

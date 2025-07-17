@@ -103,3 +103,80 @@ summary {
   font-weight: 500;
   list-style: none;
 }
+
+@media (max-width: 800px) {
+  .hero {
+    height: auto;
+    padding: 40px 15px;
+  }
+
+  .hero-text h1 {
+    font-size: 4rem;
+  }
+
+  .hero-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .products {
+    padding: 20px;
+  }
+
+  .gallery-item {
+    width: 250px;
+  }
+}
+
+@media (max-width: 800px) {
+  .hero {
+    height: auto;
+    padding: 40px 15px;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .hero-text h2 {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+
+  .products {
+    padding: 20px 15px;
+  }
+
+  .scroll-gallery {
+    gap: 12px;
+    padding-bottom: 8px;
+  }
+
+  .gallery-item {
+    width: 180px;
+    padding: 8px;
+  }
+
+  .product-tab summary {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 0.9rem;
+  }
+
+  .hero-text h2 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+
+  .gallery-item {
+    width: 150px;
+  }
+
+  .product-tab summary::after {
+    font-size: 1.25rem;
+  }
+}

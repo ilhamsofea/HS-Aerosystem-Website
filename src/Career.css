@@ -280,3 +280,81 @@
   font-size: 0.95rem;
   color: #444;
 }
+
+@media (max-width: 800px) {
+  .career-hero-slider {
+    height: 40vh;
+  }
+
+  .career-hero-image {
+    height: 40vh;
+  }
+
+  .career-hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .career-hero-content p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .career-box {
+    padding: 50px 16px;
+  }
+
+  .career-contact-box,
+  .vacancy-panel {
+    padding: 24px 20px;
+  }
+
+  .vacancy-item {
+    padding: 14px 16px;
+  }
+
+  .career-contact-box h3,
+  .vacancy-panel h3 {
+    font-size: 1.3rem;
+  }
+
+  .career-section-header h2 {
+    font-size: 2rem;
+  }
+
+  .career-section-header p {
+    font-size: 1rem;
+  }
+
+  .contact-list {
+    gap: 10px;
+  }
+
+  .contact-list li {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 0.9rem;
+  }
+
+  .label {
+    min-width: unset;
+    font-size: 0.9rem;
+  }
+
+  .job-modal-content{
+    padding: 24px 20px;
+  }
+
+  .job-modal h2 {
+    font-size: 1.3rem;
+  }
+
+  .job-modal p {
+    font-size: 0.95rem;
+  }
+
+  .apply-btn {
+    width: 100%;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+}
