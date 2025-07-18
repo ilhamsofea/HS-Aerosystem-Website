@@ -23,7 +23,7 @@ function Footer() {
           <p>Phone: +60 6 7921886</p>
           <p>
             E-mail:{" "}
-            <a href="mailto:Contactus@hongshi-group.com">
+            <a href="mailto:admin@hsaerosystem.com">
               admin@hsaerosystem.com
             </a>
           </p>
