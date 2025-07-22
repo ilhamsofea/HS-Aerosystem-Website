@@ -1,6 +1,6 @@
 import "./Home.css";
 import Footer from "./Footer";
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const clientLogos = [
@@ -9,6 +9,29 @@ const clientLogos = [
 ];
 
 const Home = () => {
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const el = entry.target as HTMLElement;
+          if (entry.isIntersecting) {
+            el.classList.add("reveal");
+            // observer.unobserve(el);
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    const timeout = setTimeout(() => {
+      const slides = document.querySelectorAll(".inner-slide");
+      slides.forEach((slide) => observer.observe(slide));
+    }, 100); // Delay to ensure elements are in the DOM
+
+    return () => {
+      clearTimeout(timeout);
+    };
+  }, []);
   const [submitted, setSubmitted] = useState(false);
   const [formKey, setFormKey] = useState(0);
   const shouldScroll = useMemo(() => clientLogos.length > 5, []); //only scroll if client > 5
