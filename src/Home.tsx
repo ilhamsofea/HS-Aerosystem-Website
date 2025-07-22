@@ -166,7 +166,7 @@ const Home = () => {
   return (
     // START container
     <>
-      <section className="home-intro" style={{ paddingTop: "30px" }}>
+      <section className="home-intro" style={{ paddingTop: "150px" }}>
         <div className="home-overlay" id="product-app-start"></div>
         <div className="home-hero-text">
           <h1 className="aboutus-title">

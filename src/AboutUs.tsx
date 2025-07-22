@@ -16,7 +16,7 @@ function AboutUs() {
   const [activeCert, setActiveCert] = useState<string | null>(null);
 
   return (
-    <div className="aboutus-container" style={{ paddingTop: "30px" }}>
+    <div className="aboutus-container" style={{ paddingTop: "150px" }}>
         <div className="aboutus-wrapper">
           <div className="aboutus-bg" id="about-us">
             <div className="aboutus-intro">
