@@ -671,6 +671,17 @@ textarea {
     text-align: center;
   }
 
+  .scrollable-slides {
+    overflow: auto; 
+    height: auto; 
+  }
+
+  .inner-slide {
+    min-height: auto; 
+    margin: 20px 0;
+    padding: 40px 20px;
+  }
+
   .slide-title,
   .sticky-title,
   .approach-title {
