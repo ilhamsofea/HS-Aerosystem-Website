@@ -120,15 +120,15 @@ const Career = () => {
             <ul className="contact-list">
               <li>
                 <span className="label">HR:</span>
-                <a href="mailto:hr@company.com">hr@company.com</a>
+                <a href="mailto:hr@hsaerosystem.com">hr@hsaerosystem.com</a>
               </li>
-              <li>
+              <li className="info-needed">
                 <span className="label">Recruitment:</span>
                 <a href="mailto:recruitment@company.com">
                   recruitment@company.com
                 </a>
               </li>
-              <li>
+              <li className="info-needed">
                 <span className="label">Internship:</span>
                 <a href="mailto:internship@company.com">
                   internship@company.com
