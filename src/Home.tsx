@@ -9,6 +9,8 @@ const clientLogos = [
 ];
 
 const Home = () => {
+  // Animations section
+  // Home intro, About Us animation
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -16,7 +18,6 @@ const Home = () => {
           const el = entry.target as HTMLElement;
           if (entry.isIntersecting) {
             el.classList.add("reveal");
-            // observer.unobserve(el);
           }
         });
       },
@@ -32,6 +33,95 @@ const Home = () => {
       clearTimeout(timeout);
     };
   }, []);
+
+  // Approach section animation
+  useEffect(() => {
+    const target = document.querySelector(".home-approach");
+    if (!target) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("approach-visible");
+          }
+        });
+      },
+      { threshold: 0.3 }
+    );
+
+    observer.observe(target);
+
+    return () => observer.unobserve(target);
+  }, []);
+
+  // Approach cards animation
+  useEffect(() => {
+    const cards = document.querySelectorAll(".approach-card");
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry, index) => {
+          const el = entry.target as HTMLElement;
+          if (entry.isIntersecting) {
+            el.classList.add("reveal-card");
+            el.style.animationDelay = `${index * 0.15}s`;
+            observer.unobserve(el);
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    cards.forEach((card) => observer.observe(card));
+
+    return () => cards.forEach((card) => observer.unobserve(card));
+  }, []);
+
+  // Clients section animation
+  useEffect(() => {
+    const clientSection = document.querySelector(".home-our-clients");
+    if (!clientSection) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("clients-visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.3 }
+    );
+
+    observer.observe(clientSection);
+
+    return () => observer.unobserve(clientSection);
+  }, []);
+
+  // Contact Us section animation
+  useEffect(() => {
+    const contactSection = document.querySelector(".home-contact-us");
+    if (!contactSection) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("contact-animate");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.3 }
+    );
+
+    observer.observe(contactSection);
+
+    return () => observer.unobserve(contactSection);
+  }, []);
+  // Ends Animations section
+
   const [submitted, setSubmitted] = useState(false);
   const [formKey, setFormKey] = useState(0);
   const shouldScroll = useMemo(() => clientLogos.length > 5, []); //only scroll if client > 5
@@ -60,7 +150,7 @@ const Home = () => {
         console.log("Success", res);
         setSubmitted(true);
 
-        // Logics for Contact Us form
+        // Logics for Contact Us form to auto reset after submission
         setTimeout(() => {
           setSubmitted(false);
           setFormKey((prev) => prev + 1);
@@ -74,8 +164,13 @@ const Home = () => {
   };
 
   return (
+    // START container
     <>
-      <div className="home-intro" style={{ paddingTop: "30px" }}>
+      <div
+        className="home-intro"
+        style={{ paddingTop: "30px" }}
+        id="home-intro"
+      >
         <h1 className="aboutus-title">
           Commited to Quality <br /> Driven by Passion
         </h1>

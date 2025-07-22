@@ -8,7 +8,6 @@
   justify-content: center;
   align-items: center;
   background-color: #2c2c2c;
-
 }
 
 .home-intro .img-1 {
@@ -252,6 +251,20 @@
   line-height: 1.6;
 }
 
+.approach-title,
+.approach-description {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8 ease;
+}
+
+.approach-visible .approach-title,
+.approach-visible .approach-description {
+  opacity: 1;
+  transform: translateY(0);
+  animation: fadeSlideUp 0.8s ease forwards;
+}
+
 .approach-card-container {
   display: flex;
   gap: 10rem;
@@ -270,6 +283,15 @@
   transition: transform 0.4s ease, box-shadow 0.4s ease;
   cursor: pointer;
   overflow: hidden;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.approach-card.reveal-card {
+  opacity: 1;
+  transform: translateY(0);
+  animation: fadeSlideUpCard 0.8s ease forwards;
 }
 
 .approach-card h3 {
@@ -335,6 +357,27 @@
   }
 }
 
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeSlideUpCard {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 /*end try*/
 
@@ -360,6 +403,18 @@
   color: white;
   font-size: 1.25rem;
   margin-bottom: 50px;
+}
+
+.clients-title,
+.clients-subtitle {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.clients-visible .clients-title,
+.clients-visible .clients-subtitle {
+  animation: fadeSlideUpSimple 0.8s ease forwards;
 }
 
 .client-logos {
@@ -417,6 +472,17 @@
   }
   to {
     transform: translateX(-50%);
+  }
+}
+
+@keyframes fadeSlideUpSimple {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
@@ -557,6 +623,42 @@ textarea {
   font-size: 0.95rem;
 }
 
+@keyframes fadeSlideLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeSlideRight {
+  0% {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.contact-info,
+.contact-form-wrapper {
+  opacity: 0;
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* When section is visible */
+.contact-animate .contact-info {
+  animation: fadeSlideLeft 0.8s ease forwards;
+}
+
+.contact-animate .contact-form-wrapper {
+  animation: fadeSlideRight 0.8s ease forwards;
+}
 
 @media (max-width: 800px) {
   .aboutus-title {
@@ -591,6 +693,41 @@ textarea {
     width: 100%;
   }
 
+  .approach-card-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+
+  .approach-title {
+    font-size: 2.5rem;
+  }
+
+  .approach-title,
+  .approach-description {
+    padding: 0 1rem;
+  }
+
+  .approach-card {
+    background-size: cover;
+    background-position: center;
+    padding: 1.5rem;
+  }
+
+  .approach-card {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .client-track {
+    gap: 30px;
+  }
+
+  .home-our-clients .client-logos {
+    padding: 40px 20px;
+  }
+
   .contact-layout {
     flex-direction: column;
     gap: 30px;
@@ -605,13 +742,5 @@ textarea {
   .form-row {
     flex-direction: column;
     gap: 10px;
-  }
-
-  .client-track {
-    gap: 30px;
-  }
-
-  .home-our-clients .client-logos {
-    padding: 40px 20px;
   }
 }
