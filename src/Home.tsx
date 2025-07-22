@@ -166,7 +166,16 @@ const Home = () => {
   return (
     // START container
     <>
-      <div
+      <section className="home-intro" style={{ paddingTop: "30px" }}>
+        <div className="home-overlay" id="product-app-start"></div>
+        <div className="home-hero-text">
+          <h1 className="aboutus-title">
+            Commited to Quality <br /> Driven by Passion
+          </h1>
+        </div>
+      </section>
+
+      {/* <div
         className="home-intro"
         style={{ paddingTop: "30px" }}
         id="home-intro"
@@ -174,15 +183,12 @@ const Home = () => {
         <h1 className="aboutus-title">
           Commited to Quality <br /> Driven by Passion
         </h1>
-        <p className="aboutus-heading">
-          Innovation-driven solutions for modern aviation
-        </p>
         <img
           src="https://static.wixstatic.com/media/58d4da_01f43d142c9c4a08a3453145066b133c~mv2.png/v1/fill/w_638,h_284,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/place-flying-sunset-sky_edited.png"
           className="img-1"
           alt="Flying Plane"
         />
-      </div>
+      </div> */}
 
       <section className="home-about-us">
         <div className="sticky-header">
