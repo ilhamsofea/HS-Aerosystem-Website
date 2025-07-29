@@ -602,15 +602,23 @@ textarea {
   transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
-.contact-animate .contact-info,
-.career-animate .career-stat-box-l {
+.career-stat-box-l.career-animate {
   animation: fadeSlideLeft 0.8s ease forwards;
 }
 
-.contact-animate .contact-form-wrapper,
-.career-animate .career-stat-box-r {
+.career-stat-box-r.career-animate {
   animation: fadeSlideRight 0.8s ease forwards;
 }
+
+.contact-info.contact-animate {
+  animation: fadeSlideLeft 0.8s ease forwards;
+}
+
+.contact-form-wrapper.contact-animate {
+  animation: fadeSlideRight 0.8s ease forwards;
+}
+
+
 
 /* Animations */
 @keyframes fadeUp {

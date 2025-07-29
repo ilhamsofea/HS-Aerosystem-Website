@@ -158,15 +158,24 @@ const Home = () => {
   }, []);
 
   // Career-stat-box (l,r) and Contact Us Animation
-  const sections = document.querySelectorAll(
-    ".home-contact-us, .home-career-preview"
+  const statBoxes = document.querySelectorAll(
+    ".career-stat-box-l, .career-stat-box-r"
+  );
+  const contactBoxes = document.querySelectorAll(
+    ".contact-info, .contact-form-wrapper"
   );
 
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add("contact-animate", "career-animate");
+          if (entry.target.classList.contains("career-stat-box-l")) {
+            entry.target.classList.add("career-animate", "fadeSlideLeft");
+          } else if (entry.target.classList.contains("career-stat-box-r")) {
+            entry.target.classList.add("career-animate", "fadeSlideRight");
+          } else {
+            entry.target.classList.add("contact-animate");
+          }
           observer.unobserve(entry.target);
         }
       });
@@ -174,7 +183,9 @@ const Home = () => {
     { threshold: 0.3 }
   );
 
-  sections.forEach((section) => observer.observe(section));
+  statBoxes.forEach((el) => observer.observe(el));
+  contactBoxes.forEach((el) => observer.observe(el));
+
   // Ends Animations section
 
   // Contact Us form logics
