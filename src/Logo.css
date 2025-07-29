@@ -1,4 +1,4 @@
-.logo-white {
+.logo-dark {
   width: 250px;
   max-width: 80vw;
   height: auto;
@@ -9,7 +9,7 @@
 }
 
 @media (max-width: 480px) {
-  .logo-white {
+  .logo-dark {
     width: 180px;
   }
 }

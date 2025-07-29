@@ -4,8 +4,20 @@
   box-sizing: border-box;
 }
 
+:root {
+  --light-bg: #f9fafb;
+  --card-bg: #ffffff;
+  --alt-card-bg: #f3f4f6;
+  --dark-text: #1a1a1a;
+  --muted-text: #555555;
+  --crimson-red: #b30000;
+  --btn-red: #b60000;
+  --btn-hover-red: #7c0a02; /*RENAME: --deep-red*/
+}
+
 body {
-  font-family: "Open Sans", "Lucida Sans", sans-serif;
+  /* font-family: "Open Sans", "Lucida Sans", sans-serif; */
+  font-family: "RTX-font", Helvetica, Arial, sans-serif;
   background-color: #111;
   color: white;
 }

@@ -18,22 +18,12 @@ function ProcessCap() {
               <p className="process-cap-slide-number">01</p>
               <h2 className="process-cap-slide-title">Precision Sheet Metal</h2>
               <p className="process-cap-slide-description">
-                We are equipped with advanced sheet metal processing machines of
-                Japanese AMADA, Swedish Quintus Hydroforming machine and
-                SWITZERLAND BYSTRONIC BySmart Fiber high-speed maglev laser,
-                fiber laser, laser and stamping compound machines, NCT, bending
-                machine and de-burring machines.
+                [Desc of the process here]
                 <ul className="list1">
                   <br />
-                  <li>Laser cutting</li>
-                  <li>CNC Machining</li>
-                  <li>Hydroforming</li>
-                  <li>CNC Bending</li>
-                  <li>TIG Welding</li>
-                  <li>CO2 Welding</li>
-                  <li>Laser Welding</li>
-                  <li>Spot Welding</li>
-                  <li>Robot Welding</li>
+                  <li>3 Axis Vertical Machining</li>
+                  <li>4 Axis Horizontal Machining</li>
+                  <li>Tool Presetter</li>
                 </ul>
               </p>
             </div>
@@ -46,25 +36,20 @@ function ProcessCap() {
           </div>
         </div>
 
-        <div className="process-cap-inner-slide2" id="02">
+        <div className="process-cap-inner-slide" id="02">
           <div className="process-cap-slide-content">
             <div className="process-cap-text-section">
               <p className="process-cap-slide-number">02</p>
               <h2 className="process-cap-slide-title">CNC Machining</h2>
               <p className="process-cap-slide-description">
-                The superior equipment suppliers of Japanese MAKINO and DMG
-                MORI, Korean HYUNDAI WIA provided us stability of the hardware
-                equipments and technical services, so that we can offer products
-                to customers with stable quality and quick response.
+                [Desc of the process here]
                 <ul className="list1">
                   <br />
-                  <li>Vertical CNC</li>
-                  <li>Horizontal CNC</li>
-                  <li>5-AXIS CNC</li>
-                  <li>9-AXIS CNC</li>
-                  <li>Bending Machine</li>
-                  <li>Tube end forming machine</li>
-                  <li>Wire cutting machine</li>
+                  <li>Fiber Laser Cutting</li>
+                  <li>Robotic Sheet Metal Bending</li>
+                  <li>Manual Sheet Metal Bending</li>
+                  <li>Sheet Metal Punch</li>
+                  <li>Burnishing</li>
                 </ul>
               </p>
             </div>
@@ -78,52 +63,65 @@ function ProcessCap() {
           <div className="process-cap-slide-content">
             <div className="process-cap-text-section">
               <p className="process-cap-slide-number">03</p>
-              <h2 className="process-cap-slide-title">Assembly and Testing</h2>
+              <h2 className="process-cap-slide-title">Welding</h2>
               <p className="process-cap-slide-description">
+                [Desc of the process here]
                 <ul className="list1">
                   <br />
-                  <li>Riveting assembly</li>
-                  <li>Fasteners assembly</li>
-                  <li>Bonding</li>
-                  <li>Low temperature assembly</li>
+                  <li>Fusion Welding</li>
+                  <li>Spot Welding</li>
+                  <li>Welding Cleaning</li>
+                  <li>High Energy Ultra Sonic Deburring</li>
+                </ul>
+              </p>
+            </div>
+            <div className="process-cap-image-section">
+              <img src="./assets/ProcessCap/cnc.JPG" alt="Welding" />
+            </div>
+          </div>
+        </div>
+
+        <div className="process-cap-inner-slide" id="04">
+          <div className="process-cap-slide-content">
+            <div className="process-cap-text-section">
+              <p className="process-cap-slide-number">04</p>
+              <h2 className="process-cap-slide-title">Mechanical Assembly</h2>
+              <p className="process-cap-slide-description">
+                [Desc of process here]
+                <ul className="list1">
+                  <br />
+                  <li>Assembly Installations (Riveting, Fastening, etc)</li>
+                  <li>Inkjet Marking</li>
+                  <li>Fiber Laser Marking</li>
                 </ul>
               </p>
             </div>
             <div className="process-cap-image-section">
               <img
                 src="./assets/ProcessCap/assembly-testing5.JPG"
-                alt="Assembly and Testing"
+                alt="Mechanical Assembly"
               />
             </div>
           </div>
         </div>
 
-        <div className="process-cap-inner-slide2" id="04">
+        <div className="process-cap-inner-slide" id="05">
           <div className="process-cap-slide-content">
             <div className="process-cap-text-section">
-              <p className="process-cap-slide-number">04</p>
-              <h2 className="process-cap-slide-title">Quality Capability</h2>
+              <p className="process-cap-slide-number">05</p>
+              <h2 className="process-cap-slide-title">Quality Inspection</h2>
               <p className="process-cap-slide-description">
-                As an independent testing and calibration department,
-                Experimental Testing Center has gradually improved its functions
-                after years of construction, covering most of the testing and
-                calibration work required within the company; mainly including
-                internal calibration and metallographic analysis, mechanical
-                testing, chemical analysis, non-destructive testing, etc. The
-                center has obtained NADCAP MTL qualification in April 2020. And
-                it has more than 70 sets of various testing equipment, including
-                FPI testing lines, CMM, high-precision image measuring
-                instruments, hardness testers, material testing machines,
-                metallographic analysis equipment, color difference meters,
-                element analyzers, etc.
+                [Desc of process here]
                 <ul className="list1">
                   <br />
-                  <li>Chemical analysis</li>
-                  <li>Metallographic</li>
-                  <li>Mechanics</li>
-                  <li>NDT FPI</li>
-                  <li>Calibration</li>
-                  <li>Length</li>
+                  <li>3 Dimensional CMM</li>
+                  <li>2.5D OMM</li>
+                  <li>Height Gauge</li>
+                  <li>Tensile Testing</li>
+                  <li>Contourgraph - Profiler</li>
+                  <li>Hardness Tester</li>
+                  <li>Roughness Tester</li>
+                  <li>Vision Detector</li>
                 </ul>
               </p>
             </div>

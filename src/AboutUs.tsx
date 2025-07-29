@@ -1,6 +1,6 @@
 import "./AboutUs.css";
 import Footer from "./Footer";
-import { useState} from "react";
+import { useState } from "react";
 
 const certificates = [
   "/assets/AboutUs/cert1.png",
@@ -17,39 +17,34 @@ function AboutUs() {
 
   return (
     <div className="aboutus-container" style={{ paddingTop: "150px" }}>
-        <div className="aboutus-wrapper">
-          <div className="aboutus-bg" id="about-us">
-            <div className="aboutus-intro">
-              <p>Company Profile</p>
-              <h1>
-                Redefining Aviation <br /> Solutions
-              </h1>
-            </div>
-
-            <div className="col">
-              <p className="main-p">
-                HS Aerosystem Sdn Bhd is a Malaysia–China joint venture
-                dedicated to high-precision aerospace manufacturing and
-                engineering services. Established in 2024 in Bandar Sri
-                Sendayan, Negeri Sembilan, the company specializes in sheet
-                metal fabrication, component assembly, and high-value-added
-                processes tailored for the aviation sector. Backed by Hongshi
-                Group’s global expertise and a commitment to excellence, HS
-                Aerosystem serves as a strategic hub for supplying quality
-                aerospace parts to international clients. The company is built
-                on a foundation of innovation, collaboration, and sustainable
-                growth—positioning itself as a rising force in the ASEAN
-                aerospace ecosystem.
-                <br />
-                <img
-                  alt="big image"
-                  src="./assets/AboutUs/model-image3.JPG"
-                  className="img-1"
-                />
-                <br />
-              </p>
-            </div>
+      <div className="aboutus-wrapper">
+        <div className="aboutus-bg" id="about-us">
+          <div className="aboutus-intro">
+            <p>Company Profile</p>
+            <h1>
+              Redefining Aviation <br /> Solutions
+            </h1>
           </div>
+
+          <div className="col">
+            <p className="main-p">
+              HS Aerosystem Sdn. Bhd is a Malaysia Incorporated Company on 14th
+              of February 2024. We are unwavering in our focus on our customers,
+              our pride is in our people, our strengths are in our continuous
+              development and adoption in technology and innovations for
+              achieving business operations excellence and our consciences are
+              in our influence and impacts we have on the society and environent
+              from where we operate.
+              <br />
+              <img
+                alt="big image"
+                src="./assets/AboutUs/model-image3.JPG"
+                className="img-1"
+              />
+              <br />
+            </p>
+          </div>
+        </div>
       </div>
 
       <section className="aboutus-core-values" id="core-values">
