@@ -1,0 +1,234 @@
+.history-intro {
+  position: relative;
+  min-height: 100vh;
+  overflow-y: auto;
+  /* background: url("/assets/ProductApp/hero-img.JPG") center/cover no-repeat; */
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+}
+
+.history-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.history-hero-text {
+  position: relative;
+  z-index: 2;
+  padding: 50px;
+  font-size: 3rem;
+  color: var(--light-bg);
+  animation: fadeUp 1s ease forwards;
+  opacity: 0;
+}
+
+.history-hero-text p {
+  font-size: 1.5rem;
+}
+
+.milestone-section {
+  padding: 100px 20px;
+  background: var(--light-bg);
+  color: var(--dark-text);
+}
+
+.milestone-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 80px auto;
+}
+
+.milestone-header h1 {
+  font-size: 3.5rem;
+  color: var(--crimson-red);
+  margin-bottom: 10px;
+}
+
+.milestone-header p {
+  color: var(--muted-text);
+  font-size: 1.2rem;
+}
+
+.milestone-legend {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 40px;
+  font-size: 0.95rem;
+  color: var(--dark-text);
+}
+
+.dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.completed-dot {
+  background-color: #007b4f;
+}
+
+.planned-dot {
+  background-color: #e07b00;
+}
+
+
+/* Status Indicators */
+.timeline-item.completed .content {
+  border-left: 4px solid #007b4f; /* green for completed */
+}
+
+.timeline-item.planned .content {
+  border-left: 4px dashed #e07b00; /* orange dashed for planned */
+  opacity: 0.8;
+}
+
+.timeline-item.completed::before,
+.timeline-item.planned::before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: -10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeline-item.completed::before {
+  background-color: #007b4f;
+  border: 2px solid white;
+}
+
+.timeline-item.planned::before {
+  background-color: #e07b00;
+  border: 2px dashed white;
+}
+
+
+/* Timeline Core */
+.timeline {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-left: 30px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  width: 2px;
+  background: var(--muted-text);
+  top: 0;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 20px 40px;
+  box-sizing: border-box;
+}
+
+.timeline-item.left {
+  left: 0;
+  text-align: right;
+}
+
+.timeline-item.right {
+  left: 50%;
+}
+
+.timeline-item .content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  position: relative;
+}
+
+.timeline-item .date {
+  display: block;
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: var(--crimson-red);
+  margin-bottom: 10px;
+}
+
+.timeline-item h3 {
+  margin: 0 0 10px;
+  font-size: 1.4rem;
+  color: var(--dark-text);
+}
+
+.timeline-item p {
+  font-size: 1rem;
+  color: var(--muted-text);
+}
+
+.milestone-img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  margin: 15px 0;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  object-fit: cover;
+}
+
+.timeline-item.current .content {
+  border: 2px solid var(--crimson-red);
+  box-shadow: 0 0 10px rgba(182, 0, 0, 0.3);
+  position: relative;
+}
+
+.current-label {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 12px;
+  background-color: var(--crimson-red);
+  color: white;
+  font-weight: bold;
+  font-size: 0.9rem;
+  border-radius: 20px;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(182, 0, 0, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(182, 0, 0, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(182, 0, 0, 0);
+  }
+}
+
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 10px;
+  }
+
+  .timeline-item {
+    width: 100%;
+    padding-left: 30px;
+    text-align: left;
+  }
+
+  .timeline-item.left,
+  .timeline-item.right {
+    left: 0;
+  }
+}

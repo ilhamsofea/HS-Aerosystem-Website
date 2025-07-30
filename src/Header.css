@@ -42,7 +42,7 @@ body.menu-open {
   font-weight: 600;
   padding: 8px 12px;
   border-radius: 6px;
-  color: var(--dark-text);
+  color: var(--light-bg);
 }
 
 .desktop-hamburger:hover {
@@ -58,7 +58,7 @@ body.menu-open {
   font-size: 1rem;
   font-weight: 500;
   text-decoration: none;
-  color: var(--dark-text);
+  color: var(--light-bg);
 }
 
 .global-nav a:hover {

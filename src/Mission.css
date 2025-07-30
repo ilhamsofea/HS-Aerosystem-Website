@@ -1,0 +1,148 @@
+.mission-intro {
+  position: relative;
+  min-height: 100vh;
+  overflow-y: auto;
+  /* background: url("/assets/ProductApp/hero-img.JPG") center/cover no-repeat; */
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+}
+
+.mission-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.mission-hero-text {
+  position: relative;
+  z-index: 2;
+  padding: 50px;
+  font-size: 3rem;
+  color: var(--light-bg);
+  animation: fadeUp 1s ease forwards;
+  opacity: 0;
+}
+
+.mission-hero-text p {
+  font-size: 1.5rem;
+}
+
+.home-approach {
+  padding: 100px 40px;
+  background-color: var(--light-bg);
+  color: var(--dark-text);
+  border-bottom: 1px solid gainsboro;
+}
+
+.approach-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.approach-heading {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--crimson-red);
+}
+
+.approach-sub {
+  font-size: 1.2rem;
+  color: var(--muted-text);
+  margin-bottom: 50px;
+  line-height: 1.6;
+}
+
+.approach-block {
+  margin-bottom: 40px;
+}
+
+.approach-block h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--dark-text);
+}
+
+.approach-block p {
+  font-size: 1.05rem;
+  color: var(--muted-text);
+  line-height: 1.8;
+}
+
+.core-bg {
+  padding: 100px 40px;
+  background-color: var(--light-bg);
+  color: var(--dark-text);
+}
+
+.core-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.core-heading {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--crimson-red);
+}
+
+.core-sub {
+  font-size: 1.2rem;
+  color: var(--muted-text);
+  margin-bottom: 50px;
+}
+
+.core-block {
+  margin-bottom: 40px;
+}
+
+.core-block h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--dark-text);
+}
+
+.core-block p {
+  font-size: 1.05rem;
+  color: var(--muted-text);
+  line-height: 1.8;
+}
+
+@keyframes glow {
+  from {
+    border-color: rgba(255, 255, 255, 0.6);
+  }
+  to {
+    border-color: rgba(255, 0, 0, 0.8);
+  }
+}
+
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeSlideUpCard {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -3,6 +3,8 @@ import { useState, useEffect, useRef } from "react";
 import { Routes, Route, Link } from "react-router-dom";
 import Home from "./Home";
 import AboutUs from "./AboutUs";
+import History from "./History";
+import Mission from "./Mission";
 import ProductApp from "./ProductApp";
 import ProcessCap from "./ProcessCap";
 import Career from "./Career";
@@ -100,7 +102,7 @@ function App() {
         <div className="sidebar-header">
           <div className="logo">
             <Link to="/home">
-              <LogoWhite />
+              <img src="/assets/Hs_Logo_dark.png" />
             </Link>
           </div>
           <div className="sidebar-close" onClick={() => setSidebarOpen(false)}>
@@ -165,7 +167,7 @@ function App() {
                     <li>
                       <Link to="/process">Process Capability</Link>
                     </li>
-                                        <li>
+                    <li>
                       <Link to="/process">Products</Link>
                     </li>
                     <li>
@@ -209,6 +211,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/aboutus" element={<AboutUs />} />
+        <Route path="/history" element={<History />} />
+        <Route path="/mission" element={<Mission />} />
         <Route path="/process" element={<ProcessCap />} />
         <Route path="/product" element={<ProductApp />} />
         <Route path="/career" element={<Career />} />

@@ -1,6 +1,6 @@
 import "./Home.css";
 import Footer from "./Footer";
-import { useState, useMemo, useEffect, useRef } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 // About Us pictures
@@ -85,7 +85,8 @@ const Home = () => {
     setSlideIndex((prev) => (prev === aboutSlides.length - 1 ? 0 : prev + 1));
 
   // Animations section
-  // Home intro, About Us animation
+
+  // About Us animation
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -231,7 +232,7 @@ const Home = () => {
   return (
     // START container
     <>
-      <section className="home-intro" style={{ paddingTop: "150px" }}>
+      <section className="home-intro">
         <div className="home-overlay" id="product-app-start"></div>
         <div className="home-hero-text">
           <h1>
@@ -281,24 +282,6 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="home-our-clients">
-        <div className="our-clients">
-          <p className="section-label">OUR CLIENTS</p>
-          <h1 className="clients-title">Empowering Progress Together</h1>
-          <p className="clients-subtitle">
-            We believe every client is a valuable, long-term partner.
-          </p>
-
-          <div className="client-marquee">
-            <div className={`client-track ${shouldScroll ? "scrolling" : ""}`}>
-              {clientLogos.map((logo, index) => (
-                <img key={index} src={logo} alt={`Client ${index + 1}`} />
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section className="home-career-preview">
         <div className="career-left">
           <p className="section-label">JOIN US</p>
@@ -343,6 +326,24 @@ const Home = () => {
               </div>
             </div>
           ))}
+        </div>
+      </section>
+
+      <section className="home-our-clients">
+        <div className="our-clients">
+          <p className="section-label">OUR CLIENTS</p>
+          <h1 className="clients-title">Empowering Progress Together</h1>
+          <p className="clients-subtitle">
+            We believe every client is a valuable, long-term partner.
+          </p>
+
+          <div className="client-marquee">
+            <div className={`client-track ${shouldScroll ? "scrolling" : ""}`}>
+              {clientLogos.map((logo, index) => (
+                <img key={index} src={logo} alt={`Client ${index + 1}`} />
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 

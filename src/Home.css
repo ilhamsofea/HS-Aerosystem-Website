@@ -2,7 +2,7 @@
   position: relative;
   min-height: 100vh;
   overflow-y: auto;
-  /* background: url("/assets/ProductApp/hero-img.JPG") center/cover no-repeat; */
+  background: url("/assets/ProductApp/hero-img.JPG") center/cover no-repeat;
   display: flex;
   align-items: left;
   flex-direction: column;
@@ -13,19 +13,18 @@
 .home-overlay {
   position: absolute;
   inset: 0;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .home-hero-text {
   position: relative;
   z-index: 2;
   padding: 50px;
-  font-size: 4rem;
-  color: var(--crimson-red);
+  font-size: 3rem;
+  color: var(--light-bg);
   animation: fadeUp 1s ease forwards;
   opacity: 0;
 }
-
 /*ABOUTUS START*/
 
 .home-about-us {
@@ -35,6 +34,7 @@
   background-color: var(--light-bg);
   flex-wrap: wrap;
   align-items: center;
+  border-bottom: 1px solid gainsboro;
 }
 
 .aboutus-left {
@@ -617,8 +617,6 @@ textarea {
 .contact-form-wrapper.contact-animate {
   animation: fadeSlideRight 0.8s ease forwards;
 }
-
-
 
 /* Animations */
 @keyframes fadeUp {
