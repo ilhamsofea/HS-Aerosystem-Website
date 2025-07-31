@@ -1,21 +1,24 @@
-import "./History.css";
+import "./Journey.css";
 import Footer from "./Footer";
 
-function Mission() {
+function Journey() {
   return (
-
-    <div className="history-container">
-      <section className="history-intro">
-        <div className="history-overlay" id="history-start"></div>
-        <div className="history-hero-text">
-          <h1> History </h1>
-          <p>A glance at where we started, how far we've come, and where we’re heading.</p>
+    // START container
+    <>
+      <section className="journey-hero">
+        <div className="overlay" id="history-start"></div>
+        <div className="hero-text">
+          <h1> Our Journey </h1>
+          <p>
+            A glance at where we started, how far we've come, and where we’re
+            heading.
+          </p>
         </div>
       </section>
 
       <section className="milestone-section">
         <div className="milestone-header">
-          <h1>Our Journey</h1>
+          <h1>From Vision to Reality</h1>
           <p>
             Milestones that shape who we are — from our inception to our future
             vision.
@@ -210,8 +213,8 @@ function Mission() {
       </section>
 
       <Footer />
-    </div> //ENDS container
+    </> //ENDS container
   );
 }
 
-export default Mission;
+export default Journey;

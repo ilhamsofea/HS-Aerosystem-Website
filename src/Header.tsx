@@ -3,8 +3,9 @@ import { useState, useEffect, useRef } from "react";
 import { Routes, Route, Link } from "react-router-dom";
 import Home from "./Home";
 import AboutUs from "./AboutUs";
-import History from "./History";
+import History from "./Journey";
 import Mission from "./Mission";
+import Team from "./Team";
 import ProductApp from "./ProductApp";
 import ProcessCap from "./ProcessCap";
 import Career from "./Career";
@@ -148,7 +149,7 @@ function App() {
                       <Link to="/aboutus">Overview</Link>
                     </li>
                     <li>
-                      <Link to="/history">History</Link>
+                      <Link to="/history"> Our Journey </Link>
                     </li>
                     <li>
                       <Link to="/mission">Mission, Vision, Value</Link>
@@ -168,7 +169,7 @@ function App() {
                       <Link to="/process">Process Capability</Link>
                     </li>
                     <li>
-                      <Link to="/process">Products</Link>
+                      <Link to="/product">Products Produced</Link>
                     </li>
                     <li>
                       <Link to="/certifications">
@@ -213,6 +214,7 @@ function App() {
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/history" element={<History />} />
         <Route path="/mission" element={<Mission />} />
+        <Route path="/team" element={<Team />} />
         <Route path="/process" element={<ProcessCap />} />
         <Route path="/product" element={<ProductApp />} />
         <Route path="/career" element={<Career />} />

@@ -232,9 +232,9 @@ const Home = () => {
   return (
     // START container
     <>
-      <section className="home-intro">
-        <div className="home-overlay" id="product-app-start"></div>
-        <div className="home-hero-text">
+      <section className="home-hero">
+        <div className="overlay" id="home-start"></div>
+        <div className="hero-text">
           <h1>
             Commited to Quality <br /> Driven by Passion
           </h1>

@@ -1,4 +1,4 @@
-.history-intro {
+.journey-hero {
   position: relative;
   min-height: 100vh;
   overflow-y: auto;
@@ -8,26 +8,6 @@
   flex-direction: column;
   justify-content: center;
   padding: 50px;
-}
-
-.history-overlay {
-  position: absolute;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.history-hero-text {
-  position: relative;
-  z-index: 2;
-  padding: 50px;
-  font-size: 3rem;
-  color: var(--light-bg);
-  animation: fadeUp 1s ease forwards;
-  opacity: 0;
-}
-
-.history-hero-text p {
-  font-size: 1.5rem;
 }
 
 .milestone-section {
@@ -79,8 +59,6 @@
   background-color: #e07b00;
 }
 
-
-/* Status Indicators */
 .timeline-item.completed .content {
   border-left: 4px solid #007b4f; /* green for completed */
 }
@@ -214,9 +192,7 @@
   }
 }
 
-
-/* Mobile Responsive */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .timeline::before {
     left: 10px;
   }

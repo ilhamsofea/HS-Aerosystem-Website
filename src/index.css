@@ -20,3 +20,24 @@ body {
   background-color: #111;
   color: white;
 }
+
+/*Global design for each pages Hero*/
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-text {
+  position: relative;
+  z-index: 2;
+  padding: 50px;
+  font-size: 3rem;
+  color: var(--light-bg);
+  animation: fadeUp 1s ease forwards;
+  opacity: 0;
+}
+
+.hero-text p {
+  font-size: 1.5rem;
+}

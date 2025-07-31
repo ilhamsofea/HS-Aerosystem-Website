@@ -1,0 +1,116 @@
+.team-hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+}
+
+.team-section {
+  background-color: var(--light-bg);
+  padding: 100px 20px;
+}
+
+.team-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.team-wrapper h1 {
+  font-size: 3.5rem;
+  color: var(--crimson-red);
+  margin-bottom: 20px;
+}
+
+.team-wrapper p {
+  font-size: 1.2rem;
+  color: var(--muted-text);
+  line-height: 1.6;
+}
+
+
+/* Top leader highlight */
+.highlight-leader {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  gap: 40px;
+}
+
+.leader-img-lg {
+  width: 280px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+}
+
+.leader-details-lg h2 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+  color: var(--dark-text);
+}
+
+.leader-details-lg p {
+  font-size: 1.2rem;
+  color: var(--muted-text);
+}
+
+/* Team grid section */
+.team-grid-section {
+  padding: 60px 20px;
+}
+
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.team-card {
+  flex: 1 1 220px;
+  max-width: 260px;
+  border-bottom: 1px solid gainsboro;
+}
+
+.team-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.06);
+  margin-bottom: 12px;
+}
+
+.team-info h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: var(--dark-text);
+}
+
+.team-info p {
+  color: var(--muted-text);
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .team-hero-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .team-hero-text p {
+    font-size: 1.1rem;
+  }
+}
+

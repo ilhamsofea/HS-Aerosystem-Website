@@ -3,19 +3,22 @@ import Footer from "./Footer";
 
 function Mission() {
   return (
-    <div className="mission-container">
-      <section className="mission-intro">
-        <div className="mission-overlay" id="product-app-start"></div>
-        <div className="mission-hero-text">
+    // START Container
+    <>
+      <section className="mission-hero">
+        <div className="overlay" id="product-app-start"></div>
+        <div className="hero-text">
           <h1> Mission, Vision, Value </h1>
-          <p>Purpose-built to reshape aerospace through integrity and innovation.</p>
+          <p>
+            Purpose-built to reshape aerospace through integrity and innovation.
+          </p>
         </div>
       </section>
 
-      <section className="home-approach">
+      <section className="approach-section">
         <div className="approach-wrapper">
-          <h1 className="approach-heading">What Drives Us</h1>
-          <p className="approach-sub">
+          <h1>What Drives Us</h1>
+          <p>
             We align innovation, precision, and performance to deliver tailored
             aerospace solutions. Our methodology ensures seamless execution
             across every phase of our client partnerships.
@@ -38,22 +41,13 @@ function Mission() {
               impact.
             </p>
           </div>
-
-          <div className="approach-block">
-            <h2>Values</h2>
-            <p>
-              Integrity, innovation, collaboration, and accountability are the
-              pillars that define how we operate, build relationships, and
-              exceed expectations.
-            </p>
-          </div>
         </div>
       </section>
 
-      <div className="core-bg">
-        <div className="core-wrapper">
-          <h1 className="core-heading">How We Work</h1>
-          <p className="core-sub">
+      <div className="value-section">
+        <div className="value-wrapper">
+          <h1>How We Work</h1>
+          <p>
             We are guided by principles that define who we are and how we
             operate.
           </p>
@@ -70,40 +64,43 @@ function Mission() {
           <div className="core-block">
             <h2>Innovation</h2>
             <p>
-              Embracing cutting-edge technologies and fostering a culture of
-              continuous improvement to stay ahead in the aerospace industry.
+              Emphasizing the importance of cutting-edge technology and
+              forward-thinking mindset to drive advancements and redefine
+              industry standards.
             </p>
           </div>
 
           <div className="core-block">
-            <h2>Integrity</h2>
+            <h2>Leveraging</h2>
             <p>
-              Operating with honesty, transparency, and accountability in
-              everything we do.
+              We leverage on the strength of our people, our customers and
+              partners to overcome challenges in the journey we are achieving.
             </p>
           </div>
 
           <div className="core-block">
-            <h2>Integrity</h2>
+            <h2>Sustainability</h2>
             <p>
-              Operating with honesty, transparency, and accountability in
-              everything we do.
+              A commitment to sustainable practices, both environmentally and
+              socially, with a focus on minimizing the company's environmental
+              footprint and positively influencing the interconnected world.
             </p>
           </div>
 
           <div className="core-block">
-            <h2>Integrity</h2>
+            <h2>Leadership</h2>
             <p>
-              Operating with honesty, transparency, and accountability in
-              everything we do.
+              A dedication to being a leader on the global stage in aerospace
+              manufacturing, taking initiatives that positions the company at
+              the forefront of the industry.
             </p>
           </div>
 
           <div className="core-block">
-            <h2>Integrity</h2>
+            <h2>Ethical Practises</h2>
             <p>
-              Operating with honesty, transparency, and accountability in
-              everything we do.
+              Adherence to the ethical principles in all business operations,
+              ensuring the integrity, transparency and responsible conduct.
             </p>
           </div>
 
@@ -112,7 +109,7 @@ function Mission() {
       </div>
 
       <Footer />
-    </div> //ENDS aboutus-container
+    </> //ENDS aboutus-container
   );
 }
 

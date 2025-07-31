@@ -1,39 +1,40 @@
-.hero {
+.product-hero {
   position: relative;
-  height: 80vh;
-  background: url("/assets/ProductApp/hero-img.JPG") center/cover no-repeat;
+  min-height: 100vh;
+  overflow-y: auto;
+  /* background: url("/assets/ProductApp/hero-img.JPG") center/cover no-repeat; */
   display: flex;
+  align-items: left;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.overlay {
-  position: absolute;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.hero-text {
-  position: relative;
-  z-index: 2;
-}
-
-.hero-text h1 {
-  font-size: 7rem;
-  font-weight: bold;
-}
-
-.hero-text h2 {
-  font-size: 2rem;
-  font-weight: normal;
-  margin-top: 10px;
+  padding: 50px;
 }
 
 .products {
-  padding: 40px 50px;
-  background-color: #2c2c2c;
+  padding: 100px 40px;
   overflow-x: auto;
+  background-color: var(--light-bg);
+}
+
+.product-header {
+  padding: 100px 40px;
+  background-color: var(--light-bg);
+  color: var(--dark-text);
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.product-header h1 {
+  font-size: 3.5rem;
+  color: var(--crimson-red);
+  margin-bottom: 10px;
+}
+
+.product-header p {
+  font-size: 1.2rem;
+  color: var(--muted-text);
+  line-height: 1.6;
 }
 
 .scroll-gallery {
@@ -49,18 +50,19 @@
   flex: 0 0 auto;
   width: 300px;
   scroll-snap-align: start;
-  background-color: #1c1c1c;
-  border: 1px solid #444;
+  background-color: var(--card-bg);
   padding: 10px;
   border-radius: 10px;
 }
 
 .gallery-item img {
   width: 100%;
-  height: auto;
-  object-fit: contain;
+  height: 200px; /* or any fixed height you want */
+  object-fit: cover; /* Ensures uniform visual appearance */
   border-radius: 5px;
+  display: block;
 }
+
 
 .product-tab summary {
   cursor: pointer;
@@ -69,6 +71,7 @@
   position: relative;
   padding-right: 25px;
   list-style: none;
+  color: var(--dark-text);
 }
 
 .product-tab summary::-webkit-details-marker {
@@ -82,7 +85,7 @@
   top: 0;
   font-size: 1.5rem;
   line-height: 1;
-  color: #fff;
+  color: var(--dark-text);
   transition: transform 0.3s ease;
 }
 
@@ -93,8 +96,8 @@
 details {
   margin: 10px 0;
   padding: 20px;
-  background-color: #222;
-  border: 1px solid #444;
+  background-color: var(--card-bg);
+  border: 1px solid var(--muted-text);
   cursor: pointer;
 }
 
@@ -104,28 +107,6 @@ summary {
   list-style: none;
 }
 
-@media (max-width: 800px) {
-  .hero {
-    height: auto;
-    padding: 40px 15px;
-  }
-
-  .hero-text h1 {
-    font-size: 4rem;
-  }
-
-  .hero-text h2 {
-    font-size: 1.5rem;
-  }
-
-  .products {
-    padding: 20px;
-  }
-
-  .gallery-item {
-    width: 250px;
-  }
-}
 
 @media (max-width: 800px) {
   .hero {
