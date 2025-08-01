@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from "react";
 import { Routes, Route, Link } from "react-router-dom";
 import Home from "./Home";
 import AboutUs from "./AboutUs";
-import History from "./Journey";
+import Journey from "./Journey";
 import Mission from "./Mission";
 import Team from "./Team";
 import ProductApp from "./ProductApp";
@@ -124,7 +124,7 @@ function App() {
                   Core Capabilities <span>›</span>
                 </span>
               </li>
-              <li onClick={() => toggleExpand("innovation")}>
+              <li onClick={() => toggleExpand("updates")}>
                 <span>
                   News & Updates <span>›</span>
                 </span>
@@ -149,13 +149,15 @@ function App() {
                       <Link to="/aboutus">Overview</Link>
                     </li>
                     <li>
-                      <Link to="/history"> Our Journey </Link>
+                      <Link to="/journey#journey-start"> Our Journey </Link>
                     </li>
                     <li>
-                      <Link to="/mission">Mission, Vision, Value</Link>
+                      <Link to="/mission#mission-start">
+                        Mission, Vision, Value
+                      </Link>
                     </li>
                     <li>
-                      <Link to="/team">Leadership & Team</Link>
+                      <Link to="/team#team-start">Leadership & Team</Link>
                     </li>
                   </ul>
                 </>
@@ -168,9 +170,9 @@ function App() {
                     <li>
                       <Link to="/process">Process Capability</Link>
                     </li>
-                    <li>
+                    {/* <li>
                       <Link to="/product">Products Produced</Link>
-                    </li>
+                    </li> */}
                     <li>
                       <Link to="/certifications">
                         Certifications & Standards
@@ -180,7 +182,7 @@ function App() {
                 </>
               )}
 
-              {expandedMenu === "innovation" && (
+              {expandedMenu === "updates" && (
                 <>
                   <h3 className="expanded-title">News & Updates</h3>
                   <ul className="submenu-list">
@@ -212,7 +214,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/aboutus" element={<AboutUs />} />
-        <Route path="/history" element={<History />} />
+        <Route path="/journey" element={<Journey />} />
         <Route path="/mission" element={<Mission />} />
         <Route path="/team" element={<Team />} />
         <Route path="/process" element={<ProcessCap />} />

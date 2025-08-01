@@ -1,11 +1,51 @@
 import "./Mission.css";
 import Footer from "./Footer";
+import { useEffect } from "react";
 
 function Mission() {
+
+  useEffect(() => {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("reveal");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.3 }
+  );
+
+  const section = document.querySelector(".approach-section");
+  if (section) observer.observe(section);
+
+  return () => observer.disconnect();
+}, []);
+
+  useEffect(() => {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("reveal");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.3 }
+  );
+
+  const section = document.querySelector(".value-section");
+  if (section) observer.observe(section);
+
+  return () => observer.disconnect();
+}, []);
+
   return (
     // START Container
     <>
-      <section className="mission-hero">
+      <section className="mission-hero" id = "mission-start">
         <div className="overlay" id="product-app-start"></div>
         <div className="hero-text">
           <h1> Mission, Vision, Value </h1>

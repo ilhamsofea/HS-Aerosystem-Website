@@ -19,6 +19,7 @@ body {
   font-family: "RTX-font", Helvetica, Arial, sans-serif;
   background-color: #111;
   color: white;
+  overscroll-behavior: contain;
 }
 
 /*Global design for each pages Hero*/

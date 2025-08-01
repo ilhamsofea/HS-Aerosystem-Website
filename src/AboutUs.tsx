@@ -38,8 +38,8 @@ function AboutUs() {
 
           <div className="aboutus-desc">
             <p>
-              <span className="bold-word">HS Aerosystem Sdn. Bhd</span> is a{" "}
-              <span className="bold-word">Malaysia Incorporated Company</span>on
+              <span className="bold-word"> HS Aerosystem Sdn. Bhd </span> is a
+              <span className="bold-word"> Malaysia Incorporated Company </span>on
               14th of February 2024.
             </p>
 

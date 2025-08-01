@@ -1,12 +1,37 @@
 import "./Journey.css";
 import Footer from "./Footer";
+import { useEffect } from "react";
 
 function Journey() {
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("reveal");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.3 }
+    );
+
+    const sections = document.querySelectorAll(
+      ".milestone-wrapper, .milestone-legend, .timeline-item"
+    );
+
+    sections.forEach((section) => {
+      observer.observe(section);
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     // START container
     <>
-      <section className="journey-hero">
-        <div className="overlay" id="history-start"></div>
+      <section className="journey-hero" id="journey-start">
+        <div className="overlay"></div>
         <div className="hero-text">
           <h1> Our Journey </h1>
           <p>
@@ -17,7 +42,7 @@ function Journey() {
       </section>
 
       <section className="milestone-section">
-        <div className="milestone-header">
+        <div className="milestone-wrapper">
           <h1>From Vision to Reality</h1>
           <p>
             Milestones that shape who we are — from our inception to our future
