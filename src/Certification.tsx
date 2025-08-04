@@ -1,31 +1,14 @@
-import "./AboutUs.css";
+import "./Certification.css";
 import Footer from "./Footer";
-import { useState } from "react";
 
-const images = [
-  "./assets/AboutUs/model-image1.JPG",
-  "./assets/AboutUs/model-image2.jpg",
-  "./assets/AboutUs/model-image3.JPG",
-];
-
-function AboutUs() {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const handlePrev = () => {
-    setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
-  };
-
-  const handleNext = () => {
-    setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
-  };
-
+function Certification() {
   return (
     <>
-      <section className="aboutus-hero" id="aboutus-start">
+      <section className="cert-hero" id="cert-start">
         <div className="overlay"></div>
         <div className="hero-text">
-          <h1>Overview</h1>
-          <p>HS Aerosystem Sdn. Bhd is where expertise meets aerospace excellence.</p>
+          <h1>Certification</h1>
+          <p>[ Insert text here ]</p>
         </div>
       </section>
 
@@ -42,23 +25,6 @@ function AboutUs() {
               <span className="bold-word"> Malaysia Incorporated Company </span>on
               14th of February 2024.
             </p>
-
-            {/* --- CAROUSEL START --- */}
-            <div className="carousel">
-              <button className="carousel-btn left" onClick={handlePrev}>
-                ‹
-              </button>
-              <img
-                src={images[currentIndex]}
-                alt={`Slide ${currentIndex + 1}`}
-                className="img-1"
-              />
-              <button className="carousel-btn right" onClick={handleNext}>
-                ›
-              </button>
-            </div>
-            {/* --- CAROUSEL END --- */}
-
             <p>
               <span className="bold-word"> WE </span> are unwavering in our
               focus on <span className="bold-word"> our customers, </span> our
@@ -81,4 +47,4 @@ function AboutUs() {
   );
 }
 
-export default AboutUs;
+export default Certification;

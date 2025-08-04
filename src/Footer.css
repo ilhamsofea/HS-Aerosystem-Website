@@ -26,6 +26,26 @@
   text-decoration: none;
 }
 
+.linkedin-link a {
+  display: inline-flex;
+  align-items: center;
+  color: #89cdfd;
+  text-decoration: none;
+  /* margin-top: 2px; */
+}
+
+.linkedin-icon {
+  width: 25px;
+  height: 25px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.2s ease;
+}
+
+.linkedin-link a:hover .linkedin-icon {
+  transform: scale(1.1);
+}
+
+
 .footer-links {
   display: flex;
   flex-wrap: wrap;

@@ -6,7 +6,7 @@ body.menu-open {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 70px;
+  height: 90px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -18,12 +18,33 @@ body.menu-open {
   background: transparent;
 }
 
+.topbar.scrolled {
+  background-color: var(--light-bg);
+  backdrop-filter: none; 
+  color: var(--dark-text);
+  height: 60px;
+}
+
 .topbar.hidden {
   transform: translateY(-100%);
 }
 
 .topbar.visible {
   transform: translateY(0);
+}
+
+.topbar.scrolled .desktop-hamburger,
+.topbar.scrolled .global-nav a {
+  color: black;
+}
+
+.topbar.scrolled .desktop-hamburger {
+    padding-right: 50px;
+
+}
+
+.topbar.scrolled .global-nav a:hover {
+  color: var(--crimson-red);
 }
 
 .left-section {
@@ -41,7 +62,7 @@ body.menu-open {
   font-size: 16px;
   font-weight: 600;
   padding: 8px 12px;
-  border-radius: 6px;
+  padding-right: 50px;
   color: var(--light-bg);
 }
 

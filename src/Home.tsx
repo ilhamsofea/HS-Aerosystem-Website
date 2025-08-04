@@ -232,8 +232,8 @@ const Home = () => {
   return (
     // START container
     <>
-      <section className="home-hero">
-        <div className="overlay" id="home-start"></div>
+      <section className="home-hero" id="home-start">
+        <div className="overlay"></div>
         <div className="hero-text">
           <h1>
             Commited to Quality <br /> Driven by Passion

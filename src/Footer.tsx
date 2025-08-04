@@ -27,6 +27,20 @@ function Footer() {
             E-mail:{" "}
             <a href="mailto:admin@hsaerosystem.com">admin@hsaerosystem.com</a>
           </p>
+          <p className="linkedin-link">
+            <a
+              href="https://www.linkedin.com/company/hsaerosystem" // Replace with your actual LinkedIn URL
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg
+"
+                alt="LinkedIn"
+                className="linkedin-icon"
+              />
+            </a>
+          </p>
         </div>
 
         <div className="footer-links">

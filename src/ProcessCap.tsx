@@ -8,7 +8,7 @@ function ProcessCap() {
         <div className="overlay"></div>
         <div className="hero-text">
           <h1> Process Capability </h1>
-          <p></p>
+          <p> [Insert text Here ]</p>
         </div>
       </section>
       <section className="process-cap-slide">

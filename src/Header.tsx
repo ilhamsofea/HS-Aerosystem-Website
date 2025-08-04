@@ -6,8 +6,10 @@ import AboutUs from "./AboutUs";
 import Journey from "./Journey";
 import Mission from "./Mission";
 import Team from "./Team";
+import News from "./News";
 import ProductApp from "./ProductApp";
 import ProcessCap from "./ProcessCap";
+import Certification from "./Certification";
 import Career from "./Career";
 import ContactUs from "./ContactUs";
 import LogoWhite from "./Logo";
@@ -55,8 +57,16 @@ function App() {
             ☰ Menu
           </div>
           <div className="logo">
-            <Link to="/home">
-              <LogoWhite />
+            <Link to="/home#home-start">
+              {scrolled ? (
+                <img
+                  className="topbar-logo"
+                  src="/assets/Hs_Logo_dark.png"
+                  alt="HS Logo Dark"
+                />
+              ) : (
+                <LogoWhite />
+              )}
             </Link>
           </div>
         </div>
@@ -102,7 +112,7 @@ function App() {
       <aside className={`desktop-sidebar ${sidebarOpen ? "open" : ""}`}>
         <div className="sidebar-header">
           <div className="logo">
-            <Link to="/home">
+            <Link to="/home#home-start">
               <img src="/assets/Hs_Logo_dark.png" />
             </Link>
           </div>
@@ -174,7 +184,7 @@ function App() {
                       <Link to="/product">Products Produced</Link>
                     </li> */}
                     <li>
-                      <Link to="/certifications">
+                      <Link to="/certification">
                         Certifications & Standards
                       </Link>
                     </li>
@@ -217,7 +227,9 @@ function App() {
         <Route path="/journey" element={<Journey />} />
         <Route path="/mission" element={<Mission />} />
         <Route path="/team" element={<Team />} />
+        <Route path="/news" element={<News />} />
         <Route path="/process" element={<ProcessCap />} />
+        <Route path="/certification" element={<Certification />} />
         <Route path="/product" element={<ProductApp />} />
         <Route path="/career" element={<Career />} />
         <Route path="/contactus" element={<ContactUs />} />

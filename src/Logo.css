@@ -1,12 +1,10 @@
-.logo-dark {
-  width: 250px;
-  max-width: 80vw;
+/* .logo-dark {
   height: auto;
   object-fit: contain;
   object-position: center;
   display: block;
   margin: 0 auto;
-}
+} */
 
 @media (max-width: 480px) {
   .logo-dark {
