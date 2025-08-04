@@ -2,7 +2,7 @@
   position: relative;
   min-height: 100vh;
   overflow-y: auto;
-  background: url("/assets/ProductApp/hero-img.JPG") center/cover no-repeat;
+  /* background: url("/assets/ProductApp/hero-img.JPG") center/cover no-repeat; */
   display: flex;
   align-items: left;
   flex-direction: column;
@@ -10,107 +10,103 @@
   padding: 50px;
 }
 
-.aboutus-bg {
+.cert-section {
   padding: 100px 40px;
   background-color: var(--light-bg);
   color: var(--dark-text);
   line-height: 1.8;
 }
 
-.aboutus-aligned-wrapper {
+.cert-wrapper {
   max-width: 1000px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
+  text-align: left;
 }
 
-.aboutus-header {
-  width: 100%;
+.cert-wrapper h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--crimson-red);
 }
 
-.aboutus-header p {
+.cert-wrapper p {
   font-size: 1.2rem;
   color: var(--muted-text);
-  /* margin-bottom: 50px; */
+  margin-bottom: 50px;
   line-height: 1.6;
 }
 
-.aboutus-header h1 {
-  font-size: 3.5rem;
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.cert-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cert-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.cert-card img {
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.cert-card h3 {
+  font-size: 1.4rem;
   color: var(--crimson-red);
   margin-bottom: 10px;
 }
 
-.aboutus-desc p {
-  font-size: 1.5rem;
-  width: 100%;
-  text-align: justify;
+.cert-card p {
+  font-size: 1rem;
   color: var(--dark-text);
 }
 
-.bold-word {
-  font-weight: bold;
+/* Optional download section */
+.cert-downloads {
+  margin-top: 60px;
 }
 
-.img-1 {
-  width: 100%;
-  max-width: 900px;
-  margin: 40px auto 0 auto;
-  display: block;
-  aspect-ratio: 16 / 9;
-  border-radius: 16px;
-  object-fit: cover;
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.cert-downloads h2 {
+  font-size: 1.8rem;
+  color: var(--crimson-red);
+  margin-bottom: 20px;
 }
 
-.img-1:hover {
-  transform: scale(1.02);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+.cert-downloads ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.cert-downloads li {
+  margin-bottom: 10px;
+  list-style-type: circle;
+}
+
+.cert-downloads a {
+  text-decoration: none;
+  color: var(--dark-text);
+  font-weight: 500;
+  border-bottom: 1px solid var(--crimson-red);
+  transition: color 0.3s ease;
+}
+
+.cert-downloads a:hover {
+  color: var(--crimson-red);
 }
 
 @media (max-width: 800px) {
-  .aboutus-bg {
-    padding: 20px;
-  }
-
-  .aboutus-aligned-wrapper {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .aboutus-header {
-    padding: 0;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-
-  .aboutus-header h1 {
-    font-size: 2.5rem;
-    text-align: center;
-  }
-
-  .aboutus-header p {
-    font-size: 1.2rem;
-    color: #ccc;
-    margin-bottom: 10px;
-  }
-
-  .aboutus-desc p {
-    padding: 0;
-    font-size: 1rem;
-    line-height: 1.6;
-    text-align: justify;
-  }
-
-  .img-1 {
-    width: 100%;
-    max-width: 100%;
-    margin: 20px 0;
-    border-radius: 12px;
-    max-height: none;
-    aspect-ratio: 16 / 9;
-    object-fit: contain;
-  }
 }

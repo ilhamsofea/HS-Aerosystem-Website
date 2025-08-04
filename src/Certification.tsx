@@ -7,40 +7,76 @@ function Certification() {
       <section className="cert-hero" id="cert-start">
         <div className="overlay"></div>
         <div className="hero-text">
-          <h1>Certification</h1>
-          <p>[ Insert text here ]</p>
+          <h1> Certification & Standard </h1>
+          <p>
+            Our certifications demonstrate our compliance with global standards
+            and our dedication to quality, safety, and performance.
+          </p>
         </div>
       </section>
 
-      <div className="aboutus-bg">
-        <div className="aboutus-aligned-wrapper">
-          <div className="aboutus-header">
-            <h1>Redefining Aviation Solutions</h1>
-            <p>Company Profile</p>
+      <section className="cert-section">
+        <div className="cert-wrapper">
+          <h1>Recognized for Excellence</h1>
+          <p>
+            Upholding global benchmarks — discover the certifications that
+            define our commitment to quality and compliance.
+          </p>
+
+          {/* Certifications Grid */}
+          <div className="cert-grid">
+            <div className="cert-card">
+              <img src="/assets/Cert/cert1.png" alt="cert1" />
+              <h3>Cert1</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
+              </p>
+            </div>
+
+            <div className="cert-card">
+              <img src="/assets/Cert/cert2.jpg" alt="cert2" />
+              <h3>Cert2</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+
+            <div className="cert-card">
+              <img src="/assets/Cert/cert4.png" alt="cert3" />
+              <h3>Cert3</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+
+            {/* Add more certifications if needed (repeat certification grid) */}
           </div>
 
-          <div className="aboutus-desc">
-            <p>
-              <span className="bold-word"> HS Aerosystem Sdn. Bhd </span> is a
-              <span className="bold-word"> Malaysia Incorporated Company </span>on
-              14th of February 2024.
-            </p>
-            <p>
-              <span className="bold-word"> WE </span> are unwavering in our
-              focus on <span className="bold-word"> our customers, </span> our
-              pride is in
-              <span className="bold-word"> our people</span>,
-              <span className="bold-word"> our strength </span> are in our
-              continuous development and adoption in
-              <span className="bold-word"> technology and innovation </span> for
-              achieving business operations excellence and our consciences are
-              in our influence and impacts we have on the
-              <span className="bold-word"> society and environment </span> from
-              where we operate.
-            </p>
+          <div className="cert-downloads">
+            <h2>Download Certificates</h2>
+            <ul>
+              <li>
+                <a href="/assets/Cert/cert1.pdf" target="_blank">
+                  cert1 (PDF)
+                </a>
+              </li>
+              <li>
+                <a href="/assets/Cert/cert2.pdf" target="_blank">
+                  cert2 (PDF)
+                </a>
+              </li>
+              <li>
+                <a href="/assets/Cert/cert4.pdf" target="_blank">
+                  cert3 (PDF)
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
+      </section>
 
       <Footer />
     </>

@@ -76,23 +76,23 @@ function Team() {
 
   /* FOR ANIMATION ON*/
   useEffect(() => {
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("reveal");
-          observer.unobserve(entry.target);
-        }
-      });
-    },
-    { threshold: 0.3 }
-  );
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("reveal");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.3 }
+    );
 
-  const section = document.querySelector(".team-section");
-  if (section) observer.observe(section);
+    const section = document.querySelector(".team-section");
+    if (section) observer.observe(section);
 
-  return () => observer.disconnect();
-}, []);
+    return () => observer.disconnect();
+  }, []);
 
   useEffect(() => {
     if (selectedMember) {
@@ -106,16 +106,15 @@ function Team() {
     };
   }, [selectedMember]);
 
-
   return (
     <>
-      <section className="team-hero" id = "team-start">
+      <section className="team-hero" id="team-start">
         <div className="overlay" id="team"></div>
         <div className="hero-text">
           <h1>Leadership & Team</h1>
           <p>
-            Leadership that empowers progress — building a company that
-            redefines what’s possible in aerospace.
+            Driven by vision, strengthened by collaboration — meet the people
+            shaping our aerospace future.
           </p>
         </div>
       </section>
