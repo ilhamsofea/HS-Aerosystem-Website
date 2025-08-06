@@ -141,6 +141,11 @@ function App() {
                   About Us <span>›</span>
                 </span>
               </li>
+              <li onClick={() => toggleExpand("people")}>
+                <span>
+                  Our People <span>›</span>
+                </span>
+              </li>
               <li onClick={() => toggleExpand("capabilities")}>
                 <span>
                   Core Capabilities <span>›</span>
@@ -197,7 +202,7 @@ function App() {
                           setExpandedMenu(null);
                         }}
                       >
-                        Mission, Vision, Value
+                        Vision, Mission, Value
                       </Link>
                     </li>
                     <li>
@@ -209,6 +214,81 @@ function App() {
                         }}
                       >
                         Leadership & Team
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/certification"
+                        onClick={() => {
+                          setSidebarOpen(false);
+                          setExpandedMenu(null);
+                        }}
+                      >
+                        Approvals & Certification
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/customers"
+                        onClick={() => {
+                          setSidebarOpen(false);
+                          setExpandedMenu(null);
+                        }}
+                      >
+                        Our Customers
+                      </Link>
+                    </li>
+                  </ul>
+                </>
+              )}
+
+              {expandedMenu === "people" && (
+                <>
+                  <h3 className="expanded-title">Our People</h3>
+                  <ul className="submenu-list">
+                    <li>
+                      <Link
+                        to="/recognition"
+                        onClick={() => {
+                          setSidebarOpen(false);
+                          setExpandedMenu(null);
+                        }}
+                      >
+                        Employee Recognition
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/csr"
+                        onClick={() => {
+                          setSidebarOpen(false);
+                          setExpandedMenu(null);
+                        }}
+                      >
+                        Corporate Social Responsibility
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/hear"
+                        onClick={() => {
+                          setSidebarOpen(false);
+                          setExpandedMenu(null);
+                        }}
+                      >
+                        Hear From Our Employee
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/career"
+                        onClick={() => {
+                          setSidebarOpen(false);
+                          setExpandedMenu(null);
+                        }}
+                      >
+                        Career
                       </Link>
                     </li>
                   </ul>
@@ -230,18 +310,15 @@ function App() {
                         Process Capability
                       </Link>
                     </li>
-                    {/* <li>
-                      <Link to="/product">Products Produced</Link>
-                    </li> */}
                     <li>
                       <Link
-                        to="/certification"
+                        to="/product"
                         onClick={() => {
                           setSidebarOpen(false);
                           setExpandedMenu(null);
                         }}
                       >
-                        Certifications & Standards
+                        Sample Products
                       </Link>
                     </li>
                   </ul>

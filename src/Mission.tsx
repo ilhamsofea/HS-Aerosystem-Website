@@ -9,7 +9,7 @@ function Mission() {
       <section className="mission-hero" id="mission-start">
         <div className="overlay" id="product-app-start"></div>
         <div className="hero-text">
-          <h1> Mission, Vision, Value </h1>
+          <h1> Vision, Mission, Value </h1>
           <p>
             Purpose-built to reshape aerospace through integrity and innovation.
           </p>

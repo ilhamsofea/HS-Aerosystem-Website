@@ -2,7 +2,7 @@
   position: relative;
   min-height: 100vh;
   overflow-y: auto;
-  /* background: url("/assets/ProductApp/hero-img.JPG") center/cover no-repeat; */
+  background: url("/assets/ProductApp/hero-img.JPG") center/cover no-repeat;
   display: flex;
   align-items: left;
   flex-direction: column;
@@ -11,8 +11,6 @@
 }
 
 .products {
-  padding: 100px 40px;
-  overflow-x: auto;
   background-color: var(--light-bg);
 }
 
@@ -57,13 +55,18 @@
 
 .gallery-item img {
   width: 100%;
-  height: 200px; /* or any fixed height you want */
-  object-fit: cover; /* Ensures uniform visual appearance */
+  height: 200px; 
+  object-fit: cover; 
   border-radius: 5px;
   display: block;
 }
 
+.product-list {
 
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+}
 .product-tab summary {
   cursor: pointer;
   font-size: 1.5rem;

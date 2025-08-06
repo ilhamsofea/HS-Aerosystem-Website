@@ -15,7 +15,7 @@ const productImages: Record<Category, string[]> = {
   ],
   "Sheet Metal and Machinated Part": [
     "assets/ProductApp/smm2.png",
-    "assets/ProductApp/smm3.png"
+    "assets/ProductApp/smm3.png",
   ],
 };
 
@@ -25,8 +25,10 @@ function ProductApp() {
       <section className="product-hero">
         <div className="overlay" id="product-app-start"></div>
         <div className="hero-text">
-          <h1>Products Produced</h1>
+          <h1>Sample Products</h1>
           <p>
+            Explore a showcase of our precision-engineered aerospace components,
+            reflecting our capabilities in quality, innovation, and performance.
           </p>
         </div>
       </section>
@@ -35,10 +37,13 @@ function ProductApp() {
         <div className="product-header">
           <h1>Engineered for Impact</h1>
           <p>
-            From aircraft interiors to flight controls, our solutions drive
-            aviation forward.
+            <p>
+              Our commitment to excellence fuels everything we do — delivering
+              solutions that meet the demands of modern aviation.
+            </p>
           </p>
         </div>
+        <div className="product-list">
         {categories.map((category) => (
           <details
             className="product-tab"
@@ -55,6 +60,7 @@ function ProductApp() {
             </div>
           </details>
         ))}
+        </div>
       </section>
       <Footer />
     </div>
