@@ -7,7 +7,7 @@ function Certification() {
       <section className="cert-hero" id="cert-start">
         <div className="overlay"></div>
         <div className="hero-text">
-          <h1> Certification & Standard </h1>
+          <h1>Certification & Standards</h1>
           <p>
             Our certifications demonstrate our compliance with global standards
             and our dedication to quality, safety, and performance.
@@ -23,57 +23,96 @@ function Certification() {
             define our commitment to quality and compliance.
           </p>
 
-          {/* Certifications Grid */}
           <div className="cert-grid">
+
+             {/*REPEAT - to add more cert*/}
             <div className="cert-card">
               <img src="/assets/Cert/cert1.png" alt="cert1" />
-              <h3>Cert1</h3>
+              <h3>AS9100 Certification</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
+                Certification ensuring our quality management system meets
+                aerospace industry standards.
               </p>
+              <div className="cert-card-actions">
+                <a href="/assets/Cert/cert1.png" target="_blank" rel="noopener noreferrer">
+                  View Full
+                </a>
+                <a href="/assets/Cert/cert1.pdf" target="_blank" rel="noopener noreferrer">
+                  ⬇ Download PDF
+                </a>
+              </div>
             </div>
+            {/* END REPEAT */}
 
             <div className="cert-card">
               <img src="/assets/Cert/cert2.jpg" alt="cert2" />
-              <h3>Cert2</h3>
+              <h3>ISO 9001 Certification</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Global standard for quality management and continual improvement
+                across our processes.
               </p>
+              <div className="cert-card-actions">
+                <a href="/assets/Cert/cert2.jpg" target="_blank" rel="noopener noreferrer">
+                  View Full
+                </a>
+                <a href="/assets/Cert/cert2.pdf" target="_blank" rel="noopener noreferrer">
+                  ⬇ Download PDF
+                </a>
+              </div>
             </div>
 
             <div className="cert-card">
               <img src="/assets/Cert/cert4.png" alt="cert3" />
-              <h3>Cert3</h3>
+              <h3>OHSAS 18001 Certification</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Occupational health and safety certification ensuring a safe and
+                healthy working environment.
               </p>
+              <div className="cert-card-actions">
+                <a href="/assets/Cert/cert4.png" target="_blank" rel="noopener noreferrer">
+                  View Full
+                </a>
+                <a href="/assets/Cert/cert4.pdf" target="_blank" rel="noopener noreferrer">
+                  ⬇ Download PDF
+                </a>
+              </div>
             </div>
 
-            {/* Add more certifications if needed (repeat certification grid) */}
-          </div>
+            <div className="cert-card">
+              <img src="/assets/Cert/cert4.png" alt="cert3" />
+              <h3>OHSAS 18001 Certification</h3>
+              <p>
+                Occupational health and safety certification ensuring a safe and
+                healthy working environment.
+              </p>
+              <div className="cert-card-actions">
+                <a href="/assets/Cert/cert4.png" target="_blank" rel="noopener noreferrer">
+                  View Full
+                </a>
+                <a href="/assets/Cert/cert4.pdf" target="_blank" rel="noopener noreferrer">
+                  ⬇ Download PDF
+                </a>
+              </div>
+            </div>
 
-          <div className="cert-downloads">
-            <h2>Download Certificates</h2>
-            <ul>
-              <li>
-                <a href="/assets/Cert/cert1.pdf" target="_blank">
-                  cert1 (PDF)
+                        <div className="cert-card">
+              <img src="/assets/Cert/cert4.png" alt="cert3" />
+              <h3>OHSAS 18001 Certification</h3>
+              <p>
+                Occupational health and safety certification ensuring a safe and
+                healthy working environment.
+              </p>
+              <div className="cert-card-actions">
+                <a href="/assets/Cert/cert4.png" target="_blank" rel="noopener noreferrer">
+                  View Full
                 </a>
-              </li>
-              <li>
-                <a href="/assets/Cert/cert2.pdf" target="_blank">
-                  cert2 (PDF)
+                <a href="/assets/Cert/cert4.pdf" target="_blank" rel="noopener noreferrer">
+                  ⬇ Download PDF
                 </a>
-              </li>
-              <li>
-                <a href="/assets/Cert/cert4.pdf" target="_blank">
-                  cert3 (PDF)
-                </a>
-              </li>
-            </ul>
+              </div>
+            </div>
+
+            
           </div>
         </div>
       </section>

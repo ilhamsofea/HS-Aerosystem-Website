@@ -4,7 +4,7 @@ import Footer from "./Footer";
 function ProcessCap() {
   return (
     <>
-      <section className="process-cap-hero" id="process-cap">
+      <section className="process-cap-hero" id="process-start">
         <div className="overlay"></div>
         <div className="hero-text">
           <h1> Process Capability </h1>
@@ -40,7 +40,7 @@ function ProcessCap() {
             </div>
             <div className="process-cap-image-section">
               <img
-                src="./assets/ProcessCap/sheetmetal1.JPG"
+                src="./assets/ProcessCap/sheetmetal2-1.JPG"
                 alt="Precision Sheet Metal"
               />
             </div>
@@ -65,7 +65,7 @@ function ProcessCap() {
               </p>
             </div>
             <div className="process-cap-image-section">
-              <img src="./assets/ProcessCap/cnc.JPG" alt="CNC Machining" />
+              <img src="./assets/ProcessCap/cnc2.JPG" alt="CNC Machining" />
             </div>
           </div>
         </div>
@@ -87,7 +87,7 @@ function ProcessCap() {
               </p>
             </div>
             <div className="process-cap-image-section">
-              <img src="./assets/ProcessCap/cnc.JPG" alt="Welding" />
+              <img src="./assets/ProcessCap/welding.jpg" alt="Welding" />
             </div>
           </div>
         </div>

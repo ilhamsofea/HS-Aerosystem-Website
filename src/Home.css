@@ -8,6 +8,7 @@
   flex-direction: column;
   justify-content: center;
   padding: 50px;
+  animation: fadeUp 1s ease forwards;
 }
 
 /*ABOUTUS START*/
@@ -33,7 +34,7 @@
   font-weight: 600;
   font-size: 0.9rem;
   letter-spacing: 1px;
-  color: #444;
+  color: var(--muted-text);
   text-transform: uppercase;
   margin-bottom: 12px;
 }
@@ -46,7 +47,7 @@
 
 .aboutus-left p {
   font-size: 1.1rem;
-  color: #444;
+  color: var(--dark-text);
   line-height: 1.6;
 }
 
@@ -164,13 +165,256 @@
 }
 
 .aboutus-card.hidden {
-  /* display: none; */
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
 }
 
 /*ABOUTUS END*/
+
+/* Career */
+.home-career-preview {
+  padding: 150px 40px;
+  background-color: var(--light-bg);
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  border-bottom: 1px solid gainsboro;
+}
+
+.career-main-container {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  align-items: flex-start; /* or center */
+  justify-content: space-between;
+  width: 100%;
+  /* padding-right: 100px; */
+}
+
+.career-left {
+  flex: 1;
+  min-width: 300px;
+}
+
+.career-left .section-label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  color: var(--muted-text);
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.career-left h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: var(--crimson-red);
+}
+
+.career-description {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  color: var(--dark-text);
+}
+
+.career-btn {
+  background-color: var(--btn-red);
+  color: var(--light-bg);
+  border: none;
+  padding: 14px 28px;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.career-btn:hover {
+  background-color: var(--btn-hover-red);
+}
+
+.career-employee-highlight {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+  background-color: var(--card-bg);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+}
+
+.career-employee-highlight.fadeSlideLeft {
+  animation: fadeSlideLeft 0.8s ease forwards;
+}
+
+.career-employee-highlight.fadeSlideRight {
+  animation: fadeSlideRight 0.8s ease forwards;
+}
+
+
+.employee-subtitle {
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--muted-text);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.career-employee-highlight h2 {
+  font-size: 1.5rem;
+  color: var(--crimson-red);
+  margin-bottom: 20px;
+}
+
+.employee-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.employee-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid var(--crimson-red);
+  flex-shrink: 0;
+  background-color: #f2f2f2; /* fallback if image fails */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.employee-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.employee-details h4 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: var(--dark-text);
+}
+
+.employee-role {
+  font-size: 0.95rem;
+  color: var(--muted-text);
+  margin: 5px 0;
+}
+
+.employee-quote {
+  font-size: 0.95rem;
+  color: var(--dark-text);
+  font-style: italic;
+}
+
+/*END CAREER*/
+
+/*NEWS*/
+.home-news-section {
+  padding: 80px 40px;
+  background-color: var(--light-bg);
+  max-width: 2500px;
+}
+
+.home-news-section .section-label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--muted-text);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.news-title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: var(--crimson-red);
+  font-weight: bold;
+}
+
+.news-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  color: var(--dark-text);
+}
+
+.news-carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 30px;
+  padding-bottom: 20px;
+}
+
+.news-card {
+  flex: 0 0 300px;
+  background-color: var(--card-bg);
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  scroll-snap-align: start;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+.news-card:hover {
+  transform: translateY(-5px);
+}
+
+.news-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.news-content {
+  padding: 20px;
+}
+
+.news-content h3 {
+  font-size: 1.2rem;
+  color: var(--dark-text);
+  margin-bottom: 10px;
+}
+
+.news-date {
+  font-size: 0.85rem;
+  color: var(--muted-text);
+  margin-bottom: 10px;
+}
+
+.news-summary {
+  font-size: 0.95rem;
+  color: var(--dark-text);
+  margin-bottom: 12px;
+}
+
+.read-more {
+  font-weight: 600;
+  color: var(--crimson-red);
+  text-decoration: none;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+.news-carousel::-webkit-scrollbar {
+  height: 8px;
+}
+
+.news-carousel::-webkit-scrollbar-thumb {
+  background-color: var(--lighter-text);
+  border-radius: 4px;
+}
+/*END NEWS*/
 
 /* Client */
 .home-our-clients {
@@ -241,189 +485,7 @@
 .client-track.scrolling {
   animation: scrollLeft 20s linear infinite;
 }
-
-/* Career */
-.home-career-preview {
-  padding: 100px 40px;
-  background-color: var(--light-bg);
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-  border-bottom: 1px solid gainsboro;
-}
-
-.career-left {
-  max-width: 700px;
-}
-
-.career-left .section-label {
-  font-weight: 600;
-  font-size: 0.9rem;
-  letter-spacing: 1px;
-  color: var(--dark-text);
-  text-transform: uppercase;
-  margin-bottom: 12px;
-}
-
-.career-left h1 {
-  font-size: 3rem;
-  line-height: 1.2;
-  margin-bottom: 20px;
-  color: var(--crimson-red);
-}
-
-.career-description {
-  font-size: 1.2rem;
-  margin-bottom: 30px;
-  line-height: 1.6;
-  color: var(--dark-text);
-}
-
-.career-btn {
-  background-color: var(--btn-red);
-  color: var(--light-bg);
-  border: none;
-  padding: 14px 28px;
-  font-weight: bold;
-  font-size: 1rem;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.career-btn:hover {
-  background-color: var(--btn-hover-red);
-}
-
-.career-stats-container {
-  display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
-}
-
-.career-stat-box-l,
-.career-stat-box-r {
-  background-color: var(--card-bg);
-  border-radius: 12px;
-  padding: 30px 40px;
-  min-width: 200px;
-  text-align: left;
-  flex: 1;
-}
-
-.career-stat-box-l:hover,
-.career-stat-box-r:hover {
-  background-color: var(--alt-card-bg);
-  transform: translateY(-5px);
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.career-stat-box-l h2,
-.career-stat-box-r h2 {
-  font-size: 2.5rem;
-  margin-bottom: 8px;
-  color: var(--crimson-red);
-}
-
-.career-stat-box-l p,
-.career-stat-box-r p {
-  color: var(--muted-text);
-  font-size: 1rem;
-}
-
-/*END CAREER*/
-
-/*NEWS*/
-.home-news-section {
-  padding: 80px 40px;
-  background-color: var(--light-bg);
-  max-width: 2500px;
-}
-
-.home-news-section .section-label {
-  font-weight: 600;
-  font-size: 0.9rem;
-  color: var(--muted-text);
-  text-transform: uppercase;
-  margin-bottom: 10px;
-}
-
-.news-title {
-  font-size: 3rem;
-  margin-bottom: 40px;
-  color: var(--crimson-red);
-  font-weight: bold;
-}
-
-.news-carousel {
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  gap: 30px;
-  padding-bottom: 20px;
-}
-
-.news-card {
-  flex: 0 0 300px;
-  background-color: var(--card-bg);
-  border-radius: 16px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
-  scroll-snap-align: start;
-  transition: transform 0.3s ease;
-  overflow: hidden;
-}
-
-.news-card:hover {
-  transform: translateY(-5px);
-}
-
-.news-card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-}
-
-.news-content {
-  padding: 20px;
-}
-
-.news-content h3 {
-  font-size: 1.2rem;
-  color: #222;
-  margin-bottom: 10px;
-}
-
-.news-date {
-  font-size: 0.85rem;
-  color: #777;
-  margin-bottom: 10px;
-}
-
-.news-summary {
-  font-size: 0.95rem;
-  color: #444;
-  margin-bottom: 12px;
-}
-
-.read-more {
-  font-weight: 600;
-  color: #b60000;
-  text-decoration: none;
-}
-
-.read-more:hover {
-  text-decoration: underline;
-}
-
-.news-carousel::-webkit-scrollbar {
-  height: 8px;
-}
-
-.news-carousel::-webkit-scrollbar-thumb {
-  background-color: #ccc;
-  border-radius: 4px;
-}
-/*END NEWS*/
+/*END CLIENT*/
 
 /*START ANIMATE NEWS/Career*/
 /* Shared animation */
@@ -579,19 +641,10 @@ textarea {
 }
 
 .contact-info,
-.contact-form-wrapper,
-.career-stat-box-l,
-.career-stat-box-r {
+.contact-form-wrapper
+/* .career-employee-highlight */ {
   opacity: 0;
   transition: opacity 0.8s ease, transform 0.8s ease;
-}
-
-.career-stat-box-l.career-animate {
-  animation: fadeSlideLeft 0.8s ease forwards;
-}
-
-.career-stat-box-r.career-animate {
-  animation: fadeSlideRight 0.8s ease forwards;
 }
 
 .contact-info.contact-animate {

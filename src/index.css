@@ -10,6 +10,7 @@
   --alt-card-bg: #f3f4f6;
   --dark-text: #1a1a1a;
   --muted-text: #555555;
+  --lighter-text: #ccc;
   --crimson-red: #b30000;
   --btn-red: #b60000;
   --btn-hover-red: #7c0a02; /*RENAME: --deep-red*/
@@ -26,7 +27,7 @@ body {
 .overlay {
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .hero-text {

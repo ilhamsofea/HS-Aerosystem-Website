@@ -3,9 +3,14 @@ import Footer from "./Footer";
 import { useState } from "react";
 
 const images = [
-  "./assets/AboutUs/model-image1.JPG",
-  "./assets/AboutUs/model-image2.jpg",
-  "./assets/AboutUs/model-image3.JPG",
+  "./assets/AboutUs/model.JPG",
+  "./assets/AboutUs/machine1.JPG",
+  "./assets/AboutUs/model1.JPG",
+  "./assets/AboutUs/machine2.JPG",
+  "./assets/AboutUs/model2.JPG",
+  "./assets/AboutUs/machine3.JPG",
+  "./assets/AboutUs/model3.JPG",
+  "./assets/AboutUs/assembly1.jpg",
 ];
 
 function AboutUs() {
@@ -25,7 +30,10 @@ function AboutUs() {
         <div className="overlay"></div>
         <div className="hero-text">
           <h1>Overview</h1>
-          <p>HS Aerosystem Sdn. Bhd is where expertise meets aerospace excellence.</p>
+          <p>
+            HS Aerosystem Sdn. Bhd is where expertise meets aerospace
+            excellence.
+          </p>
         </div>
       </section>
 
@@ -39,8 +47,8 @@ function AboutUs() {
           <div className="aboutus-desc">
             <p>
               <span className="bold-word"> HS Aerosystem Sdn. Bhd </span> is a
-              <span className="bold-word"> Malaysia Incorporated Company </span>on
-              14th of February 2024.
+              <span className="bold-word"> Malaysia Incorporated Company </span>
+              on 14th of February 2024.
             </p>
 
             {/* --- CAROUSEL START --- */}

@@ -57,7 +57,13 @@ function App() {
             ☰ Menu
           </div>
           <div className="logo">
-            <Link to="/home#home-start">
+            <Link
+              to="/home#home-start"
+              onClick={() => {
+                setSidebarOpen(false);
+                setExpandedMenu(null);
+              }}
+            >
               {scrolled ? (
                 <img
                   className="topbar-logo"
@@ -112,7 +118,13 @@ function App() {
       <aside className={`desktop-sidebar ${sidebarOpen ? "open" : ""}`}>
         <div className="sidebar-header">
           <div className="logo">
-            <Link to="/home#home-start">
+            <Link
+              to="/home#home-start"
+              onClick={() => {
+                setSidebarOpen(false);
+                setExpandedMenu(null);
+              }}
+            >
               <img src="/assets/Hs_Logo_dark.png" />
             </Link>
           </div>
@@ -156,18 +168,48 @@ function App() {
                   <h3 className="expanded-title">About Us</h3>
                   <ul className="submenu-list">
                     <li>
-                      <Link to="/aboutus">Overview</Link>
+                      <Link
+                        to="/aboutus"
+                        onClick={() => {
+                          setSidebarOpen(false);
+                          setExpandedMenu(null);
+                        }}
+                      >
+                        Overview
+                      </Link>
                     </li>
                     <li>
-                      <Link to="/journey#journey-start"> Our Journey </Link>
+                      <Link
+                        to="/journey#journey-start"
+                        onClick={() => {
+                          setSidebarOpen(false);
+                          setExpandedMenu(null);
+                        }}
+                      >
+                        Our Journey
+                      </Link>
                     </li>
                     <li>
-                      <Link to="/mission#mission-start">
+                      <Link
+                        to="/mission#mission-start"
+                        onClick={() => {
+                          setSidebarOpen(false);
+                          setExpandedMenu(null);
+                        }}
+                      >
                         Mission, Vision, Value
                       </Link>
                     </li>
                     <li>
-                      <Link to="/team#team-start">Leadership & Team</Link>
+                      <Link
+                        to="/team#team-start"
+                        onClick={() => {
+                          setSidebarOpen(false);
+                          setExpandedMenu(null);
+                        }}
+                      >
+                        Leadership & Team
+                      </Link>
                     </li>
                   </ul>
                 </>
@@ -178,13 +220,27 @@ function App() {
                   <h3 className="expanded-title">Core Capabilities</h3>
                   <ul className="submenu-list">
                     <li>
-                      <Link to="/process">Process Capability</Link>
+                      <Link
+                        to="/process"
+                        onClick={() => {
+                          setSidebarOpen(false);
+                          setExpandedMenu(null);
+                        }}
+                      >
+                        Process Capability
+                      </Link>
                     </li>
                     {/* <li>
                       <Link to="/product">Products Produced</Link>
                     </li> */}
                     <li>
-                      <Link to="/certification">
+                      <Link
+                        to="/certification"
+                        onClick={() => {
+                          setSidebarOpen(false);
+                          setExpandedMenu(null);
+                        }}
+                      >
                         Certifications & Standards
                       </Link>
                     </li>
@@ -197,13 +253,37 @@ function App() {
                   <h3 className="expanded-title">News & Updates</h3>
                   <ul className="submenu-list">
                     <li>
-                      <Link to="/news">News</Link>
+                      <Link
+                        to="/news"
+                        onClick={() => {
+                          setSidebarOpen(false);
+                          setExpandedMenu(null);
+                        }}
+                      >
+                        News
+                      </Link>
                     </li>
                     <li>
-                      <Link to="/downloads">Downloads</Link>
+                      <Link
+                        to="/downloads"
+                        onClick={() => {
+                          setSidebarOpen(false);
+                          setExpandedMenu(null);
+                        }}
+                      >
+                        Downloads
+                      </Link>
                     </li>
                     <li>
-                      <Link to="/activities">Employee Activities</Link>
+                      <Link
+                        to="/activities"
+                        onClick={() => {
+                          setSidebarOpen(false);
+                          setExpandedMenu(null);
+                        }}
+                      >
+                        Employee Activities
+                      </Link>
                     </li>
                   </ul>
                 </>

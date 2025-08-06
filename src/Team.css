@@ -2,6 +2,7 @@
   position: relative;
   min-height: 100vh;
   display: flex;
+    background: url("/assets/Team/hero-img.JPG") center/cover no-repeat;
   align-items: left;
   flex-direction: column;
   justify-content: center;

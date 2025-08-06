@@ -6,21 +6,25 @@ import { Link } from "react-router-dom";
 // About Us pictures
 const aboutSlides = [
   {
+    img: "/assets/Home/hs3.JPG",
+    title: "Our Team",
+  },
+  {
     img: "/assets/Home/assembly-cap.JPG",
     title: "Precision Assembly",
   },
   {
-    img: "/assets/AboutUs/cert2.jpg",
-    title: "Team Collaboration",
+    img: "/assets/Home/model2.JPG",
+    title: "Team Work",
   },
   {
-    img: "/assets/default/default3.jpg",
-    title: "Rigorous Inspection",
+    img: "/assets/Home/special-proc.JPG",
+    title: "Sheet Metal Bending",
   },
 
   {
-    img: "/assets/default/default2.jpg",
-    title: "Rigorous Inspection",
+    img: "/assets/Home/model1.JPG",
+    title: "??",
   },
 ];
 
@@ -79,10 +83,15 @@ const newsList = [
 const Home = () => {
   const [slideIndex, setSlideIndex] = useState(0);
 
-  const handlePrev = () =>
-    setSlideIndex((prev) => (prev === 0 ? aboutSlides.length - 1 : prev - 1));
-  const handleNext = () =>
-    setSlideIndex((prev) => (prev === aboutSlides.length - 1 ? 0 : prev + 1));
+  const handleNext = () => {
+    setSlideIndex((prev) => (prev + 1) % aboutSlides.length);
+  };
+
+  const handlePrev = () => {
+    setSlideIndex(
+      (prev) => (prev - 1 + aboutSlides.length) % aboutSlides.length
+    );
+  };
 
   // Animations section
 
@@ -170,9 +179,11 @@ const Home = () => {
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          if (entry.target.classList.contains("career-stat-box-l")) {
+          if (entry.target.classList.contains("career-employee-highlight")) {
             entry.target.classList.add("career-animate", "fadeSlideLeft");
-          } else if (entry.target.classList.contains("career-stat-box-r")) {
+          } else if (
+            entry.target.classList.contains("career-employee-highlight")
+          ) {
             entry.target.classList.add("career-animate", "fadeSlideRight");
           } else {
             entry.target.classList.add("contact-animate");
@@ -254,21 +265,24 @@ const Home = () => {
             Learn more about us →
           </Link>
           <div className="aboutus-nav">
-            <button onClick={handlePrev}>&larr;</button>
-            <button onClick={handleNext}>&rarr;</button>
+            <button onClick={handleNext}>&larr;</button>
+            <button onClick={handlePrev}>&rarr;</button>
           </div>
         </div>
 
         <div className="aboutus-slider">
           {aboutSlides.map((item, index) => {
             let className = "aboutus-card";
-            if (index === slideIndex) className += " center";
-            else if (
-              index ===
-              (slideIndex - 1 + aboutSlides.length) % aboutSlides.length
-            )
+            const lastIndex =
+              (slideIndex - 1 + aboutSlides.length) % aboutSlides.length;
+
+            if (index === slideIndex) {
+              className += " center";
+            } else if (index === lastIndex) {
               className += " left";
-            else className += " hidden";
+            } else {
+              className += " hidden";
+            }
 
             return (
               <div key={index} className={className}>
@@ -283,34 +297,48 @@ const Home = () => {
       </section>
 
       <section className="home-career-preview">
-        <div className="career-left">
-          <p className="section-label">JOIN US</p>
-          <h1>Launch your Career Here</h1>
-          <p className="career-description">
-            Looking to be part of an innovative team shaping the future of
-            aerospace? Check out our current openings and find your place with
-            us.
-          </p>
-          <Link to="/career">
-            <button className="career-btn">Find out more</button>
-          </Link>
-        </div>
-
-        <div className="career-stats-container">
-          <div className="career-stat-box-l">
-            <h2>157,000</h2>
-            <p>Employees</p>
+        <div className="career-main-container">
+          <div className="career-left">
+            <p className="section-label">JOIN US</p>
+            <h1>Launch your Career Here</h1>
+            <p className="career-description">
+              Looking to be part of an innovative team shaping the future of
+              aerospace? Explore career opportunities and be part of our growth.
+            </p>
+            <Link to="/career">
+              <button className="career-btn">Explore Careers</button>
+            </Link>
           </div>
-          <div className="career-stat-box-r">
-            <h2>160+</h2>
-            <p>Nationalities</p>
+
+          <div className="career-employee-highlight">
+            <p className="employee-subtitle">EMPLOYEE SPOTLIGHT</p>
+            <h2>Best Employee of the Month</h2>
+            <div className="employee-content">
+              <div className="employee-photo">
+                <img src="/assets/Team/default.jpg" />
+              </div>
+              <div className="employee-details">
+                <h4>Nur Aisyah binti Abdullah</h4>
+                <p className="employee-role">Lead Manufacturing Engineer</p>
+                <p className="employee-quote">
+                  <em>
+                    “Every challenge is an opportunity to build something
+                    better.”
+                  </em>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       <section className="home-news-section">
-        <p className="section-label">LATEST NEWS</p>
-        <h2 className="news-title">Our Latest News and Events</h2>
+        <p className="section-label">NEWS & UPDATES</p>
+        <h2 className="news-title">Sharing Our Milestones and Moments</h2>
+        <p className="news-subtitle">
+          Discover how we’re growing, innovating, and connecting through our
+          latest stories.
+        </p>
 
         <div className="news-carousel">
           {newsList.map((news, index) => (

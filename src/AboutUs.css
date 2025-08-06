@@ -2,12 +2,13 @@
   position: relative;
   min-height: 100vh;
   overflow-y: auto;
-  background: url("/assets/ProductApp/hero-img.JPG") center/cover no-repeat;
+  background: url("/assets/AboutUs/hs-company2-1.JPG") center/cover no-repeat;
   display: flex;
   align-items: left;
   flex-direction: column;
   justify-content: center;
   padding: 50px;
+  animation: fadeUp 1s ease forwards;
 }
 
 .aboutus-bg {

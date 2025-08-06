@@ -29,7 +29,7 @@ function Footer() {
           </p>
           <p className="linkedin-link">
             <a
-              href="https://www.linkedin.com/company/hsaerosystem" // Replace with your actual LinkedIn URL
+              href="https://www.linkedin.com/company/hsaerosystem"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -45,26 +45,24 @@ function Footer() {
 
         <div className="footer-links">
           <div>
-            <h4>
-              <Link to="/aboutus#about-us">About Us</Link>
-            </h4>
+            <h4>About Us</h4>
             <ul>
               <li>
-                <Link to="/aboutus#about-us">About Us</Link>
+                <Link to="/aboutus#aboutus-start">Overview</Link>
               </li>
               <li>
-                <Link to="/aboutus#core-values">Our Core Values</Link>
+                <Link to="/journey#journey-start">Our Journey</Link>
               </li>
               <li>
-                <Link to="/aboutus#our-journey">Our Journey</Link>
+                <Link to="/mission#mission-start">Mission, Vision, Value</Link>
               </li>
               <li>
-                <Link to="/aboutus#cert">Certifications</Link>
+                <Link to="/team#team-start">Leadership & Team</Link>
               </li>
             </ul>
           </div>
 
-          <div>
+          {/* <div>
             <h4>
               <Link to="/process#process-cap">Process Capability</Link>
             </h4>
@@ -76,22 +74,26 @@ function Footer() {
                 <Link to="/process#02">CNC Machining</Link>
               </li>
               <li>
-                <Link to="/process#03">Assembly and Testing</Link>
+                <Link to="/process#03">Welding</Link>
               </li>
               <li>
-                <Link to="/process#04">Quality Capability</Link>
+                <Link to="/process#04">Mechanical Assembly</Link>
+              </li>
+              <li>
+                <Link to="/process#05">Quality Inspection</Link>
               </li>
             </ul>
-          </div>
+          </div> */}
 
           <div>
-            <h4>
-              <Link to="/product#product-app-start">Product Application</Link>
-            </h4>
+            <h4>Core Capabilities</h4>
             <ul>
               <li>
-                <Link to="/product#aircraft-seats-system">
-                  Aircraft Seats System
+                <Link to="/process#process-start">Process Capability</Link>
+              </li>
+              <li>
+                <Link to="/certification#cert-start">
+                  Certifications & Standard
                 </Link>
               </li>
             </ul>
