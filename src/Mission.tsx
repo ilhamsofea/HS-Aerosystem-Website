@@ -6,7 +6,7 @@ function Mission() {
   return (
     // START Container
     <>
-      <section className="mission-hero" id = "mission-start">
+      <section className="mission-hero" id="mission-start">
         <div className="overlay" id="product-app-start"></div>
         <div className="hero-text">
           <h1> Mission, Vision, Value </h1>
@@ -26,20 +26,22 @@ function Mission() {
           </p>
 
           <div className="approach-block">
-            <h2>Mission</h2>
+            <h2>Vision</h2>
             <p>
-              To deliver world-class aerospace solutions through innovative
-              design, precision engineering, and unwavering commitment to
-              quality and safety.
+              To lead aerospace manufacturing with innovation, sustainability,
+              and excellence, setting global benchmarks and inspiring a
+              connected world.
             </p>
           </div>
 
           <div className="approach-block">
-            <h2>Vision</h2>
+            <h2>Mission</h2>
             <p>
-              To be the trusted partner in redefining the future of aerospace,
-              driven by technological excellence, sustainability, and global
-              impact.
+              We are dedicated to advancing the regional aerospace industry
+              through innovation, customer focus, and ethical, sustainable
+              practices. By embracing technology and fostering an inclusive,
+              people-centered workplace, we strive to create lasting value for
+              our customers, employees, and the communities we serve.
             </p>
           </div>
         </div>
@@ -52,41 +54,6 @@ function Mission() {
             We are guided by principles that define who we are and how we
             operate.
           </p>
-
-          <div className="core-block">
-            <h2>Excellence</h2>
-            <p>
-              A commitment to relentless pursuit in all aspects of aerospace
-              manufacturing, setting high standards and constantly striving for
-              improvement.
-            </p>
-          </div>
-
-          <div className="core-block">
-            <h2>Innovation</h2>
-            <p>
-              Emphasizing the importance of cutting-edge technology and
-              forward-thinking mindset to drive advancements and redefine
-              industry standards.
-            </p>
-          </div>
-
-          <div className="core-block">
-            <h2>Leveraging</h2>
-            <p>
-              We leverage on the strength of our people, our customers and
-              partners to overcome challenges in the journey we are achieving.
-            </p>
-          </div>
-
-          <div className="core-block">
-            <h2>Sustainability</h2>
-            <p>
-              A commitment to sustainable practices, both environmentally and
-              socially, with a focus on minimizing the company's environmental
-              footprint and positively influencing the interconnected world.
-            </p>
-          </div>
 
           <div className="core-block">
             <h2>Leadership</h2>
@@ -102,6 +69,41 @@ function Mission() {
             <p>
               Adherence to the ethical principles in all business operations,
               ensuring the integrity, transparency and responsible conduct.
+            </p>
+          </div>
+
+          <div className="core-block">
+            <h2>Sustainability</h2>
+            <p>
+              A commitment to sustainable practices, both environmentally and
+              socially, with a focus on minimizing the company's environmental
+              footprint and positively influencing the interconnected world.
+            </p>
+          </div>
+
+          <div className="core-block">
+            <h2>Leveraging</h2>
+            <p>
+              We leverage on the strength of our people, our customers and
+              partners to overcome challenges in the journey we are achieving.
+            </p>
+          </div>
+
+          <div className="core-block">
+            <h2>Innovation</h2>
+            <p>
+              Emphasizing the importance of cutting-edge technology and
+              forward-thinking mindset to drive advancements and redefine
+              industry standards.
+            </p>
+          </div>
+
+          <div className="core-block">
+            <h2>Excellence</h2>
+            <p>
+              A commitment to relentless pursuit in all aspects of aerospace
+              manufacturing, setting high standards and constantly striving for
+              improvement.
             </p>
           </div>
 

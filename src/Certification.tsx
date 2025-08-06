@@ -53,16 +53,25 @@ function Certification() {
                 aerospace industry standards.
               </p>
               <div className="cert-card-actions">
-                <a href="/assets/Cert/cert1.png" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="/assets/Cert/cert1.png"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   View Full
                 </a>
-                <a href="/assets/Cert/cert1.pdf" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="/assets/Cert/cert1.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   ⬇ Download PDF
                 </a>
               </div>
             </div>
+            {/*CERT CARD END */}
 
-                        <div className="cert-card">
+            <div className="cert-card">
               <img src="/assets/Cert/cert1.png" alt="cert1" />
               <h3>AS9100 Certification</h3>
               <p>
@@ -70,16 +79,24 @@ function Certification() {
                 aerospace industry standards.
               </p>
               <div className="cert-card-actions">
-                <a href="/assets/Cert/cert1.png" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="/assets/Cert/cert1.png"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   View Full
                 </a>
-                <a href="/assets/Cert/cert1.pdf" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="/assets/Cert/cert1.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   ⬇ Download PDF
                 </a>
               </div>
             </div>
 
-                        <div className="cert-card">
+            <div className="cert-card">
               <img src="/assets/Cert/cert1.png" alt="cert1" />
               <h3>AS9100 Certification</h3>
               <p>
@@ -87,33 +104,24 @@ function Certification() {
                 aerospace industry standards.
               </p>
               <div className="cert-card-actions">
-                <a href="/assets/Cert/cert1.png" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="/assets/Cert/cert1.png"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   View Full
                 </a>
-                <a href="/assets/Cert/cert1.pdf" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="/assets/Cert/cert1.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   ⬇ Download PDF
                 </a>
               </div>
             </div>
 
-                        <div className="cert-card">
-              <img src="/assets/Cert/cert1.png" alt="cert1" />
-              <h3>AS9100 Certification</h3>
-              <p>
-                Certification ensuring our quality management system meets
-                aerospace industry standards.
-              </p>
-              <div className="cert-card-actions">
-                <a href="/assets/Cert/cert1.png" target="_blank" rel="noopener noreferrer">
-                  View Full
-                </a>
-                <a href="/assets/Cert/cert1.pdf" target="_blank" rel="noopener noreferrer">
-                  ⬇ Download PDF
-                </a>
-              </div>
-            </div>
-
-            {/* Copy this block to add more certs */}
+            {/* ^ Add above here for new certs */}
           </div>
         </div>
       </section>

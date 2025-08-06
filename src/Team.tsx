@@ -27,15 +27,15 @@ const teamMembers: TeamMember[] = [
     email: "email here",
   },
   {
-    name: "Grace Lee",
-    title: "Head of Quality",
+    name: "Annie Chia",
+    title: "Head of Engineering",
     img: "/assets/Team/default.jpg",
     bio: "bio here",
     email: "email here",
   },
   {
-    name: "Annie Chia",
-    title: "Head of Engineering",
+    name: "Stacy Gan",
+    title: "Head of HR",
     img: "/assets/Team/default.jpg",
     bio: "bio here",
     email: "email here",
@@ -55,8 +55,8 @@ const teamMembers: TeamMember[] = [
     email: "email here",
   },
   {
-    name: "Stacy Gan",
-    title: "Head of HR",
+    name: "Grace Lee",
+    title: "Head of Quality",
     img: "/assets/Team/default.jpg",
     bio: "bio here",
     email: "email here",
@@ -139,7 +139,7 @@ function Team() {
               className="leader-img-lg"
             />
             <div className="leader-details-lg">
-              <h2>{topLeader.name}</h2>
+              <h3>{topLeader.name}</h3>
               <p>{topLeader.title}</p>
             </div>
           </div>

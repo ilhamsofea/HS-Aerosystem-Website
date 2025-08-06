@@ -24,9 +24,6 @@
 .aboutus-left {
   flex: 1;
   min-width: 300px;
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
 .aboutus-left .section-label {
@@ -246,14 +243,6 @@
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
 }
 
-.career-employee-highlight.fadeSlideLeft {
-  animation: fadeSlideLeft 0.8s ease forwards;
-}
-
-.career-employee-highlight.fadeSlideRight {
-  animation: fadeSlideRight 0.8s ease forwards;
-}
-
 
 .employee-subtitle {
   font-weight: 600;
@@ -423,14 +412,11 @@
 
 .our-clients {
   margin: 0 auto;
-  opacity: 0;
+  /* opacity: 0;
   transform: translateY(30px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
+  transition: opacity 0.8s ease, transform 0.8s ease; */
 }
 
-.clients-visible .our-clients {
-  animation: fadeUp 0.8s ease forwards;
-}
 
 .our-clients .section-label {
   font-weight: 600;
@@ -485,24 +471,6 @@
   animation: scrollLeft 20s linear infinite;
 }
 /*END CLIENT*/
-
-/*START ANIMATE NEWS/Career*/
-/* Shared animation */
-.reveal {
-  opacity: 1 !important;
-  transform: translateY(0) !important;
-}
-
-.career-left,
-.news-title,
-.home-news-section .section-label,
-.news-card {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
-}
-
-/*END ANIMATE NEWS/Career*/
 
 /* CONTACT US */
 .home-contact-us {
@@ -639,33 +607,7 @@ textarea {
   font-size: 0.95rem;
 }
 
-.contact-info,
-.contact-form-wrapper
-/* .career-employee-highlight */ {
-  opacity: 0;
-  transition: opacity 0.8s ease, transform 0.8s ease;
-}
-
-.contact-info.contact-animate {
-  animation: fadeSlideLeft 0.8s ease forwards;
-}
-
-.contact-form-wrapper.contact-animate {
-  animation: fadeSlideRight 0.8s ease forwards;
-}
-
 /* Animations */
-@keyframes fadeUp {
-  0% {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 @keyframes scrollLeft {
   from {
     transform: translateX(0);
@@ -685,27 +627,6 @@ textarea {
   }
 }
 
-@keyframes fadeSlideLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-40px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes fadeSlideRight {
-  0% {
-    opacity: 0;
-    transform: translateX(40px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
 /* Animations end */
 
 /* mobile version */
