@@ -1,60 +1,48 @@
 .cert-hero {
   position: relative;
   min-height: 100vh;
+  overflow-y: auto;
   background: url("/assets/Cert/hero-img.JPG") center/cover no-repeat;
   display: flex;
+  align-items: left;
   flex-direction: column;
   justify-content: center;
-  padding: 60px;
-  color: white;
+  padding: 50px;
 }
 
-.cert-hero .overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.3);
-}
-
-.hero-text {
-  position: relative;
-  z-index: 2;
-  max-width: 800px;
-}
-
-.hero-text h1 {
-  font-size: 3.5rem;
-  margin-bottom: 20px;
-}
-
-.hero-text p {
-  font-size: 1.2rem;
-  max-width: 600px;
-  line-height: 1.6;
-}
-
-/* Section Styling */
 .cert-section {
-  background-color: var(--light-bg);
   padding: 100px 40px;
+  background-color: var(--light-bg);
   color: var(--dark-text);
+  border-bottom: 1px solid gainsboro;
 }
 
-.cert-wrapper {
+.cert-section .cert-wrapper {
   max-width: 1200px;
   margin: 0 auto;
   text-align: left;
+  /* opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease; */
 }
 
+/* .cert-section.reveal .cert-wrapper {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+} */
+
 .cert-wrapper h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   color: var(--crimson-red);
+  font-weight: 700;
   margin-bottom: 10px;
 }
 
 .cert-wrapper p {
   font-size: 1.2rem;
   color: var(--muted-text);
-  margin-bottom: 40px;
+  margin-bottom: 50px;
+  line-height: 1.6;
 }
 
 /* Grid layout */
@@ -63,7 +51,6 @@
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 40px;
 }
-
 
 /* Certificate Card */
 .cert-card {
@@ -122,6 +109,18 @@
 .cert-card-actions a:hover {
   background-color: var(--crimson-red);
   color: white;
+}
+
+/* Animations (imported idea from Mission.css) */
+@keyframes fadeSlideUpCard {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Responsive */

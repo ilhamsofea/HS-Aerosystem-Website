@@ -60,6 +60,7 @@ function AboutUs() {
                 src={images[currentIndex]}
                 alt={`Slide ${currentIndex + 1}`}
                 className="img-1"
+                loading="lazy" 
               />
               <button className="carousel-btn right" onClick={handleNext}>
                 ›

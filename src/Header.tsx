@@ -191,7 +191,7 @@ function App() {
                     </li>
                     <li>
                       <Link
-                        to="/mission#mission-start"
+                        to="/mission"
                         onClick={() => {
                           setSidebarOpen(false);
                           setExpandedMenu(null);
@@ -202,7 +202,7 @@ function App() {
                     </li>
                     <li>
                       <Link
-                        to="/team#team-start"
+                        to="/team"
                         onClick={() => {
                           setSidebarOpen(false);
                           setExpandedMenu(null);

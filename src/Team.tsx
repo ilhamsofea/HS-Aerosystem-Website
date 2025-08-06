@@ -20,7 +20,7 @@ const topLeader: TeamMember = {
 
 const teamMembers: TeamMember[] = [
   {
-    name: "Jonas See Zeng Woon",
+    name: "Jonas See",
     title: "Finance Controller",
     img: "/assets/Team/default.jpg",
     bio: "bio here",
@@ -34,7 +34,7 @@ const teamMembers: TeamMember[] = [
     email: "email here",
   },
   {
-    name: "Annie Chia Yee Ting",
+    name: "Annie Chia",
     title: "Head of Engineering",
     img: "/assets/Team/default.jpg",
     bio: "bio here",
@@ -55,7 +55,7 @@ const teamMembers: TeamMember[] = [
     email: "email here",
   },
   {
-    name: "Stacy Gan Hui Fang",
+    name: "Stacy Gan",
     title: "Head of HR",
     img: "/assets/Team/default.jpg",
     bio: "bio here",

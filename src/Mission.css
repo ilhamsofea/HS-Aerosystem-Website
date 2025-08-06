@@ -17,28 +17,6 @@
   border-bottom: 1px solid gainsboro;
 }
 
-.approach-section .approach-wrapper {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
-}
-
-.approach-section.reveal .approach-wrapper {
-  opacity: 1 !important;
-  transform: translateY(0) !important;
-}
-
-.value-section .value-wrapper {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
-}
-
-.value-section.reveal .value-wrapper {
-  opacity: 1 !important;
-  transform: translateY(0) !important;
-}
-
 .approach-wrapper {
   max-width: 1000px;
   margin: 0 auto;

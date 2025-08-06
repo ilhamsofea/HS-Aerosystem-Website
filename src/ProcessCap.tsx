@@ -32,9 +32,11 @@ function ProcessCap() {
                 [Desc of the process here]
                 <ul className="list1">
                   <br />
-                  <li>3 Axis Vertical Machining</li>
-                  <li>4 Axis Horizontal Machining</li>
-                  <li>Tool Presetter</li>
+                  <li>Fiber Laser Cutting</li>
+                  <li>Robotic Sheet Metal Bending</li>
+                  <li>Manual Sheet Metal Bending</li>
+                  <li>Sheet Metal Punch</li>
+                  <li>Burnishing</li>
                 </ul>
               </p>
             </div>
@@ -56,11 +58,10 @@ function ProcessCap() {
                 [Desc of the process here]
                 <ul className="list1">
                   <br />
-                  <li>Fiber Laser Cutting</li>
-                  <li>Robotic Sheet Metal Bending</li>
-                  <li>Manual Sheet Metal Bending</li>
-                  <li>Sheet Metal Punch</li>
-                  <li>Burnishing</li>
+
+                  <li>3 Axis Vertical Machining</li>
+                  <li>4 Axis Horizontal Machining</li>
+                  <li>Tool Presetter</li>
                 </ul>
               </p>
             </div>
