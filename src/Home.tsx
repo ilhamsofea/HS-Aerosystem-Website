@@ -1,32 +1,9 @@
 import "./Home.css";
 import Footer from "./Footer";
+import newsData from "./newsData";
+import {aboutusPic} from "./homeData";
 import { useState, useMemo, useEffect } from "react";
 import { Link } from "react-router-dom";
-
-// About Us pictures
-const aboutSlides = [
-  {
-    img: "/assets/Home/hs3.JPG",
-    title: "Our Team",
-  },
-  {
-    img: "/assets/Home/assembly-cap.JPG",
-    title: "Precision Assembly",
-  },
-  {
-    img: "/assets/Home/model2.JPG",
-    title: "Team Work",
-  },
-  {
-    img: "/assets/Home/special-proc.JPG",
-    title: "Sheet Metal Bending",
-  },
-
-  {
-    img: "/assets/Home/model1.JPG",
-    title: "??",
-  },
-];
 
 //  Our Clients Logos
 const clientLogos = [
@@ -34,71 +11,19 @@ const clientLogos = [
   // Add more client logo here when available
 ];
 
-// News Preview Information Update
-const newsList = [
-  {
-    title: "New Facility Launch",
-    date: "July 20, 2025",
-    summary:
-      "We're proud to announce the opening of our new precision machining facility in Penang.",
-    image: "/assets/default/default2.jpg",
-  },
-  {
-    title: "ISO 9001:2025 Certified",
-    date: "June 15, 2025",
-    summary: "Achieving new milestones in quality and compliance.",
-    image: "/assets/default/default2.jpg",
-  },
-
-  {
-    title: "Sustainability Initiatives",
-    date: "May 10, 2025",
-    summary: "Our commitment to sustainable manufacturing practices.",
-    image: "/assets/default/default2.jpg",
-  },
-  {
-    title: "New Product Launch",
-    date: "April 5, 2025",
-    summary:
-      "Introducing our latest aerospace component designed for efficiency and performance.",
-    image: "/assets/default/default2.jpg",
-  },
-
-  {
-    title: "Community Engagement",
-    date: "March 1, 2025",
-    summary:
-      "We believe in giving back to the community. Learn about our latest initiatives.",
-    image: "/assets/default/default2.jpg",
-  },
-  {
-    title: "Innovation in Aerospace",
-    date: "February 20, 2025",
-    summary:
-      "Exploring the latest trends and technologies in aerospace manufacturing.",
-    image: "/assets/default/default2.jpg",
-  },
-];
-
 const Home = () => {
   const [slideIndex, setSlideIndex] = useState(0);
 
   const handleNext = () => {
-    setSlideIndex((prev) => (prev + 1) % aboutSlides.length);
+    setSlideIndex((prev) => (prev + 1) % aboutusPic.length);
   };
 
   const handlePrev = () => {
-    setSlideIndex(
-      (prev) => (prev - 1 + aboutSlides.length) % aboutSlides.length
-    );
+    setSlideIndex((prev) => (prev - 1 + aboutusPic.length) % aboutusPic.length);
   };
-
-  // Animations section
 
   // Our Clients animation
   const shouldScroll = useMemo(() => clientLogos.length > 5, []); //only scroll if client > 5
-
-  // Ends Animations section
 
   // Contact Us form logics
   const [submitted, setSubmitted] = useState(false);
@@ -171,10 +96,10 @@ const Home = () => {
         </div>
 
         <div className="aboutus-slider">
-          {aboutSlides.map((item, index) => {
+          {aboutusPic.map((item, index) => {
             let className = "aboutus-card";
             const lastIndex =
-              (slideIndex - 1 + aboutSlides.length) % aboutSlides.length;
+              (slideIndex - 1 + aboutusPic.length) % aboutusPic.length;
 
             if (index === slideIndex) {
               className += " center";
@@ -241,15 +166,15 @@ const Home = () => {
         </p>
 
         <div className="news-carousel">
-          {newsList.map((news, index) => (
-            <div className="news-card" key={index}>
-              <img src={news.image} alt={news.title} />
+          {newsData.map((item) => (
+            <div className="news-card-home" key={item.id}>
+              <img src={item.image} alt={item.title} />
               <div className="news-content">
-                <h3>{news.title}</h3>
-                <p className="news-date">{news.date}</p>
-                <p className="news-summary">{news.summary}</p>
-                <Link to="/news" className="read-more">
-                  Read more →
+                <h3>{item.title}</h3>
+                <p className="news-date">{item.date}</p>
+                <p className="news-summary">{item.preview}</p>
+                <Link to={`/news/${item.id}`} className="read-more">
+                  Read More →
                 </Link>
               </div>
             </div>

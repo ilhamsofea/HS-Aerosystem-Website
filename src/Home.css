@@ -342,7 +342,7 @@
   padding-bottom: 20px;
 }
 
-.news-card {
+.news-card-home {
   flex: 0 0 300px;
   background-color: var(--card-bg);
   border-radius: 16px;
@@ -352,11 +352,11 @@
   overflow: hidden;
 }
 
-.news-card:hover {
+.news-card-home:hover {
   transform: translateY(-5px);
 }
 
-.news-card img {
+.news-card-home img {
   width: 100%;
   height: 180px;
   object-fit: cover;

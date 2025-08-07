@@ -8,6 +8,7 @@
   flex-direction: column;
   justify-content: center;
   padding: 50px;
+  animation: fadeUp 1s ease forwards;
 }
 
 .cert-section {
@@ -21,15 +22,7 @@
   max-width: 1200px;
   margin: 0 auto;
   text-align: left;
-  /* opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.8s ease, transform 0.8s ease; */
 }
-
-/* .cert-section.reveal .cert-wrapper {
-  opacity: 1 !important;
-  transform: translateY(0) !important;
-} */
 
 .cert-wrapper h1 {
   font-size: 3.5rem;
@@ -111,17 +104,7 @@
   color: white;
 }
 
-/* Animations (imported idea from Mission.css) */
-@keyframes fadeSlideUpCard {
-  0% {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+
 
 /* Responsive */
 @media (max-width: 800px) {

@@ -8,6 +8,7 @@
   flex-direction: column;
   justify-content: center;
   padding: 50px;
+  animation: fadeUp 1s ease forwards;
 }
 
 .products {
@@ -55,14 +56,13 @@
 
 .gallery-item img {
   width: 100%;
-  height: 200px; 
-  object-fit: cover; 
+  height: 200px;
+  object-fit: cover;
   border-radius: 5px;
   display: block;
 }
 
 .product-list {
-
   padding-left: 50px;
   padding-right: 50px;
   padding-bottom: 50px;
@@ -109,7 +109,6 @@ summary {
   font-weight: 500;
   list-style: none;
 }
-
 
 @media (max-width: 800px) {
   .hero {

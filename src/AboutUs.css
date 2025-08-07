@@ -11,14 +11,14 @@
   animation: fadeUp 1s ease forwards;
 }
 
-.aboutus-bg {
+.aboutus-section {
   padding: 100px 40px;
   background-color: var(--light-bg);
   color: var(--dark-text);
   line-height: 1.8;
 }
 
-.aboutus-aligned-wrapper {
+.aboutus-wrapper {
   max-width: 1000px;
   margin: 0 auto;
   display: flex;
@@ -30,17 +30,16 @@
   width: 100%;
 }
 
-.aboutus-header p {
-  font-size: 1.2rem;
-  color: var(--muted-text);
-  /* margin-bottom: 50px; */
-  line-height: 1.6;
-}
-
 .aboutus-header h1 {
   font-size: 3.5rem;
   color: var(--crimson-red);
   margin-bottom: 10px;
+}
+
+.aboutus-header p {
+  font-size: 1.2rem;
+  color: var(--muted-text);
+  line-height: 1.6;
 }
 
 .aboutus-desc p {
@@ -48,10 +47,6 @@
   width: 100%;
   text-align: justify;
   color: var(--dark-text);
-}
-
-.bold-word {
-  font-weight: bold;
 }
 
 .carousel {

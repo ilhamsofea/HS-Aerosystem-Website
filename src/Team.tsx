@@ -2,66 +2,7 @@ import { useState, useEffect } from "react";
 import "./Team.css";
 import Footer from "./Footer";
 
-interface TeamMember {
-  name: string;
-  title: string;
-  img: string;
-  bio?: string;
-  email?: string;
-}
-
-const topLeader: TeamMember = {
-  name: "Dr. Yeow Jee Leong",
-  title: "General Manager",
-  img: "/assets/Team/default.jpg",
-  bio: "bio here",
-  email: "email here",
-};
-
-const teamMembers: TeamMember[] = [
-  {
-    name: "Jonas See",
-    title: "Finance Controller",
-    img: "/assets/Team/default.jpg",
-    bio: "bio here",
-    email: "email here",
-  },
-  {
-    name: "Annie Chia",
-    title: "Head of Engineering",
-    img: "/assets/Team/default.jpg",
-    bio: "bio here",
-    email: "email here",
-  },
-  {
-    name: "Stacy Gan",
-    title: "Head of HR",
-    img: "/assets/Team/default.jpg",
-    bio: "bio here",
-    email: "email here",
-  },
-  {
-    name: "Leslie Joseph",
-    title: "Head of Manufacturing",
-    img: "/assets/Team/default.jpg",
-    bio: "bio here",
-    email: "email here",
-  },
-  {
-    name: "Zulfadhli Idrus",
-    title: "Head of Operations",
-    img: "/assets/Team/default.jpg",
-    bio: "bio here",
-    email: "email here",
-  },
-  {
-    name: "Grace Lee",
-    title: "Head of Quality",
-    img: "/assets/Team/default.jpg",
-    bio: "bio here",
-    email: "email here",
-  },
-];
+import { TeamMember, topLeader, teamMembers } from "./teamData";
 
 function Team() {
   const [selectedMember, setSelectedMember] = useState<TeamMember | null>(null);
@@ -74,7 +15,6 @@ function Team() {
     setSelectedMember(null);
   };
 
-  /* FOR ANIMATION ON*/
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {

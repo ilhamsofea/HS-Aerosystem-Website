@@ -5,13 +5,14 @@ import Home from "./Home";
 import AboutUs from "./AboutUs";
 import Journey from "./Journey";
 import Mission from "./Mission";
+import Certification from "./Certification";
 import Team from "./Team";
+import Customer from "./Customer";
 import News from "./News";
+import NewsDetail from "./NewsDetail";
 import ProductApp from "./ProductApp";
 import ProcessCap from "./ProcessCap";
-import Certification from "./Certification";
 import Career from "./Career";
-import ContactUs from "./ContactUs";
 import LogoWhite from "./Logo";
 import ScrollToHash from "./ScrollToHash";
 
@@ -229,7 +230,7 @@ function App() {
                     </li>
                     <li>
                       <Link
-                        to="/customers"
+                        to="/customer"
                         onClick={() => {
                           setSidebarOpen(false);
                           setExpandedMenu(null);
@@ -384,12 +385,13 @@ function App() {
         <Route path="/journey" element={<Journey />} />
         <Route path="/mission" element={<Mission />} />
         <Route path="/team" element={<Team />} />
+        <Route path="/customer" element={<Customer />} />
         <Route path="/news" element={<News />} />
+        <Route path="/news/:id" element={<NewsDetail />} />
         <Route path="/process" element={<ProcessCap />} />
         <Route path="/certification" element={<Certification />} />
         <Route path="/product" element={<ProductApp />} />
         <Route path="/career" element={<Career />} />
-        <Route path="/contactus" element={<ContactUs />} />
       </Routes>
     </>
   );

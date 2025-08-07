@@ -37,8 +37,8 @@ function AboutUs() {
         </div>
       </section>
 
-      <div className="aboutus-bg">
-        <div className="aboutus-aligned-wrapper">
+      <div className="aboutus-section">
+        <div className="aboutus-wrapper">
           <div className="aboutus-header">
             <h1>Redefining Aviation Solutions</h1>
             <p>Company Profile</p>
@@ -46,8 +46,8 @@ function AboutUs() {
 
           <div className="aboutus-desc">
             <p>
-              <span className="bold-word"> HS Aerosystem Sdn. Bhd </span> is a
-              <span className="bold-word"> Malaysia Incorporated Company </span>
+              <strong>HS Aerosystem Sdn. Bhd </strong> is a
+              <strong> Malaysia Incorporated Company </strong>
               on 14th of February 2024.
             </p>
 
@@ -60,7 +60,7 @@ function AboutUs() {
                 src={images[currentIndex]}
                 alt={`Slide ${currentIndex + 1}`}
                 className="img-1"
-                loading="lazy" 
+                loading="lazy"
               />
               <button className="carousel-btn right" onClick={handleNext}>
                 ›
@@ -69,17 +69,14 @@ function AboutUs() {
             {/* --- CAROUSEL END --- */}
 
             <p>
-              <span className="bold-word"> WE </span> are unwavering in our
-              focus on <span className="bold-word"> our customers, </span> our
-              pride is in
-              <span className="bold-word"> our people</span>,
-              <span className="bold-word"> our strength </span> are in our
-              continuous development and adoption in
-              <span className="bold-word"> technology and innovation </span> for
-              achieving business operations excellence and our consciences are
-              in our influence and impacts we have on the
-              <span className="bold-word"> society and environment </span> from
-              where we operate.
+              We are unwavering in our focus on
+              <strong> our customers, </strong> our pride is in
+              <strong> our people</strong>,<strong> our strength </strong> are
+              in our continuous development and adoption in
+              <strong> technology and innovation </strong> for achieving
+              business operations excellence and our consciences are in our
+              influence and impacts we have on the
+              <strong> society and environment </strong> from where we operate.
             </p>
           </div>
         </div>

@@ -2,11 +2,12 @@
   position: relative;
   min-height: 100vh;
   display: flex;
-    background: url("/assets/Team/hero-img.JPG") center/cover no-repeat;
+  background: url("/assets/Team/hero-img.JPG") center/cover no-repeat;
   align-items: left;
   flex-direction: column;
   justify-content: center;
   padding: 50px;
+  animation: fadeUp 1s ease forwards;
 }
 
 .team-section {
@@ -44,7 +45,6 @@
   transform: translateY(0) !important;
 }
 
-
 /* Top leader highlight */
 .highlight-leader {
   display: flex;
@@ -56,12 +56,7 @@
 }
 
 .leader-img-lg {
-  /* width: 280px;
-  height: 320px;
-  object-fit: cover;
-  border-radius: 6px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08); */
-    width: 200px;
+  width: 200px;
   height: 200px;
   object-fit: cover;
   border-radius: 6px;

@@ -1,0 +1,72 @@
+.customer-hero {
+  position: relative;
+  min-height: 100vh;
+  overflow-y: auto;
+  background: url("/assets/Customer/hero-customer.JPG") center/cover no-repeat;
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+    animation: fadeUp 1s ease forwards;
+
+}
+
+.customer-section {
+  padding: 100px 40px;
+  background-color: var(--light-bg);
+  color: var(--dark-text);
+}
+
+.customer-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.customer-wrapper h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--crimson-red);
+}
+
+.customer-wrapper p {
+  font-size: 1.2rem;
+  color: var(--muted-text);
+  margin-bottom: 50px;
+  line-height: 1.6;
+}
+
+.customer-logo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  max-width: 900px;
+  margin: 50px auto 0;
+  gap: 50px 40px;
+  animation: fadeSlideUpCard 1s ease forwards;
+  justify-items: center;
+}
+
+
+.customer-logo {
+  text-align: center;
+  max-width: 200px;
+}
+
+.customer-logo img {
+  width: 100%;
+  max-height: 100px;
+  object-fit: contain;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.customer-logo img:hover {
+  transform: scale(1.05);
+}
+
+.customer-logo p {
+  font-size: 1rem;
+  color: var(--dark-text);
+}

@@ -1,13 +1,12 @@
 import "./Mission.css";
 import Footer from "./Footer";
-import { useEffect } from "react";
 
 function Mission() {
   return (
     // START Container
     <>
       <section className="mission-hero" id="mission-start">
-        <div className="overlay" id="product-app-start"></div>
+        <div className="overlay"></div>
         <div className="hero-text">
           <h1> Vision, Mission, Value </h1>
           <p>
