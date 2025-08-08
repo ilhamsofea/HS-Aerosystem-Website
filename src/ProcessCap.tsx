@@ -1,11 +1,15 @@
 import "./ProcessCap.css";
 import Footer from "./Footer";
 import processCapData from "./processCapData";
+import { useEffect } from "react";
 
 function ProcessCap() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
-      <section className="process-cap-hero" id="process-start">
+      <section className="process-cap-hero">
         <div className="overlay"></div>
         <div className="hero-text">
           <h1> Process Capability </h1>

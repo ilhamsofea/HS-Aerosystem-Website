@@ -10,13 +10,14 @@ import Team from "./Team";
 import Customer from "./Customer";
 import News from "./News";
 import NewsDetail from "./NewsDetail";
+import Activity from "./Activity";
 import ProductApp from "./ProductApp";
 import ProcessCap from "./ProcessCap";
 import Career from "./Career";
 import LogoWhite from "./Logo";
 import ScrollToHash from "./ScrollToHash";
 
-function App() {
+function Header() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
   const [expandedMenu, setExpandedMenu] = useState<string | null>(null);
@@ -59,7 +60,7 @@ function App() {
           </div>
           <div className="logo">
             <Link
-              to="/home#home-start"
+              to="/home"
               onClick={() => {
                 setSidebarOpen(false);
                 setExpandedMenu(null);
@@ -120,7 +121,7 @@ function App() {
         <div className="sidebar-header">
           <div className="logo">
             <Link
-              to="/home#home-start"
+              to="/home"
               onClick={() => {
                 setSidebarOpen(false);
                 setExpandedMenu(null);
@@ -186,7 +187,7 @@ function App() {
                     </li>
                     <li>
                       <Link
-                        to="/journey#journey-start"
+                        to="/journey"
                         onClick={() => {
                           setSidebarOpen(false);
                           setExpandedMenu(null);
@@ -343,18 +344,7 @@ function App() {
                     </li>
                     <li>
                       <Link
-                        to="/downloads"
-                        onClick={() => {
-                          setSidebarOpen(false);
-                          setExpandedMenu(null);
-                        }}
-                      >
-                        Downloads
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        to="/activities"
+                        to="/activity"
                         onClick={() => {
                           setSidebarOpen(false);
                           setExpandedMenu(null);
@@ -388,6 +378,7 @@ function App() {
         <Route path="/customer" element={<Customer />} />
         <Route path="/news" element={<News />} />
         <Route path="/news/:id" element={<NewsDetail />} />
+        <Route path="/activity" element={<Activity />} />
         <Route path="/process" element={<ProcessCap />} />
         <Route path="/certification" element={<Certification />} />
         <Route path="/product" element={<ProductApp />} />
@@ -397,4 +388,4 @@ function App() {
   );
 }
 
-export default App;
+export default Header;

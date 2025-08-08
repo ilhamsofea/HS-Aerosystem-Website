@@ -4,6 +4,10 @@ import { useEffect } from "react";
 
 function Certification() {
   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -24,7 +28,7 @@ function Certification() {
 
   return (
     <>
-      <section className="cert-hero" id="cert-start">
+      <section className="cert-hero">
         <div className="overlay"></div>
         <div className="hero-text">
           <h1>Certification & Standards</h1>

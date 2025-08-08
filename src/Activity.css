@@ -1,0 +1,93 @@
+.activity-hero {
+  position: relative;
+  min-height: 100vh;
+  overflow-y: auto;
+  /* background: url("/assets/Home/modelx.JPG") center/cover no-repeat; */
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+    animation: fadeUp 1s ease forwards;
+
+}
+
+.activity-section {
+  padding: 100px 40px;
+  background-color: var(--light-bg);
+  color: var(--dark-text);
+}
+
+.activity-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.activity-wrapper h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--crimson-red);
+}
+
+.activity-wrapper p {
+  font-size: 1.2rem;
+  color: var(--muted-text);
+  margin-bottom: 50px;
+  line-height: 1.6;
+}
+
+.activity-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 80px;
+  gap: 40px;
+  animation: fadeSlideUpCard 1s ease forwards;
+  flex-wrap: wrap;
+  border-bottom: 1px solid gainsboro;
+}
+
+.activity-row.reverse {
+  flex-direction: row-reverse;
+}
+
+.activity-image {
+  flex: 1;
+  min-width: 300px;
+  max-width: 45%;
+  margin-bottom: 80px;
+}
+
+.activity-image img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  max-height: 300px;
+  transition: transform 0.3s ease;
+}
+
+.activity-image img:hover {
+  transform: scale(1.03);
+}
+
+.activity-description {
+  flex: 1;
+  max-width: 45%;
+}
+
+.activity-description h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--dark-text);
+}
+
+.activity-description p {
+  font-size: 1.05rem;
+  color: var(--muted-text);
+  line-height: 1.8;
+}
+
+

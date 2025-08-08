@@ -1,7 +1,7 @@
 import "./Home.css";
 import Footer from "./Footer";
 import newsData from "./newsData";
-import {aboutusPic} from "./homeData";
+import { aboutusPic } from "./homeData";
 import { useState, useMemo, useEffect } from "react";
 import { Link } from "react-router-dom";
 
@@ -14,13 +14,16 @@ const clientLogos = [
 const Home = () => {
   const [slideIndex, setSlideIndex] = useState(0);
 
-  const handleNext = () => {
-    setSlideIndex((prev) => (prev + 1) % aboutusPic.length);
-  };
+const handleNext = () => {
+  // Move to the NEXT image (slide right)
+  setSlideIndex((prev) => (prev - 1 + aboutusPic.length) % aboutusPic.length);
+};
 
-  const handlePrev = () => {
-    setSlideIndex((prev) => (prev - 1 + aboutusPic.length) % aboutusPic.length);
-  };
+const handlePrev = () => {
+  // Move to the PREVIOUS image (slide left)
+  setSlideIndex((prev) => (prev + 1) % aboutusPic.length);
+};
+
 
   // Our Clients animation
   const shouldScroll = useMemo(() => clientLogos.length > 5, []); //only scroll if client > 5
@@ -65,10 +68,14 @@ const Home = () => {
     }
   };
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     // START container
     <>
-      <section className="home-hero" id="home-start">
+      <section className="home-hero">
         <div className="overlay"></div>
         <div className="hero-text">
           <h1>
@@ -131,7 +138,7 @@ const Home = () => {
               aerospace? Explore career opportunities and be part of our growth.
             </p>
             <Link to="/career">
-              <button className="career-btn">Explore Careers</button>
+              <button className="career-btn">Find Out More</button>
             </Link>
           </div>
 
@@ -190,13 +197,13 @@ const Home = () => {
             We believe every client is a valuable, long-term partner.
           </p>
 
-          <div className="client-marquee">
+          {/* <div className="client-marquee">
             <div className={`client-track ${shouldScroll ? "scrolling" : ""}`}>
               {clientLogos.map((logo, index) => (
                 <img key={index} src={logo} alt={`Client ${index + 1}`} />
               ))}
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 

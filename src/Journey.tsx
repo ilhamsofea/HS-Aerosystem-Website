@@ -5,6 +5,10 @@ import journeyData from "./journeyData";
 
 function Journey() {
   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -30,12 +34,13 @@ function Journey() {
 
   return (
     <>
-      <section className="journey-hero" id="journey-start">
+      <section className="journey-hero">
         <div className="overlay"></div>
         <div className="hero-text">
           <h1>Our Journey</h1>
           <p>
-            A glance at where we started, how far we've come, and where we’re heading.
+            A glance at where we started, how far we've come, and where we’re
+            heading.
           </p>
         </div>
       </section>
@@ -44,13 +49,18 @@ function Journey() {
         <div className="milestone-wrapper">
           <h1>From Vision to Reality</h1>
           <p>
-            Milestones that shape who we are — from our inception to our future vision.
+            Milestones that shape who we are — from our inception to our future
+            vision.
           </p>
         </div>
 
         <div className="milestone-legend">
-          <span><span className="dot completed-dot"></span> Completed</span>
-          <span><span className="dot planned-dot"></span> Planned</span>
+          <span>
+            <span className="dot completed-dot"></span> Completed
+          </span>
+          <span>
+            <span className="dot planned-dot"></span> Planned
+          </span>
         </div>
 
         <div className="timeline">

@@ -9,6 +9,10 @@ function NewsDetail() {
   const article = newsData.find((item) => item.id.toString() === id);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
     const section = document.querySelector(".news-detail-section");
     if (!section) return;
 
@@ -32,7 +36,7 @@ function NewsDetail() {
 
   return (
     <>
-      <section className="news-detail-hero" id="news-start">
+      <section className="news-detail-hero">
         <div className="overlay"></div>
         <div className="hero-text">
           <h1>{article.category}</h1>

@@ -1,6 +1,6 @@
 import "./AboutUs.css";
 import Footer from "./Footer";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const images = [
   "./assets/AboutUs/model.JPG",
@@ -24,9 +24,13 @@ function AboutUs() {
     setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
   };
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
-      <section className="aboutus-hero" id="aboutus-start">
+      <section className="aboutus-hero">
         <div className="overlay"></div>
         <div className="hero-text">
           <h1>Overview</h1>

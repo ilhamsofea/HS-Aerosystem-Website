@@ -2,12 +2,17 @@
 import "./ProductApp.css";
 import Footer from "./Footer";
 import { categories, productImages, Category } from "./productAppData";
+import { useEffect } from "react";
 
 function ProductApp() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div>
       <section className="product-hero">
-        <div className="overlay" id="product-app-start"></div>
+        <div className="overlay"></div>
         <div className="hero-text">
           <h1>Sample Products</h1>
           <p>

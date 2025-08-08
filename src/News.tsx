@@ -5,9 +5,12 @@ import newsData from "./newsData";
 import { useEffect } from "react";
 
 function News() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
-      <section className="news-hero" id="news-start">
+      <section className="news-hero">
         <div className="overlay"></div>
         <div className="hero-text">
           <h1>News & Updates</h1>

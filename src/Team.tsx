@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import "./Team.css";
 import Footer from "./Footer";
-
 import { TeamMember, topLeader, teamMembers } from "./teamData";
 
 function Team() {
@@ -14,6 +13,10 @@ function Team() {
   const closeModal = () => {
     setSelectedMember(null);
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -48,8 +51,8 @@ function Team() {
 
   return (
     <>
-      <section className="team-hero" id="team-start">
-        <div className="overlay" id="team"></div>
+      <section className="team-hero">
+        <div className="overlay"></div>
         <div className="hero-text">
           <h1>Leadership & Team</h1>
           <p>
