@@ -282,7 +282,7 @@ function Header() {
                           setExpandedMenu(null);
                         }}
                       >
-                        Hear From Our Employee
+                        Hear From Our Employees
                       </Link>
                     </li>
                     <li>

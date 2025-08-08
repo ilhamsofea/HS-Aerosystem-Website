@@ -22,7 +22,7 @@ export const activityList: ActivityInfo[] = [
     image: "/assets/Activity/raya.png",
     alt: "Hari Raya Celebration",
   },
-    {
+  {
     title: "Chinese New Year Celebration",
     description:
       "A festive gathering with food, culture, and joyful moments to honor diversity in our team.",
@@ -32,14 +32,14 @@ export const activityList: ActivityInfo[] = [
   {
     title: "International Women's Day",
     description:
-      "Giving back to the community through donations, clean-up drives, and volunteer support.",
+      "Honoring women’s achievements with activities and recognition events.",
     image: "/assets/Activity/womenday.jpg",
     alt: "International Women's Day",
   },
-    {
+  {
     title: "After work Chinese Language Class",
     description:
-      "Giving back to the community through donations, clean-up drives, and volunteer support.",
+      "Encouraging cultural learning through casual language sessions.",
     image: "/assets/Activity/class.jpg",
     alt: "Language Class",
   },
