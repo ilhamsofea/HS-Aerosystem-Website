@@ -13,6 +13,9 @@ import NewsDetail from "./NewsDetail";
 import Activity from "./Activity";
 import ProductApp from "./ProductApp";
 import ProcessCap from "./ProcessCap";
+import Recognition from "./Recognition";
+import Csr from "./Csr";
+import Hear from "./Hear";
 import Career from "./Career";
 import LogoWhite from "./Logo";
 import ScrollToHash from "./ScrollToHash";
@@ -382,6 +385,9 @@ function Header() {
         <Route path="/process" element={<ProcessCap />} />
         <Route path="/certification" element={<Certification />} />
         <Route path="/product" element={<ProductApp />} />
+        <Route path="/recognition" element={<Recognition />} />
+        <Route path="/csr" element={<Csr />} />
+        <Route path="/hear" element={<Hear />} />
         <Route path="/career" element={<Career />} />
       </Routes>
     </>
