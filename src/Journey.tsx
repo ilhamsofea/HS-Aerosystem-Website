@@ -4,9 +4,9 @@ import { useEffect } from "react";
 import journeyData from "./journeyData";
 
 function Journey() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
 
   useEffect(() => {
     const observer = new IntersectionObserver(

@@ -35,7 +35,9 @@ function Recognition() {
             >
               <div className="employee-img">
                 <img src={employee.image} alt={employee.name} />
+                <div className="quarter-overlay">{employee.quarter}</div>
               </div>
+
               <div className="employee-info">
                 <h2>{employee.name}</h2>
                 <h4>{employee.title}</h4>
