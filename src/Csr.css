@@ -98,7 +98,7 @@
   font-size: 3.5rem;
   font-weight: 600;
   margin-bottom: 15px;
-  color: var(--dark-text);
+  color: var(--crimson-red);
 }
 .stories-grid {
   display: grid;

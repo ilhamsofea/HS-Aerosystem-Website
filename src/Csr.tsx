@@ -1,6 +1,7 @@
 import "./Csr.css";
 import Footer from "./Footer";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 import { csrPillars, impactStats, csrStories } from "./csrData";
 
 function Csr() {
@@ -76,9 +77,10 @@ function Csr() {
         <p>
           Partner with us to create meaningful change in communities worldwide.
         </p>
-        <a href="/home#contact-us" className="csr-btn">
+        {/* <a href="/home#contact-us" className="csr-btn">
           Contact Us
-        </a>
+        </a> */}
+        <Link className="csr-btn" to="/home#contact-us">Contact Us</Link>
       </section>
 
       <Footer />
