@@ -33,37 +33,6 @@
   line-height: 1.6;
 }
 
-/* Top leader highlight */
-.highlight-leader {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  padding: 60px 20px;
-  gap: 40px;
-}
-
-.leader-img-lg {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 6px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.06);
-  margin-bottom: 12px;
-}
-
-.leader-details-lg h3 {
-  margin: 0;
-  font-size: 1.1rem;
-  color: var(--dark-text);
-}
-
-.leader-details-lg p {
-  color: var(--muted-text);
-  font-size: 0.95rem;
-  margin-bottom: 10px;
-}
-
 /* Team grid section */
 .team-grid-section {
   padding: 60px 20px;
@@ -76,12 +45,18 @@
   gap: 100px;
   max-width: 1200px;
   margin: 0 auto;
+  padding-top: 100px;
 }
+
 
 .team-card {
   flex: 1 1 220px;
   max-width: 260px;
   border-bottom: 1px solid gainsboro;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
 }
 
 .team-img {

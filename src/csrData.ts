@@ -26,7 +26,6 @@ export const csrPillars = [
 export const impactStats = [
   { number: "500+", label: "Volunteer Hours" },
   { number: "20+", label: "Communities Supported" },
-  { number: "15%", label: "CO₂ Reduction" },
 ];
 
 export const csrStories = [

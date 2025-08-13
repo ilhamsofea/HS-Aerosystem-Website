@@ -31,55 +31,37 @@ function Team() {
         </div>
       </section>
 
-      <section className="team-section">
-        <div className="team-wrapper fade-up">
-          <h1>What Guides Our Leadership</h1>
-          <p>
-            Our leadership team brings together decades of aerospace expertise,
-            united by a vision to drive innovation, integrity, and excellence
-            across every operation we undertake.
-          </p>
+<section className="team-section">
+  <div className="team-wrapper fade-up">
+    <h1>Our Team</h1>
+    <p>
+      We work side-by-side, sharing ideas and responsibilities — every member
+      is equally valued in shaping our aerospace journey.
+    </p>
 
-          <div
-            className="highlight-leader"
-            onClick={() => handleCardClick(topLeader)}
-            style={{ cursor: "pointer" }}
-          >
-            <img
-              src={topLeader.img}
-              alt={topLeader.name}
-              className="leader-img-lg"
-            />
-            <div className="leader-details-lg">
-              <h3>{topLeader.name}</h3>
-              <p>{topLeader.title}</p>
-            </div>
-          </div>
-
-          <div className="team-grid-section">
-            <div className="team-grid">
-              {teamMembers.map((person) => (
-                <div
-                  key={person.name}
-                  className="team-card"
-                  onClick={() => handleCardClick(person)}
-                  style={{ cursor: "pointer" }}
-                >
-                  <img
-                    src={person.img}
-                    alt={person.name}
-                    className="team-img"
-                  />
-                  <div className="team-info">
-                    <h3>{person.name}</h3>
-                    <p>{person.title}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
+    <div className="team-grid">
+      {[topLeader, ...teamMembers].map((person) => (
+        <div
+          key={person.name}
+          className="team-card"
+          onClick={() => handleCardClick(person)}
+          style={{ cursor: "pointer" }}
+        >
+          <img
+            src={person.img}
+            alt={person.name}
+            className="team-img"
+          />
+          <div className="team-info">
+            <h3>{person.name}</h3>
+            <p>{person.title}</p>
           </div>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
+
 
       {selectedMember && (
         <div className="modal-overlay" onClick={closeModal}>

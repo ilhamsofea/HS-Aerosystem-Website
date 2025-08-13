@@ -15,12 +15,10 @@ const Home = () => {
   const [slideIndex, setSlideIndex] = useState(0);
 
   const handleNext = () => {
-    // Move to the NEXT image (slide right)
     setSlideIndex((prev) => (prev - 1 + aboutusPic.length) % aboutusPic.length);
   };
 
   const handlePrev = () => {
-    // Move to the PREVIOUS image (slide left)
     setSlideIndex((prev) => (prev + 1) % aboutusPic.length);
   };
 
@@ -66,10 +64,6 @@ const Home = () => {
       console.error("Error submitting form:", error);
     }
   };
-
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
 
   return (
     // START container

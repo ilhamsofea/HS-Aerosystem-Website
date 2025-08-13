@@ -31,9 +31,9 @@ function Career() {
       .finally(() => setLoading(false));
   }, []);
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
 
   return (
     <>
@@ -201,7 +201,7 @@ function Career() {
         )}
       </section>
 
-      <section className="career-section">
+      <section className="hr-section">
         <h2>Meet Our HR Team</h2>
         <div className="hr-grid">
           {hrContacts.map((hr, index) => (

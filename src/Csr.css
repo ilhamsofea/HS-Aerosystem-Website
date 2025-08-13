@@ -37,8 +37,11 @@
 /* Pillars */
 .pillar-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
   gap: 30px;
+  max-width: 1000px;
+  justify-content: center;
+  margin: 0 auto;
 }
 .pillar-card {
   text-align: center;
@@ -105,6 +108,12 @@
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
   margin-top: 30px;
+
+    /* grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); was 240px */
+  justify-content: center; /* keeps them centered if fewer items */
+  max-width: 1000px; /* optional: limits total width of grid */
+  margin: 0 auto; /* centers the whole grid */
+  
 }
 .story-card {
   background: var(--card-bg);
