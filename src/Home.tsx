@@ -14,16 +14,15 @@ const clientLogos = [
 const Home = () => {
   const [slideIndex, setSlideIndex] = useState(0);
 
-const handleNext = () => {
-  // Move to the NEXT image (slide right)
-  setSlideIndex((prev) => (prev - 1 + aboutusPic.length) % aboutusPic.length);
-};
+  const handleNext = () => {
+    // Move to the NEXT image (slide right)
+    setSlideIndex((prev) => (prev - 1 + aboutusPic.length) % aboutusPic.length);
+  };
 
-const handlePrev = () => {
-  // Move to the PREVIOUS image (slide left)
-  setSlideIndex((prev) => (prev + 1) % aboutusPic.length);
-};
-
+  const handlePrev = () => {
+    // Move to the PREVIOUS image (slide left)
+    setSlideIndex((prev) => (prev + 1) % aboutusPic.length);
+  };
 
   // Our Clients animation
   const shouldScroll = useMemo(() => clientLogos.length > 5, []); //only scroll if client > 5
@@ -150,8 +149,8 @@ const handlePrev = () => {
                 <img src="/assets/Team/default.jpg" />
               </div>
               <div className="employee-details">
-                <h4>Nur Aisyah binti Abdullah</h4>
-                <p className="employee-role">Lead Manufacturing Engineer</p>
+                <h4>Muhammad Annas bin Mohd Kamil</h4>
+                <p className="employee-role">Lead NC Programmer</p>
                 <p className="employee-quote">
                   <em>
                     “Every challenge is an opportunity to build something
@@ -196,6 +195,10 @@ const handlePrev = () => {
           <p className="clients-subtitle">
             We believe every client is a valuable, long-term partner.
           </p>
+
+          <Link to="/career">
+            <button className="client-btn">Find Out More</button>
+          </Link>
 
           {/* <div className="client-marquee">
             <div className={`client-track ${shouldScroll ? "scrolling" : ""}`}>

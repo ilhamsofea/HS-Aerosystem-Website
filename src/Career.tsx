@@ -16,7 +16,9 @@ function Career() {
   const [selectedJob, setSelectedJob] = useState<Vacancy | null>(null);
   const [loading, setLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState("");
-  const [selectedDepartment, setSelectedDepartment] = useState<string | null>(null);
+  const [selectedDepartment, setSelectedDepartment] = useState<string | null>(
+    null
+  );
 
   useEffect(() => {
     fetch(
@@ -27,6 +29,10 @@ function Career() {
       .then((data) => setVacancies(data))
       .catch(console.error)
       .finally(() => setLoading(false));
+  }, []);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
   }, []);
 
   return (
@@ -142,7 +148,9 @@ function Career() {
                     )
                   )
                   .filter((job) =>
-                    selectedDepartment ? job.Department === selectedDepartment : true
+                    selectedDepartment
+                      ? job.Department === selectedDepartment
+                      : true
                   );
 
                 if (validJobs.length === 0) {

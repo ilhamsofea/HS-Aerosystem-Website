@@ -87,7 +87,7 @@ function Header() {
           <Link to="/home#contact-us">Contact Us</Link>
         </nav>
 
-        {/* Mobile Navigation */}
+        {/* Mobile Sidebar */}
         <div
           className="mobile-hamburger"
           onClick={() => setMobileNavOpen(true)}
@@ -119,7 +119,7 @@ function Header() {
         </nav>
       </header>
 
-      {/* Sidebar */}
+      {/* Desktop Sidebar */}
       <aside className={`desktop-sidebar ${sidebarOpen ? "open" : ""}`}>
         <div className="sidebar-header">
           <div className="logo">
