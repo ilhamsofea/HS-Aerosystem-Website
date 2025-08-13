@@ -48,64 +48,55 @@ function Footer() {
             <h4>About Us</h4>
             <ul>
               <li>
-                <Link to="/aboutus#aboutus-start">Overview</Link>
+                <Link to="/aboutus">Overview</Link>
               </li>
               <li>
-                <Link to="/journey#journey-start">Our Journey</Link>
+                <Link to="/journey">Our Journey</Link>
               </li>
               <li>
-                <Link to="/mission#mission-start">Mission, Vision, Value</Link>
+                <Link to="/mission">Mission, Vision, Value</Link>
               </li>
               <li>
-                <Link to="/team#team-start">Leadership & Team</Link>
+                <Link to="/team">Leadership & Team</Link>
               </li>
             </ul>
           </div>
 
-          {/* <div>
-            <h4>
-              <Link to="/process#process-cap">Process Capability</Link>
-            </h4>
+          <div>
+            <h4>Our People</h4>
             <ul>
               <li>
-                <Link to="/process#01">Precision Sheet Metal</Link>
+                <Link to="/recognition">Employee Recognition</Link>
               </li>
               <li>
-                <Link to="/process#02">CNC Machining</Link>
+                <Link to="/csr">Corporate Social Responsibility</Link>
               </li>
               <li>
-                <Link to="/process#03">Welding</Link>
-              </li>
-              <li>
-                <Link to="/process#04">Mechanical Assembly</Link>
-              </li>
-              <li>
-                <Link to="/process#05">Quality Inspection</Link>
+                <Link to="/hear">Hear From Our Employee</Link>
               </li>
             </ul>
-          </div> */}
+          </div>
 
           <div>
             <h4>Core Capabilities</h4>
             <ul>
               <li>
-                <Link to="/process#process-start">Process Capability</Link>
+                <Link to="/process">Process Capability</Link>
               </li>
               <li>
-                <Link to="/certification#cert-start">
-                  Certifications & Standard
-                </Link>
+                <Link to="/certification">Certifications & Standard</Link>
               </li>
             </ul>
           </div>
 
           <div>
-            <h4>
-              <Link to="/career#career-page">Career</Link>
-            </h4>
+            <h4>News & Updates</h4>
             <ul>
               <li>
-                <Link to="/home#contact-us">Contact Us</Link>
+                <Link to="/news">News</Link>
+              </li>
+              <li>
+                <Link to="/activity">Employee Activities</Link>
               </li>
             </ul>
           </div>
