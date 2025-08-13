@@ -243,7 +243,6 @@
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
 }
 
-
 .employee-subtitle {
   font-weight: 600;
   font-size: 0.85rem;
@@ -430,7 +429,6 @@
   background-color: rgb(192, 192, 192);
 }
 
-
 .our-clients .section-label {
   font-weight: 600;
   font-size: 0.9rem;
@@ -450,7 +448,7 @@
 .clients-subtitle {
   color: var(--light-bg);
   font-size: 1.25rem;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .client-marquee {
