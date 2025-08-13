@@ -63,7 +63,7 @@ function Header() {
           </div>
           <div className="logo">
             <Link
-              to="/home"
+              to="/home#home-start"
               onClick={() => {
                 setSidebarOpen(false);
                 setExpandedMenu(null);
@@ -124,7 +124,7 @@ function Header() {
         <div className="sidebar-header">
           <div className="logo">
             <Link
-              to="/home"
+              to="/home#home-start"
               onClick={() => {
                 setSidebarOpen(false);
                 setExpandedMenu(null);

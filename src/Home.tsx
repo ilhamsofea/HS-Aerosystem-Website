@@ -67,14 +67,14 @@ const Home = () => {
     }
   };
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
 
   return (
     // START container
     <>
-      <section className="home-hero">
+      <section className="home-hero" id="home-start">
         <div className="overlay"></div>
         <div className="hero-text">
           <h1>
