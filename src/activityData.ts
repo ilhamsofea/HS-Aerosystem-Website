@@ -8,27 +8,28 @@ export type ActivityInfo = {
 };
 
 export const activityList: ActivityInfo[] = [
-  {
-    title: "Christmas/New Year Celebration",
-    description:
-      "An exciting weekend filled with games, collaboration, and personal growth. Strengthening bonds beyond the workplace.",
-    image: "/assets/Activity/newyear.jpg",
-    alt: "Christmas/New Year Celebration",
-  },
-  {
-    title: "Hari Raya Celebration",
-    description:
-      "A festive gathering with food, culture, and joyful moments to honor diversity in our team.",
-    image: "/assets/Activity/raya.png",
-    alt: "Hari Raya Celebration",
-  },
-  {
-    title: "Chinese New Year Celebration",
-    description:
-      "A festive gathering with food, culture, and joyful moments to honor diversity in our team.",
-    image: "/assets/Activity/cny.jpg",
-    alt: "Chinese New Year Celebration",
-  },
+{
+  title: "Christmas/New Year Celebration",
+  description:
+    "A joyful year-end celebration with games, laughter, and shared memories to start the new year on a high note.",
+  image: "/assets/Activity/newyear.jpg",
+  alt: "Christmas/New Year Celebration",
+},
+{
+  title: "Hari Raya Celebration",
+  description:
+    "A vibrant celebration of togetherness, sharing traditional food and culture in the spirit of Hari Raya.",
+  image: "/assets/Activity/raya.png",
+  alt: "Hari Raya Celebration",
+},
+{
+  title: "Chinese New Year Celebration",
+  description:
+    "Welcoming the Lunar New Year with cultural traditions, festive treats, and cheerful team spirit.",
+  image: "/assets/Activity/cny.jpg",
+  alt: "Chinese New Year Celebration",
+},
+
   {
     title: "International Women's Day",
     description:

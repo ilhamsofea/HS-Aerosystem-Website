@@ -19,11 +19,12 @@ function Hear() {
 
       <section className="hear-section">
         <div className="hear-wrapper">
-          <h1>What Drives Us</h1>
+          <h1>Under Construction</h1>
           <p>
-            We align innovation, precision, and performance to deliver tailored
-            aerospace solutions. Our methodology ensures seamless execution
-            across every phase of our client partnerships.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
           </p>
         </div>
       </section>

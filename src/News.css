@@ -1,7 +1,7 @@
 .news-hero {
   position: relative;
   min-height: 100vh;
-  background: url("/assets/News/hero-img.jpg") center/cover no-repeat;
+  background: url("/assets/News/hero2.JPG") center/cover no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;

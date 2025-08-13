@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 import { csrPillars, impactStats, csrStories } from "./csrData";
 
 function Csr() {
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>
@@ -80,7 +80,9 @@ function Csr() {
         {/* <a href="/home#contact-us" className="csr-btn">
           Contact Us
         </a> */}
-        <Link className="csr-btn" to="/home#contact-us">Contact Us</Link>
+        <Link className="csr-btn" to="/home#contact-us">
+          Contact Us
+        </Link>
       </section>
 
       <Footer />

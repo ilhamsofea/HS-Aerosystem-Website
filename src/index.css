@@ -12,8 +12,7 @@
   --muted-text: #555555;
   --lighter-text: #ccc;
   --crimson-red: #b30000;
-  --btn-red: #b60000;
-  --btn-hover-red: #7c0a02; /*RENAME: --deep-red*/
+  --deep-red: #7c0a02;
 }
 
 body {

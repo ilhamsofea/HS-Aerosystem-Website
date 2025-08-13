@@ -4,9 +4,9 @@ import { useEffect } from "react";
 import { recognizedEmployees } from "./recognitionData";
 
 function Recognition() {
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>

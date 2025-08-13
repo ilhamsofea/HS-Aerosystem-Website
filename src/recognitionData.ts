@@ -9,19 +9,19 @@ export type employeeInfo = {
 export const recognizedEmployees: employeeInfo[] = [
   {
     name: "Jane Doe",
-    title: "Lead Design Engineer",
+    title: "Welding Engineer",
     image: "/assets/Team/default.jpg",
     quarter: "Q1",
     description:
-      "For outstanding leadership and delivering innovative design solutions during Q1.",
+      "For exceptional skill and precision in welding projects, contributing to high-quality results in Q1.",
   },
   {
     name: "John Doe",
-    title: "Production Supervisor",
+    title: "Logistics and Warehouse Manager",
     image: "/assets/Team/default.jpg",
     quarter: "Q2",
     description:
-      "Recognized for achieving 100% on-time delivery and maintaining top-tier quality control.",
+      "Recognized for optimizing warehouse operations and ensuring seamless, on-time deliveries in Q2.",
   },
   {
     name: "Nur",

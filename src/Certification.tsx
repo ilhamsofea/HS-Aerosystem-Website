@@ -7,25 +7,6 @@ function Certification() {
     window.scrollTo(0, 0);
   }, []);
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("reveal");
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.3 }
-    );
-
-    const section = document.querySelector(".cert-section");
-    if (section) observer.observe(section);
-
-    return () => observer.disconnect();
-  }, []);
-
   return (
     <>
       <section className="cert-hero">

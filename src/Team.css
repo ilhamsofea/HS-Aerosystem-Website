@@ -33,18 +33,6 @@
   line-height: 1.6;
 }
 
-/*FOR ANIMATION ON SCROLL*/
-.team-section .team-wrapper {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
-}
-
-.team-section.reveal .team-wrapper {
-  opacity: 1 !important;
-  transform: translateY(0) !important;
-}
-
 /* Top leader highlight */
 .highlight-leader {
   display: flex;
