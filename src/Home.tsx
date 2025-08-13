@@ -196,7 +196,7 @@ const Home = () => {
             We believe every client is a valuable, long-term partner.
           </p>
 
-          <Link to="/career">
+          <Link to="/customer">
             <button className="client-btn">Find Out More</button>
           </Link>
 
