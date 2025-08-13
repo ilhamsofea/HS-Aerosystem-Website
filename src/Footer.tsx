@@ -54,7 +54,7 @@ function Footer() {
                 <Link to="/journey">Our Journey</Link>
               </li>
               <li>
-                <Link to="/mission">Mission, Vision, Value</Link>
+                <Link to="/mission">Vision, Mission, Value</Link>
               </li>
               <li>
                 <Link to="/team">Leadership & Team</Link>
