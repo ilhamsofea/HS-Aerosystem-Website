@@ -28,6 +28,13 @@ function AboutUs() {
     window.scrollTo(0, 0);
   }, []);
 
+  useEffect(() => {
+  images.forEach((src) => {
+    const img = new Image();
+    img.src = src;
+  });
+}, []);
+
   return (
     <>
       <section className="aboutus-hero">
@@ -64,7 +71,6 @@ function AboutUs() {
                 src={images[currentIndex]}
                 alt={`Slide ${currentIndex + 1}`}
                 className="img-1"
-                loading="lazy"
               />
               <button className="carousel-btn right" onClick={handleNext}>
                 ›
