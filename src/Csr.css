@@ -109,11 +109,10 @@
   gap: 30px;
   margin-top: 30px;
 
-    /* grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); was 240px */
+  /* grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); was 240px */
   justify-content: center; /* keeps them centered if fewer items */
   max-width: 1000px; /* optional: limits total width of grid */
   margin: 0 auto; /* centers the whole grid */
-  
 }
 .story-card {
   background: var(--card-bg);
