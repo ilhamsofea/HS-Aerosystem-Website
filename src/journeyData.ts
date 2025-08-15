@@ -14,16 +14,17 @@ const journeyData: Milestone[] = [
   {
     date: "14 Feb 2024",
     title: "Company Incorporation",
-    description: "HS Aerosystem Sdn. Bhd. was officially incorporated, marking the beginning of our journey.",
-    img: "/assets/default/default2.jpg",
+    description:
+      "HS Aerosystem Sdn. Bhd. was officially incorporated, marking the beginning of our journey.",
     position: "left",
     status: "completed",
   },
   {
     date: "March 2024",
     title: "Factory Acquired",
-    description: "Secured first-phase manufacturing facility to support our aerospace operations.",
-    img: "/assets/default/default2.jpg",
+    description:
+      "Secured first-phase manufacturing facility to support our aerospace operations.",
+    img: "/assets/Journey/company.jpg",
     position: "right",
     status: "completed",
   },
@@ -44,29 +45,33 @@ const journeyData: Milestone[] = [
   {
     date: "End of July 2024",
     title: "Factory Occupation Begins",
-    description: "Moved into and began setting up the newly acquired factory space.",
+    description:
+      "Moved into and began setting up the newly acquired factory space.",
     position: "left",
     status: "completed",
   },
   {
     date: "End of August 2024",
     title: "Factory Renovation Completed",
-    description: "Renovations completed; facility is now fit for aerospace manufacturing.",
-    img: "/assets/default/default2.jpg",
+    description:
+      "Renovations completed; facility is now fit for aerospace manufacturing.",
+    img: "/assets/News/facility2.jpg",
     position: "right",
     status: "completed",
   },
   {
     date: "4 Sept 2024",
     title: "AS9100 Stage 1 Audit",
-    description: "Initial audit completed for aerospace quality management certification.",
+    description:
+      "Initial audit completed for aerospace quality management certification.",
     position: "left",
     status: "completed",
   },
   {
     date: "11-12 November 2024",
     title: "AS9100 Stage 2 Audit",
-    description: "Final audit to verify full compliance with aerospace standards.",
+    description:
+      "Final audit to verify full compliance with aerospace standards.",
     position: "right",
     status: "completed",
   },
@@ -88,15 +93,18 @@ const journeyData: Milestone[] = [
   {
     date: "March 2025",
     title: "First Article Inspection (FAI)",
-    description: "Phase 1 production units undergo initial quality inspections.",
+    description:
+      "Phase 1 production units undergo initial quality inspections.",
     position: "left",
-    status: "current",
-    showCurrentLabel: true,
+    status: "completed",
+    // status: "current",
+    // showCurrentLabel: true,
   },
   {
     date: "19-21 August 2025",
     title: "NADCAP Audit Scheduled",
-    description: "Advanced accreditation process for aerospace special processes.",
+    description:
+      "Advanced accreditation process for aerospace special processes.",
     position: "right",
     status: "planned",
   },
@@ -117,7 +125,8 @@ const journeyData: Milestone[] = [
   {
     date: "2026",
     title: "> 120 Employees Reached (Phase One Complete)",
-    description: "The workforce surpasses 120 as full operational strength is achieved.",
+    description:
+      "The workforce surpasses 120 as full operational strength is achieved.",
     position: "left",
     status: "planned",
   },

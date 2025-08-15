@@ -30,17 +30,26 @@ function News() {
           </p>
 
           <div className="news-grid">
-            {newsData.map((item) => (
-              <div className="news-card" key={item.id}>
-                <img src={item.image} alt={item.title} />
-                <h3>{item.title}</h3>
-                <p className="news-date">{item.date}</p>
-                <p>{item.preview}</p>
-                <Link to={`/news/${item.id}`} className="read-more-link">
-                  Read More →
-                </Link>
-              </div>
-            ))}
+            {[...newsData]
+              .sort((a, b) => {
+                const dateA = new Date(a.date); 
+                const dateB = new Date(b.date);
+                return dateB.getTime() - dateA.getTime(); 
+              })
+              .map((item) => (
+                <div className="news-card" key={item.id}>
+                  <img
+                    src={item.images ? item.images[0] : item.images}
+                    alt={item.title}
+                  />
+                  <h3>{item.title}</h3>
+                  <p className="news-date">{item.date}</p>
+                  <p>{item.preview}</p>
+                  <Link to={`/news/${item.id}`} className="read-more-link">
+                    Read More →
+                  </Link>
+                </div>
+              ))}
           </div>
         </div>
       </section>

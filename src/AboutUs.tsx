@@ -29,11 +29,11 @@ function AboutUs() {
   }, []);
 
   useEffect(() => {
-  images.forEach((src) => {
-    const img = new Image();
-    img.src = src;
-  });
-}, []);
+    images.forEach((src) => {
+      const img = new Image();
+      img.src = src;
+    });
+  }, []);
 
   return (
     <>
@@ -57,9 +57,10 @@ function AboutUs() {
 
           <div className="aboutus-desc">
             <p>
-              <strong>HS Aerosystem Sdn. Bhd </strong> is a
-              <strong> Malaysia Incorporated Company </strong>
-              on 14th of February 2024.
+              <strong>HS Aerosystem Sdn. Bhd., </strong> incorporated in
+              Malaysia on 14 February 2024, is dedicated to advancing the
+              aerospace industry through the manufacturing of precision
+              components, assemblies, and innovative engineering solutions.
             </p>
 
             {/* --- CAROUSEL START --- */}
@@ -79,14 +80,13 @@ function AboutUs() {
             {/* --- CAROUSEL END --- */}
 
             <p>
-              We are unwavering in our focus on
-              <strong> our customers, </strong> our pride is in
-              <strong> our people</strong>,<strong> our strength </strong> are
-              in our continuous development and adoption in
-              <strong> technology and innovation </strong> for achieving
-              business operations excellence and our consciences are in our
-              influence and impacts we have on the
-              <strong> society and environment </strong> from where we operate.
+              Our unwavering focus on our customers drives every decision we
+              make, while our pride lies in the talent and dedication of our
+              people. We draw our strength from continuous development and the
+              adoption of cutting-edge technology and innovation, ensuring
+              operational excellence at every stage. Guided by a strong sense of
+              responsibility, we remain conscious of the influence and impact we
+              have on the society and environment in which we operate.
             </p>
           </div>
         </div>

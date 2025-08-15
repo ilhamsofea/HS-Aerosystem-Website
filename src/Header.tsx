@@ -22,7 +22,6 @@ import ScrollToHash from "./ScrollToHash";
 
 function Header() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
-  const [mobileNavOpen, setMobileNavOpen] = useState(false);
   const [expandedMenu, setExpandedMenu] = useState<string | null>(null);
   const [scrolled, setScrolled] = useState(false);
   const [showNavbar, setShowNavbar] = useState(true);
@@ -59,7 +58,7 @@ function Header() {
             className="desktop-hamburger"
             onClick={() => setSidebarOpen(true)}
           >
-            ☰ Menu
+            ☰ <span className="menu-word">Menu</span>
           </div>
           <div className="logo">
             <Link
@@ -85,37 +84,6 @@ function Header() {
         <nav className="global-nav">
           <Link to="/career">Career</Link>
           <Link to="/home#contact-us">Contact Us</Link>
-        </nav>
-
-        {/* Mobile Sidebar */}
-        <div
-          className="mobile-hamburger"
-          onClick={() => setMobileNavOpen(true)}
-        >
-          ☰
-        </div>
-
-        <nav className={`mobile-nav ${mobileNavOpen ? "open" : ""}`}>
-          <div className="mobile-close" onClick={() => setMobileNavOpen(false)}>
-            ✕
-          </div>
-          <ul>
-            <li>
-              <Link to="/aboutus">About Us</Link>
-            </li>
-            <li>
-              <Link to="/product">Core Capabilities</Link>
-            </li>
-            <li>
-              <Link to="/process">News & Updates</Link>
-            </li>
-            <li>
-              <Link to="/career">Career</Link>
-            </li>
-            <li>
-              <Link to="/contactus">Contact Us</Link>
-            </li>
-          </ul>
         </nav>
       </header>
 

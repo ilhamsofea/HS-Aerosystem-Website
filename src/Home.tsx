@@ -168,7 +168,7 @@ const Home = () => {
         <div className="news-carousel">
           {newsData.map((item) => (
             <div className="news-card-home" key={item.id}>
-              <img src={item.image} alt={item.title} />
+              <img src={item.images[0]} alt={item.title} />
               <div className="news-content">
                 <h3>{item.title}</h3>
                 <p className="news-date">{item.date}</p>

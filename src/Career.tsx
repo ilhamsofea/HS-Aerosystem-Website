@@ -29,11 +29,9 @@ function Career() {
       .then((data) => setVacancies(data))
       .catch(console.error)
       .finally(() => setLoading(false));
-  }, []);
 
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>

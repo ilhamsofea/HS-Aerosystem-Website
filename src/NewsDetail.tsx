@@ -47,11 +47,17 @@ function NewsDetail() {
         <div className="news-detail-wrapper">
           <h1>{article.title}</h1>
           <p>{article.date}</p>
-          <img
-            src={article.image}
-            alt={article.title}
-            className="news-banner"
-          />
+<div className="news-images">
+  {article.images.map((img, index) => (
+    <img
+      key={index}
+      src={img}
+      alt={`${article.title} - ${index + 1}`}
+      className="news-banner"
+    />
+  ))}
+</div>
+
           <p className="news-body">{article.full}</p>
         </div>
       </section>
