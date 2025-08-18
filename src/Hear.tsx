@@ -24,7 +24,7 @@ function Hear() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch(`${SCRIPT_URL}?sheet=Sheet2`) // This is where the sheet's name should be changed
+    fetch(`${SCRIPT_URL}?sheet=Sheet2`) // This is where the sheet's name should be changed (name=Sheet2)
       .then((res) => res.json())
       .then((rows) => {
         const mapped: Employee[] = rows.map((r: any) => ({

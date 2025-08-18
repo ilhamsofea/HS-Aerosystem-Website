@@ -61,7 +61,6 @@
   display: block;
 }
 
-/* Randomized heights for variety */
 .card-height-1 img {
   height: 200px;
 }
@@ -136,4 +135,67 @@
   font-size: 1rem;
   line-height: 1.4;
   margin-bottom: 0.5rem;
+}
+
+@media (max-width: 800px) {
+  /* Intro */
+  .hear-section {
+    padding: 60px 20px;
+  }
+
+  .hear-wrapper h2 {
+    font-size: 2.2rem;
+  }
+
+  .hear-wrapper p {
+    font-size: 1rem;
+  }
+
+  /* Masonry Grid */
+  .masonry {
+    column-count: 1;
+    padding: 1rem;
+  }
+
+  .masonry-item {
+    max-width: 90%; 
+    margin: 0 auto 1rem auto; 
+  }
+
+  .masonry-item img {
+    max-height: 220px; 
+    width: 100%;
+    object-fit: cover;
+  }
+
+  /* Employee info */
+  .emp-info h3 {
+    font-size: 1rem;
+  }
+
+  .emp-info p {
+    font-size: 0.85rem;
+  }
+
+  /* Modal */
+  .modal-content {
+    padding: 1.5rem;
+    max-width: 90%;
+  }
+
+  .modal-content img {
+    max-width: 100px;
+  }
+
+  .modal-content h2 {
+    font-size: 1.4rem;
+  }
+
+  .modal-content h4 {
+    font-size: 1rem;
+  }
+
+  .modal-content p {
+    font-size: 0.9rem;
+  }
 }

@@ -17,7 +17,7 @@
   padding: 2rem;
 }
 
-.career-about {
+.career-section {
   padding: 100px 40px;
   background-color: var(--light-bg);
   color: var(--dark-text);
@@ -385,30 +385,104 @@
   text-decoration: underline;
 }
 
-@media (max-width: 768px) {
-  .career-culture .grid {
-    grid-template-columns: 1fr;
+@media (max-width: 800px) {
+  .career-section {
+    padding: 50px 20px;
+  }
+
+  .career-wrapper h1 {
+    font-size: 2rem;
+  }
+
+  .career-wrapper p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+
+  .career-grid {
+    grid-template-columns: 1fr; /* stack images + text */
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  /* Student Section */
+  .career-student {
+    padding: 2rem 1rem;
   }
 
   .student-grid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+    text-align: center;
   }
 
-  .job-modal-content {
-    padding: 24px 20px;
+  .student-text h2 {
+    font-size: 1.5rem;
   }
 
-  .job-modal h2 {
-    font-size: 1.3rem;
+  .student-text p {
+    font-size: 1rem;
   }
 
-  .job-modal p {
+  .student-btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  /* Opportunities */
+  .opportunities-header h2 {
+    font-size: 2rem;
+  }
+
+  .opportunities-header .icon {
+    font-size: 1.8rem;
+  }
+
+  .vacancy-filters {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.8rem;
+  }
+
+  .vacancy-search {
+    width: 100%;
     font-size: 0.95rem;
   }
 
-  .apply-btn {
-    width: 100%;
-    text-align: center;
+  .vacancy-buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .vacancy-buttons button {
     font-size: 0.9rem;
+    padding: 0.5rem 0.8rem;
+  }
+
+  /* Vacancy cards */
+  .vacancy-card {
+    padding: 1rem;
+  }
+
+  .vacancy-card h4 {
+    font-size: 1rem;
+  }
+
+  .vacancy-card p {
+    font-size: 0.85rem;
+  }
+
+  /* HR Section */
+  .hr-section h2 {
+    font-size: 2rem;
+  }
+
+  .hr-grid {
+    grid-template-columns: 1fr; /* one column on mobile */
+    max-width: 100%;
+  }
+
+  .hr-photo {
+    height: 220px; /* smaller images */
   }
 }

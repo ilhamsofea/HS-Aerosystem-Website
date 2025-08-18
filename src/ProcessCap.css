@@ -106,12 +106,12 @@ ul.list1 {
 }
 
 @media (max-width: 800px) {
-  .process-cap-hero {
+  /* .process-cap-hero {
     padding: 20px;
     min-height: 70vh;
     text-align: center;
     background-position: center;
-  }
+  } */
 
   .process-cap-wrapper {
     padding: 50px 20px;

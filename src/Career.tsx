@@ -45,7 +45,7 @@ function Career() {
       </section>
 
       {/* ===== Life at Our Company & Our Culture ===== */}
-      <section className="career-about">
+      <section className="career-section">
         <div className="career-wrapper">
           <h1>Life at Our Company</h1>
           <p>

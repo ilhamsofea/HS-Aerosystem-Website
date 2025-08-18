@@ -104,7 +104,6 @@
   opacity: 1;
 }
 
-
 .employee-info {
   flex: 1;
 }
@@ -128,7 +127,7 @@
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .recognition-spotlight {
     flex-direction: column;
   }
@@ -139,6 +138,43 @@
   .recognition-spotlight.right .employee-info {
     order: unset;
   }
+
+  /* Wrapper */
+  .recognition-wrapper h1 {
+    font-size: 2.2rem;
+  }
+
+  .recognition-wrapper p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+
+  /* Spotlight */
+  .recognition-spotlight {
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  .employee-img {
+    max-width: 200px; /* ⬅ shrink image */
+    margin: 0 auto;
+  }
+
+  .employee-img img {
+    height: auto;
+  }
+
+  .employee-info h2 {
+    font-size: 1.5rem;
+  }
+
+  .employee-info h4 {
+    font-size: 1rem;
+  }
+
+  .employee-info p {
+    font-size: 0.95rem;
+  }
 }
-
-
