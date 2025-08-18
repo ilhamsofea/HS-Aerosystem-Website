@@ -11,11 +11,11 @@
   animation: fadeUp 1s ease forwards;
 }
 
-.products {
+.product-section {
   background-color: var(--light-bg);
 }
 
-.product-header {
+.product-wrapper {
   padding: 100px 40px;
   background-color: var(--light-bg);
   color: var(--dark-text);
@@ -24,13 +24,13 @@
   text-align: center;
 }
 
-.product-header h1 {
+.product-wrapper h1 {
   font-size: 3.5rem;
   color: var(--crimson-red);
   margin-bottom: 10px;
 }
 
-.product-header p {
+.product-wrapper p {
   font-size: 1.2rem;
   color: var(--muted-text);
   line-height: 1.6;
@@ -111,50 +111,56 @@ summary {
 }
 
 @media (max-width: 800px) {
-  .hero {
-    height: auto;
-    padding: 40px 15px;
+  .product-wrapper {
+    padding: 50px 20px;
   }
 
-  .hero-text h1 {
+  .product-wrapper h1 {
     font-size: 2rem;
-    line-height: 1.2;
   }
 
-  .hero-text h2 {
+  .product-wrapper p {
     font-size: 1rem;
-    margin-top: 10px;
-  }
-
-  .products {
-    padding: 20px 15px;
+    line-height: 1.5;
   }
 
   .scroll-gallery {
-    gap: 12px;
-    padding-bottom: 8px;
+    gap: 10px;
+    padding: 10px 0;
   }
 
   .gallery-item {
-    width: 180px;
+    width: 220px; /* narrower cards for mobile */
     padding: 8px;
   }
 
+  .gallery-item img {
+    height: 150px; /* smaller image height */
+  }
+
+  .product-list {
+    padding: 20px;
+  }
+
   .product-tab summary {
+    font-size: 1.1rem;
+    padding-right: 20px;
+  }
+
+  .product-tab summary::after {
+    font-size: 1.2rem;
+  }
+
+  details {
+    padding: 15px;
+  }
+
+  summary {
     font-size: 1.1rem;
   }
 }
 
 @media (max-width: 480px) {
-  .hero-text h1 {
-    font-size: 0.9rem;
-  }
-
-  .hero-text h2 {
-    font-size: 1.2rem;
-    margin-top: 10px;
-  }
-
   .gallery-item {
     width: 150px;
   }

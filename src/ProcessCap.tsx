@@ -21,8 +21,8 @@ function ProcessCap() {
         </div>
       </section>
 
-      <section className="process-cap-slide">
-        <div className="process-cap-header">
+      <section className="process-cap-section">
+        <div className="process-cap-wrapper">
           <h1>Explore Our Process</h1>
           <p>
             Efficiency meets innovation — uncover the methods that power our

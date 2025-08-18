@@ -11,11 +11,11 @@
   animation: fadeUp 1s ease forwards;
 }
 
-.process-cap-slide {
+.process-cap-section {
   background-color: var(--light-bg);
 }
 
-.process-cap-header {
+.process-cap-wrapper {
   padding: 100px 40px;
   background-color: var(--light-bg);
   color: var(--dark-text);
@@ -24,13 +24,13 @@
   text-align: center;
 }
 
-.process-cap-header h1 {
+.process-cap-wrapper h1 {
   font-size: 3.5rem;
   color: var(--crimson-red);
   margin-bottom: 10px;
 }
 
-.process-cap-header p {
+.process-cap-wrapper p {
   font-size: 1.2rem;
   color: var(--muted-text);
   /* margin-bottom: 50px; */
@@ -46,22 +46,6 @@
   box-sizing: border-box;
   color: var(--dark-text);
   background-color: var(--card-bg);
-  border-radius: 20px;
-  margin: 30px auto;
-  width: 90%;
-  max-width: 1400px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
-}
-
-.process-cap-inner-slide2 {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 60px 80px;
-  box-sizing: border-box;
-  color: var(--dark-text);
-  background-color: var(--alt-card-bg);
   border-radius: 20px;
   margin: 30px auto;
   width: 90%;
@@ -122,55 +106,65 @@ ul.list1 {
 }
 
 @media (max-width: 800px) {
-  .process-cap-intro {
-    padding: 4rem 2rem;
+  /* .process-cap-hero {
+    padding: 20px;
+    min-height: 70vh;
+    text-align: center;
+    background-position: center;
+  } */
+
+  .process-cap-wrapper {
+    padding: 50px 20px;
   }
 
-  .process-cap-intro h1 {
-    font-size: 2.5rem;
+  .process-cap-wrapper h1 {
+    font-size: 2rem;
   }
 
-  .process-cap-intro p {
-    font-size: 1.2rem;
+  .process-cap-wrapper p {
+    font-size: 1rem;
   }
 
-  .process-cap-inner-slide,
-  .process-cap-inner-slide2 {
+  .process-cap-inner-slide {
     flex-direction: column;
-    padding: 40px 20px;
+    padding: 30px 20px;
+    min-height: auto;
+    width: 95%;
   }
 
   .process-cap-slide-content {
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
   }
 
   .process-cap-text-section {
     width: 100%;
   }
 
-  .process-cap-slide-number,
+  .process-cap-slide-number {
+    font-size: 28px;
+  }
+
   .process-cap-slide-title {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 
   .process-cap-slide-description {
     font-size: 1rem;
+    line-height: 1.5;
   }
 
   .process-cap-image-section {
-    height: auto;
     width: 100%;
+    height: auto;
+    margin-top: 20px;
   }
 
   .process-cap-image-section img {
-    width: 100%;
     max-width: 100%;
     height: auto;
-    object-fit: cover;
-  }
-
-  ul.list1 {
-    padding-left: 1rem;
+    max-height: 250px;
   }
 }

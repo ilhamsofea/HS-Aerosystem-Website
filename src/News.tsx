@@ -13,7 +13,7 @@ function News() {
       <section className="news-hero">
         <div className="overlay"></div>
         <div className="hero-text">
-          <h1>News & Updates</h1>
+          <h1>News</h1>
           <p>
             Stay informed with the latest happenings, milestones, and insights
             from our company.

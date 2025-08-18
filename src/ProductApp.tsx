@@ -22,8 +22,8 @@ function ProductApp() {
         </div>
       </section>
 
-      <section className="products">
-        <div className="product-header">
+      <section className="product-section">
+        <div className="product-wrapper">
           <h1>Engineered for Impact</h1>
           <p>Crafted to meet tomorrow’s challenges.</p>
         </div>

@@ -87,17 +87,23 @@
 }
 
 
-/* Responsive */
+/* Mobile Version */
 @media (max-width: 800px) {
-  .hero-text h1 {
-    font-size: 2.5rem;
+
+.news-section {
+    padding: 50px 20px; 
+  }
+
+  .news-wrapper {
+    text-align: center;
   }
 
   .news-wrapper h1 {
-    font-size: 2.2rem;
+    font-size: 2rem; 
   }
 
-  .news-grid {
-    grid-template-columns: 1fr;
+  .news-wrapper p {
+    font-size: 1rem;
+    margin-bottom: 30px;
   }
 }
