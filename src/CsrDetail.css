@@ -1,0 +1,178 @@
+.csr-detail-hero {
+  position: relative;
+  min-height: 30vh;
+  overflow-y: auto;
+  background: url("/assets/Journey/hs-aerosystem1.JPG") center/cover no-repeat;
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  justify-content: end;
+  margin-top: 20px;
+  padding: 50px;
+}
+
+.csr-images {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.csr-images img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Detail section */
+.csr-detail-section {
+  padding: 100px 40px;
+  background-color: var(--light-bg);
+  color: var(--dark-text);
+}
+
+.csr-detail-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.csr-detail-wrapper p {
+  font-size: 1.2rem;
+  color: var(--muted-text);
+  line-height: 1.6;
+}
+
+.csr-detail-wrapper h1 {
+  font-size: 3.5rem;
+  color: var(--crimson-red);
+  margin-bottom: 10px;
+}
+
+.csr-banner {
+  display: block;
+  margin: 30px auto;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 80vh;
+  border-radius: 8px;
+}
+
+.csr-body {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--muted-text);
+  text-indent: 50px;
+}
+
+.csr-carousel {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  color: var(--crimson-red);
+}
+
+.csr-carousel img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* Change arrow color */
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--crimson-red);
+}
+
+/* Optional: change on hover */
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: var(--deep-red); /* blue on hover */
+}
+
+/* Optional: make arrows bigger */
+.swiper-button-next,
+.swiper-button-prev {
+  font-size: 24px;
+}
+
+/* Works in v10+ and overrides the default theme */
+.csr-swiper {
+  /* colors */
+  --swiper-pagination-color: var(--crimson-red); /* active dot */
+  --swiper-pagination-bullet-inactive-color: #d1d5db; /* inactive dot */
+  --swiper-pagination-bullet-inactive-opacity: 1;
+
+  /* sizing & spacing */
+  --swiper-pagination-bullet-size: 10px;
+  --swiper-pagination-bullet-horizontal-gap: 6px;
+}
+
+@media (max-width: 800px) {
+  /* Hero Section */
+  .csr-detail-hero {
+    min-height: 20vh;
+    padding: 30px 20px;
+    background-position: center;
+  }
+
+  /* Detail Section */
+  .csr-detail-section {
+    padding: 50px 20px;
+  }
+
+  .csr-detail-wrapper h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .csr-detail-wrapper p {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: justify;
+  }
+
+  .csr-body {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-indent: 30px;
+  }
+
+  /* Images */
+  .csr-banner {
+    max-height: 50vh;
+    margin: 20px auto;
+  }
+
+  .csr-images {
+    gap: 0.8rem;
+  }
+
+  .csr-images img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Carousel */
+  .csr-carousel {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .csr-carousel img {
+    border-radius: 8px;
+  }
+
+  /* Swiper arrows */
+  .swiper-button-next,
+  .swiper-button-prev {
+    font-size: 18px;
+  }
+
+  /* Pagination dots */
+  .csr-swiper {
+    --swiper-pagination-bullet-size: 8px;
+    --swiper-pagination-bullet-horizontal-gap: 4px;
+  }
+}

@@ -11,7 +11,7 @@ export interface TeamMember {
 export const topLeader: TeamMember = {
   name: "Dr. Yeow Jee Leong",
   title: "General Manager",
-  img: "/assets/Team/default.jpg",
+  img: "/assets/Team/dryeow.jpg",
   bio: "[text]",
   email: "[email]",
 };
@@ -27,21 +27,21 @@ export const teamMembers: TeamMember[] = [
   {
     name: "Annie Chia",
     title: "Head of Engineering",
-    img: "/assets/Team/default.jpg",
+    img: "/assets/Team/annie.jpg",
     bio: "[text]",
     email: "[email]",
   },
   {
     name: "Stacy Gan",
     title: "Head of HR",
-    img: "/assets/Team/default.jpg",
+    img: "/assets/Team/stacy.jpg",
     bio: "[text]",
     email: "[email]",
   },
   {
     name: "Leslie Joseph",
     title: "Head of Manufacturing",
-    img: "/assets/Team/default.jpg",
+    img: "/assets/Team/leslie.jpg",
     bio: "[text]",
     email: "[email]",
   },
@@ -55,7 +55,7 @@ export const teamMembers: TeamMember[] = [
   {
     name: "Grace Lee",
     title: "Head of Quality",
-    img: "/assets/Team/default.jpg",
+    img: "/assets/Team/grace.jpg",
     bio: "[text]",
     email: "[email]",
   },

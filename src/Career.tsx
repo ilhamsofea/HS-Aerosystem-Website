@@ -210,9 +210,6 @@ function Career() {
               <p>
                 Email: <a href={`mailto:${hr.email}`}>{hr.email}</a>
               </p>
-              <p>
-                Phone: <a href={`tel:${hr.phone}`}>{hr.phone}</a>
-              </p>
             </div>
           ))}
         </div>

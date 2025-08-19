@@ -30,20 +30,23 @@ export const impactStats = [
 
 export const csrStories = [
   {
-    image: "/assets/default/default2.jpg",
-    title: "Tree Planting Drive",
+    id: 1,
+    category: "CSR Story",
+    date: "14 April 2025",
+    images: [
+      "/assets/csr/img1.JPG",
+      "/assets/csr/img2-2.JPG",
+      "/assets/csr/img3.JPG",
+      "/assets/csr/img4.JPG",
+      "/assets/csr/img5.JPG",
+      "/assets/csr/img6.JPG",
+      "/assets/csr/img7.JPG",
+      "/assets/csr/img8.JPG",
+      "/assets/csr/img9.JPG",
+      "/assets/csr/img10-2.JPG",
+    ],
+    title: "Together in Kindness: Orphanage Visit",
     description: "Planted over 1,000 trees in collaboration with local NGOs.",
-  },
-  {
-    image: "/assets/default/default3.jpg",
-    title: "School Supply Donation",
-    description:
-      "Donated learning materials to rural schools across the region.",
-  },
-  {
-    image: "/assets/Team/hero-img.JPG",
-    title: "Community Clean-up",
-    description:
-      "Organized a clean-up program in coastal areas to reduce waste.",
+    full: "content here",
   },
 ];

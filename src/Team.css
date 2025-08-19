@@ -161,12 +161,83 @@
 }
 
 /* Responsive */
-@media (max-width: 768px) {
-  .team-hero-text h1 {
-    font-size: 2.5rem;
+@media (max-width: 800px) {
+
+  /* Section */
+  .team-section {
+    padding: 50px 20px;
   }
 
-  .team-hero-text p {
-    font-size: 1.1rem;
+  .team-wrapper h1 {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  .team-wrapper p {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: justify;
+  }
+
+  /* Team grid */
+  .team-grid-section {
+    padding: 40px 10px;
+  }
+
+  .team-grid {
+    gap: 40px;
+    padding-top: 50px;
+  }
+
+  .team-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .team-img {
+    width: 140px;
+    height: 140px;
+    margin: 0 auto 12px auto;
+  }
+
+  .team-info h3 {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .team-info p {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  /* Modal */
+  .modal-content {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .modal-content img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 15px;
+  }
+
+  .modal-content h2 {
+    font-size: 1.4rem;
+  }
+
+  .modal-content p,
+  .modal-bio,
+  .modal-contact {
+    font-size: 0.9rem;
+  }
+
+  .modal-close {
+    font-size: 1.3rem;
+    top: 8px;
+    right: 12px;
   }
 }
+
+

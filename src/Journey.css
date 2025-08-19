@@ -11,20 +11,20 @@
   animation: fadeUp 1s ease forwards;
 }
 
-.milestone-section {
+.journey-section {
   padding: 100px 20px;
   background: var(--light-bg);
   color: var(--dark-text);
 }
 
-.milestone-wrapper {
+.journey-wrapper {
   text-align: center;
   max-width: 800px;
   margin: 0 auto 80px auto;
 }
 
-.milestone-wrapper,
-.milestone-legend,
+.journey-wrapper,
+.journey-legend,
 .timeline-item {
   opacity: 0;
   transform: translateY(30px);
@@ -36,18 +36,18 @@
   transform: translateY(0) !important;
 }
 
-.milestone-wrapper h1 {
+.journey-wrapper h1 {
   font-size: 3.5rem;
   color: var(--crimson-red);
   margin-bottom: 10px;
 }
 
-.milestone-wrapper p {
+.journey-wrapper p {
   color: var(--muted-text);
   font-size: 1.2rem;
 }
 
-.milestone-legend {
+.journey-legend {
   display: flex;
   justify-content: center;
   gap: 30px;
@@ -166,7 +166,7 @@
   color: var(--muted-text);
 }
 
-.milestone-img {
+.journey-img {
   width: 100%;
   max-width: 400px;
   border-radius: 10px;
@@ -206,6 +206,21 @@
 }
 
 @media (max-width: 800px) {
+  .journey-section {
+    padding: 50px 20px;
+  }
+
+  .journey-wrapper h1 {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  .journey-wrapper p {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: justify;
+    margin-bottom: 30px;
+  }
   .timeline::before {
     left: 10px;
   }

@@ -22,7 +22,7 @@ function Journey() {
     );
 
     const sections = document.querySelectorAll(
-      ".milestone-wrapper, .milestone-legend, .timeline-item"
+      ".journey-wrapper, .journey-legend, .timeline-item"
     );
 
     sections.forEach((section) => {
@@ -45,8 +45,8 @@ function Journey() {
         </div>
       </section>
 
-      <section className="milestone-section">
-        <div className="milestone-wrapper">
+      <section className="journey-section">
+        <div className="journey-wrapper">
           <h1>From Vision to Reality</h1>
           <p>
             Milestones that shape who we are — from our inception to our future
@@ -54,7 +54,7 @@ function Journey() {
           </p>
         </div>
 
-        <div className="milestone-legend">
+        <div className="journey-legend">
           <span>
             <span className="dot completed-dot"></span> Completed
           </span>
@@ -76,7 +76,7 @@ function Journey() {
                   <img
                     src={item.img}
                     alt={item.title}
-                    className="milestone-img"
+                    className="journey-img"
                   />
                 )}
                 <p>{item.description}</p>

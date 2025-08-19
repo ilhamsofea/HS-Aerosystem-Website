@@ -1,13 +1,14 @@
 import "./Csr.css";
 import Footer from "./Footer";
 import { useEffect } from "react";
+import newsData from "./newsData";
 import { Link } from "react-router-dom";
 import { csrPillars, impactStats, csrStories } from "./csrData";
 
 function Csr() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
 
   return (
     <>
@@ -58,16 +59,30 @@ function Csr() {
       </section>
 
       {/* Stories */}
-      <section className="csr-stories">
-        <h2>Our Stories</h2>
-        <div className="stories-grid">
-          {csrStories.map((story, index) => (
-            <div className="story-card" key={index}>
-              <img src={story.image} alt={story.title} />
-              <h3>{story.title}</h3>
-              <p>{story.description}</p>
-            </div>
-          ))}
+      <section className="story-section">
+        <div className="story-wrapper">
+          <h1>CSR Stories</h1>
+          <p>
+            Explore meaningful initiatives where our commitment to
+            sustainability, education, and compassion comes to life.”
+          </p>
+
+          <div className="story-grid">
+            {[...csrStories].map((item) => (
+              <div className="story-card" key={item.id}>
+                <img
+                  src={item.images ? item.images[0] : item.images}
+                  alt={item.title}
+                />
+                <h3>{item.title}</h3>
+                {/* <p className="news-date">{item.date}</p> */}
+                {/* <p>{item.preview}</p> */}
+                <Link to={`/csr/${item.id}`} className="read-more-link">
+                  Read More →
+                </Link>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 

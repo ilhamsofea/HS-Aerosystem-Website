@@ -43,6 +43,20 @@ body {
   font-size: 1.5rem;
 }
 
+/* Global Back Button*/
+.back-button {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: var(--muted-text);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.back-button:hover {
+  color: var(--crimson-red);
+}
+
 /*ANIMATIONS*/
 @keyframes fadeUp {
   0% {
@@ -76,4 +90,6 @@ body {
     font-size: 14px; 
   }
 }
+
+
 

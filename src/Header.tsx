@@ -15,6 +15,7 @@ import ProductApp from "./ProductApp";
 import ProcessCap from "./ProcessCap";
 import Recognition from "./Recognition";
 import Csr from "./Csr";
+import CsrDetails from "./CsrDetail";
 import Hear from "./Hear";
 import Career from "./Career";
 import LogoWhite from "./Logo";
@@ -26,6 +27,29 @@ function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [showNavbar, setShowNavbar] = useState(true);
   const lastScrollY = useRef(0);
+  const sidebarRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        sidebarOpen &&
+        sidebarRef.current &&
+        !sidebarRef.current.contains(event.target as Node)
+      ) {
+        setSidebarOpen(false);
+        setExpandedMenu(null);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [sidebarOpen]);
+
+  const toggleExpand = (menu: string) => {
+    setExpandedMenu(expandedMenu === menu ? null : menu);
+  };
 
   useEffect(() => {
     const onScroll = () => {
@@ -41,10 +65,6 @@ function Header() {
   useEffect(() => {
     document.body.classList.toggle("menu-open", sidebarOpen);
   }, [sidebarOpen]);
-
-  const toggleExpand = (menu: string) => {
-    setExpandedMenu(expandedMenu === menu ? null : menu);
-  };
 
   return (
     <>
@@ -87,8 +107,11 @@ function Header() {
         </nav>
       </header>
 
-      {/* Desktop Sidebar */}
-      <aside className={`desktop-sidebar ${sidebarOpen ? "open" : ""}`}>
+      {/* Sidebar */}
+      <aside
+        ref={sidebarRef}
+        className={`desktop-sidebar ${sidebarOpen ? "open" : ""}`}
+      >
         <div className="sidebar-header">
           <div className="logo">
             <Link
@@ -355,6 +378,7 @@ function Header() {
         <Route path="/product" element={<ProductApp />} />
         <Route path="/recognition" element={<Recognition />} />
         <Route path="/csr" element={<Csr />} />
+        <Route path="/csr/:id" element={<CsrDetails />} />
         <Route path="/hear" element={<Hear />} />
         <Route path="/career" element={<Career />} />
       </Routes>

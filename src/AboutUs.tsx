@@ -50,11 +50,9 @@ function AboutUs() {
 
       <div className="aboutus-section">
         <div className="aboutus-wrapper">
-          <div className="aboutus-header">
             <h1>Redefining Aviation Solutions</h1>
             <p>Company Profile</p>
-          </div>
-
+          
           <div className="aboutus-desc">
             <p>
               <strong>HS Aerosystem Sdn. Bhd., </strong> incorporated in

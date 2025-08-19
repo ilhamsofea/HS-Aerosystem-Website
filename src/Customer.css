@@ -70,3 +70,42 @@
   font-size: 1rem;
   color: var(--dark-text);
 }
+
+@media (max-width: 800px) {
+  /* Section */
+  .customer-section {
+    padding: 50px 20px;
+  }
+
+  .customer-wrapper h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .customer-wrapper p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    text-align: justify;
+  }
+
+  /* Logo grid */
+  .customer-logo-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 30px 20px;
+    margin-top: 30px;
+  }
+
+  .customer-logo {
+    max-width: 150px;
+  }
+
+  .customer-logo img {
+    max-height: 70px;
+    margin-bottom: 8px;
+  }
+
+  .customer-logo p {
+    font-size: 0.9rem;
+  }
+}

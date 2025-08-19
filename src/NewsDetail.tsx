@@ -1,5 +1,5 @@
 import "./NewsDetail.css";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import newsData from "./newsData";
 import Footer from "./Footer";
 import { useEffect } from "react";
@@ -45,18 +45,21 @@ function NewsDetail() {
 
       <section className="news-detail-section">
         <div className="news-detail-wrapper">
+          <Link to="/news" className="back-button">
+            ← Back
+          </Link>
           <h1>{article.title}</h1>
           <p>{article.date}</p>
-<div className="news-images">
-  {article.images.map((img, index) => (
-    <img
-      key={index}
-      src={img}
-      alt={`${article.title} - ${index + 1}`}
-      className="news-banner"
-    />
-  ))}
-</div>
+          <div className="news-images">
+            {article.images.map((img, index) => (
+              <img
+                key={index}
+                src={img}
+                alt={`${article.title} - ${index + 1}`}
+                className="news-banner"
+              />
+            ))}
+          </div>
 
           <p className="news-body">{article.full}</p>
         </div>
