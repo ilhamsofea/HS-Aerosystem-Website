@@ -1,0 +1,259 @@
+@plugin "daisyui";
+
+body.menu-open {
+  overflow: hidden;
+}
+
+.topbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  backdrop-filter: blur(70px);
+  transition: transform 0.3s, background-color 0.3s;
+  z-index: 1000;
+  border-bottom: 3px solid var(--crimson-red);
+  background: transparent;
+}
+
+.topbar.scrolled {
+  background-color: var(--light-bg);
+  backdrop-filter: none;
+  color: var(--dark-text);
+  height: 60px;
+}
+
+.topbar.hidden {
+  transform: translateY(-100%);
+}
+
+.topbar.visible {
+  transform: translateY(0);
+}
+
+.topbar.scrolled .desktop-hamburger,
+.topbar.scrolled .global-nav a {
+  color: black;
+}
+
+.topbar.scrolled .desktop-hamburger {
+  padding-right: 50px;
+}
+
+.topbar.scrolled .global-nav a:hover {
+  color: var(--crimson-red);
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.desktop-hamburger {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 8px 12px;
+  padding-right: 50px;
+  color: var(--light-bg);
+}
+
+.desktop-hamburger:hover {
+  color: var(--crimson-red);
+}
+
+.global-nav {
+  display: flex;
+  gap: 30px;
+}
+
+.global-nav a {
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--light-bg);
+}
+
+.global-nav a:hover {
+  color: var(--crimson-red);
+}
+
+.desktop-sidebar {
+  position: fixed;
+  top: 0;
+  left: -320px;
+  width: 320px;
+  height: 100%;
+  background-color: var(--alt-card-bg);
+  transition: left 0.3s ease;
+  z-index: 1100;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.desktop-sidebar.open {
+  left: 0;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.sidebar-header .logo img {
+  height: 50px;
+}
+
+.sidebar-close {
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  color: var(--dark-text);
+}
+
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  gap: 20px;
+  font-size: 1rem;
+  animation: fadeSlideIn 0.25s ease;
+}
+
+.sidebar-menu li {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar-menu li span {
+  color: var(--dark-text);
+  font-weight: 500;
+}
+
+.sidebar-menu li span:hover {
+  color: var(--crimson-red);
+  padding-left: 10px;
+  border-left: 3px solid var(--crimson-red);
+}
+
+.sidebar-footer {
+  font-size: 0.9rem;
+  color: var(--muted-text);
+  text-align: center;
+  margin-top: auto;
+}
+
+.sidebar-footer a {
+  text-decoration: none;
+  color: var(--muted-text);
+}
+
+.submenu-view {
+  display: flex;
+  flex-direction: column;
+  animation: fadeSlideIn 0.25s ease;
+}
+
+.submenu-back {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--dark-text);
+  margin-bottom: 15px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  width: fit-content;
+  transition: background-color 0.2s;
+}
+
+.submenu-view h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: var(--dark-text);
+  padding-left: 10px;
+  border-left: 3px solid var(--crimson-red);
+}
+
+.submenu-back:hover {
+  color: var(--crimson-red);
+}
+
+.expanded-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: var(--dark-text);
+}
+
+.submenu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 15px;
+  list-style: none;
+}
+
+.submenu-list a {
+  text-decoration: none;
+  color: var(--dark-text);
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.submenu-list a:hover {
+  color: var(--crimson-red);
+  padding-left: 10px;
+  border-left: 3px solid var(--crimson-red);
+}
+
+@media (max-width: 800px) {
+  .global-nav,
+  .menu-word {
+    display: none;
+  }
+
+  .desktop-hamburger {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 12px;
+    color: var(--light-bg);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
