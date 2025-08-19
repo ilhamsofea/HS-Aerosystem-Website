@@ -20,7 +20,7 @@ export const teamMembers: TeamMember[] = [
   {
     name: "Jonas See",
     title: "Finance Controller",
-    img: "/assets/Team/default.jpg",
+    img: "/assets/Team/jonas2.jpg",
     bio: "[text]",
     email: "[email]",
   },
