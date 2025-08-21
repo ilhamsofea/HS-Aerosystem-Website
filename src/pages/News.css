@@ -1,7 +1,7 @@
 .news-hero {
   position: relative;
   min-height: 100vh;
-  background: url("/assets/News/hero2.JPG") center/cover no-repeat;
+  background: url("/assets/News/hero.JPG") center/cover no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -86,12 +86,10 @@
   text-decoration: underline;
 }
 
-
 /* Mobile Version */
 @media (max-width: 800px) {
-
-.news-section {
-    padding: 50px 20px; 
+  .news-section {
+    padding: 50px 20px;
   }
 
   .news-wrapper {
@@ -99,7 +97,7 @@
   }
 
   .news-wrapper h1 {
-    font-size: 2rem; 
+    font-size: 2rem;
   }
 
   .news-wrapper p {

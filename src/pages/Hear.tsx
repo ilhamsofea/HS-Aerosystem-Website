@@ -39,7 +39,9 @@ function Hear() {
       })
       .catch(console.error)
       .finally(() => setLoading(false));
+  }, []);
 
+  useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 

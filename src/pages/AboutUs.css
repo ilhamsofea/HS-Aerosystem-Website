@@ -2,7 +2,7 @@
   position: relative;
   min-height: 100vh;
   overflow-y: auto;
-  background: url("/assets/AboutUs/hs-company2-1.JPG") center/cover no-repeat;
+  background: url("/assets/AboutUs/hero.JPG") center/cover no-repeat;
   display: flex;
   align-items: left;
   flex-direction: column;
@@ -46,53 +46,23 @@
   color: var(--dark-text);
 }
 
-.carousel {
+/* Container */
+.simple-carousel {
   position: relative;
   width: 100%;
   max-width: 900px;
   margin: 30px auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-.carousel img {
+/* Swiper wrapper */
+.simple-swiper {
   width: 100%;
-  height: auto;
-  border-radius: 16px;
-  object-fit: cover;
-  aspect-ratio: 16 / 9;
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
+  padding-bottom: 40px; /* leaves space for dots */
 }
 
-.carousel-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(255, 255, 255, 0.7);
-  border: none;
-  font-size: 2rem;
-  padding: 0.4em 0.6em;
-  cursor: pointer;
-  z-index: 2;
-  border-radius: 50%;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-.carousel-btn.left {
-  left: 10px;
-}
-
-.carousel-btn.right {
-  right: 10px;
-}
-
-.img-1 {
+/* Slide image */
+.simple-img {
   width: 100%;
-  max-width: 900px;
-  margin: 40px auto 0 auto;
-  display: block;
   aspect-ratio: 16 / 9;
   border-radius: 16px;
   object-fit: cover;
@@ -100,10 +70,27 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.img-1:hover {
+/* Hover effect */
+.simple-img:hover {
   transform: scale(1.02);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
+
+/* Swiper navigation arrows */
+.simple-swiper {
+  --swiper-navigation-size: 2rem;
+  --swiper-navigation-color: #1f2937; /* dark gray arrows */
+}
+
+/* Swiper pagination dots */
+.simple-swiper {
+  --swiper-pagination-color: var(--crimson-red); /* active */
+  --swiper-pagination-bullet-inactive-color: #d1d5db;
+  --swiper-pagination-bullet-inactive-opacity: 1;
+  --swiper-pagination-bullet-size: 10px;
+  --swiper-pagination-bullet-horizontal-gap: 6px;
+}
+
 
 @media (max-width: 800px) {
   .aboutus-section {

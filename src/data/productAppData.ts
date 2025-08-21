@@ -13,8 +13,8 @@ export const productImages: Record<Category, string[]> = {
   ],
   /* also update this block for picture */
   "Sheet Metal and Machinated Part": [
-    "assets/ProductApp/smm4.jpg",
-    "assets/ProductApp/smm5.jpg",
+    "assets/ProductApp/smm1.jpg",
+    "assets/ProductApp/smm2.jpg",
   ]
   /*end block */
   

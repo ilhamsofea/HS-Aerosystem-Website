@@ -12,12 +12,12 @@ export const aboutusPic = [
   },
   {
     category: "images",
-    img: "/assets/Home/model2.JPG",
-    title: "Team Work",
+    img: "/assets/Home/quality-cap.JPG",
+    title: "Quality Capability",
   },
   {
     category: "images",
-    img: "/assets/Home/special-proc.JPG",
+    img: "/assets/Home/sheet-metal-bending.JPG",
     title: "Sheet Metal Bending",
   },
 
@@ -28,9 +28,4 @@ export const aboutusPic = [
   },
 ];
 
-// //  Our Clients Logos
-// const clientLogos = [
-//   "https://static.wixstatic.com/media/58d4da_05e93af3775642978dde831b88722959~mv2.png/v1/fill/w_244,h_69,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/collinsaero.png",
-//   // Add more client logo here when available
-// ];
 

@@ -4,9 +4,9 @@ import processCapData from "../data/processCapData";
 import { useEffect } from "react";
 
 function ProcessCap() {
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <section className="process-cap-hero">
@@ -37,7 +37,6 @@ function ProcessCap() {
                 <p className="process-cap-slide-number">{item.id}</p>
                 <h2 className="process-cap-slide-title">{item.title}</h2>
                 <p className="process-cap-slide-description">
-                  {item.description}
                   <ul className="list1">
                     <br />
                     {item.bulletPoints.map((point, idx) => (

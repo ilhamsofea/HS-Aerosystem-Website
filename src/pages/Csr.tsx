@@ -74,7 +74,7 @@ function Csr() {
                   alt={item.title}
                 />
                 <h3>{item.title}</h3>
-                {/* <p className="news-date">{item.date}</p> */}
+                <p className="news-date">{item.date}</p>
                 {/* <p>{item.preview}</p> */}
                 <Link to={`/csr/${item.id}`} className="read-more-link">
                   Read More →

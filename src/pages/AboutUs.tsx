@@ -1,6 +1,11 @@
 import "./AboutUs.css";
 import Footer from "../components/Footer/Footer";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 const images = [
   "./assets/AboutUs/model.JPG",
@@ -10,20 +15,11 @@ const images = [
   "./assets/AboutUs/model2.JPG",
   "./assets/AboutUs/machine3.JPG",
   "./assets/AboutUs/model3.JPG",
-  "./assets/AboutUs/assembly1.jpg",
+  "./assets/AboutUs/assembly.png",
+  "./assets/AboutUs/quality-inspect.png",
 ];
 
 function AboutUs() {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const handlePrev = () => {
-    setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
-  };
-
-  const handleNext = () => {
-    setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
-  };
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -62,19 +58,28 @@ function AboutUs() {
             </p>
 
             {/* --- CAROUSEL START --- */}
-            <div className="carousel">
-              <button className="carousel-btn left" onClick={handlePrev}>
-                ‹
-              </button>
-              <img
-                src={images[currentIndex]}
-                alt={`Slide ${currentIndex + 1}`}
-                className="img-1"
-              />
-              <button className="carousel-btn right" onClick={handleNext}>
-                ›
-              </button>
+            <div className="simple-carousel">
+              <Swiper
+                className="simple-swiper"
+                modules={[Navigation, Pagination]}
+                navigation
+                pagination={{ clickable: true }}
+                loop={true}
+                slidesPerView={1}
+                spaceBetween={20}
+              >
+                {images.map((img, index) => (
+                  <SwiperSlide key={index}>
+                    <img
+                      src={img}
+                      alt={`Slide ${index + 1}`}
+                      className="simple-img"
+                    />
+                  </SwiperSlide>
+                ))}
+              </Swiper>
             </div>
+
             {/* --- CAROUSEL END --- */}
 
             <p>

@@ -2,7 +2,7 @@
   position: relative;
   min-height: 100vh;
   overflow-y: auto;
-  background: url("/assets/Recognition/hero2.JPG") center/cover no-repeat;
+  background: url("/assets/Recognition/hero.JPG") center/cover no-repeat;
   display: flex;
   align-items: left;
   flex-direction: column;

@@ -3,7 +3,6 @@
 export interface ProcessCapItem {
   id: string;
   title: string;
-  description: string;
   bulletPoints: string[];
   image: string;
   alt: string;
@@ -13,7 +12,6 @@ const processCapData: ProcessCapItem[] = [
   {
     id: "01",
     title: "Precision Sheet Metal",
-    description: "[Desc of the process here]",
     bulletPoints: [
       "Fiber Laser Cutting",
       "Robotic Sheet Metal Bending",
@@ -21,13 +19,12 @@ const processCapData: ProcessCapItem[] = [
       "Sheet Metal Punch",
       "Burnishing",
     ],
-    image: "./assets/ProcessCap/sheetmetal2-1.JPG",
+    image: "./assets/ProcessCap/sheetmetal.JPG",
     alt: "Precision Sheet Metal",
   },
   {
     id: "02",
     title: "CNC Machining",
-    description: "[Desc of the process here]",
     bulletPoints: [
       "3 Axis Vertical Machining",
       "4 Axis Horizontal Machining",
@@ -39,7 +36,6 @@ const processCapData: ProcessCapItem[] = [
   {
     id: "03",
     title: "Welding",
-    description: "[Desc of the process here]",
     bulletPoints: [
       "Fusion Welding",
       "Spot Welding",
@@ -52,7 +48,6 @@ const processCapData: ProcessCapItem[] = [
   {
     id: "04",
     title: "Mechanical Assembly",
-    description: "[Desc of process here]",
     bulletPoints: [
       "Assembly Installations (Riveting, Fastening, etc)",
       "Inkjet Marking",
@@ -64,7 +59,6 @@ const processCapData: ProcessCapItem[] = [
   {
     id: "05",
     title: "Quality Inspection",
-    description: "[Desc of process here]",
     bulletPoints: [
       "3 Dimensional CMM",
       "2.5D OMM",

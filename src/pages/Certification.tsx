@@ -1,6 +1,7 @@
 import "./Certification.css";
 import Footer from "../components/Footer/Footer";
 import { useEffect } from "react";
+import { certificationData } from "../data/certificationData"; // adjust path if needed
 
 function Certification() {
   useEffect(() => {
@@ -29,84 +30,29 @@ function Certification() {
           </p>
 
           <div className="cert-grid">
-            {/* CERT CARD – REPEAT AS NEEDED */}
-            <div className="cert-card">
-              <img src="/assets/Cert/cert1.png" alt="cert1" />
-              <h3>AS9100 Certification</h3>
-              <p>
-                Certification ensuring our quality management system meets
-                aerospace industry standards.
-              </p>
-              <div className="cert-card-actions">
-                <a
-                  href="/assets/Cert/cert1.png"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  View Full
-                </a>
-                <a
-                  href="/assets/Cert/cert1.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  ⬇ Download PDF
-                </a>
+            {certificationData.map((cert, index) => (
+              <div className="cert-card" key={index}>
+                <img src={cert.image} alt={cert.title} />
+                <h3>{cert.title}</h3>
+                <p>{cert.description}</p>
+                <div className="cert-card-actions">
+                  <a
+                    href={cert.viewLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View Full
+                  </a>
+                  <a
+                    href={cert.downloadLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    ⬇ Download PDF
+                  </a>
+                </div>
               </div>
-            </div>
-            {/*CERT CARD END */}
-
-            <div className="cert-card">
-              <img src="/assets/Cert/cert1.png" alt="cert1" />
-              <h3>AS9100 Certification</h3>
-              <p>
-                Certification ensuring our quality management system meets
-                aerospace industry standards.
-              </p>
-              <div className="cert-card-actions">
-                <a
-                  href="/assets/Cert/cert1.png"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  View Full
-                </a>
-                <a
-                  href="/assets/Cert/cert1.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  ⬇ Download PDF
-                </a>
-              </div>
-            </div>
-
-            <div className="cert-card">
-              <img src="/assets/Cert/cert1.png" alt="cert1" />
-              <h3>AS9100 Certification</h3>
-              <p>
-                Certification ensuring our quality management system meets
-                aerospace industry standards.
-              </p>
-              <div className="cert-card-actions">
-                <a
-                  href="/assets/Cert/cert1.png"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  View Full
-                </a>
-                <a
-                  href="/assets/Cert/cert1.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  ⬇ Download PDF
-                </a>
-              </div>
-            </div>
-
-            {/* ^ Add above here for new certs */}
+            ))}
           </div>
         </div>
       </section>

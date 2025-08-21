@@ -2,7 +2,7 @@
   position: relative;
   min-height: 100vh;
   overflow-y: auto;
-  background: url("/assets/ProductApp/hero-img.JPG") center/cover no-repeat;
+  background: url("/assets/Home/hero.JPG") center/cover no-repeat;
   display: flex;
   align-items: left;
   flex-direction: column;
@@ -63,58 +63,32 @@
   background-color: var(--deep-red);
 }
 
-.aboutus-nav {
-  margin-top: 30px;
-}
-
-.aboutus-nav button {
-  margin-right: 12px;
-  padding: 10px 16px;
-  font-size: 1.2rem;
-  border: 1px solid #aaa;
-  border-radius: 50%;
-  background: white;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.aboutus-nav button:hover {
-  background-color: var(--crimson-red);
-  color: white;
-}
-
-.aboutus-slider {
-  flex: 2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  position: relative;
-  gap: 30px;
-  max-width: 800px;
-  min-width: 400px;
+.aboutus-carousel {
   width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.aboutus-swiper {
+  width: 100%;
+  height: auto;
+  padding-bottom: 40px;
 }
 
 .aboutus-card {
   width: 100%;
-  max-width: 420px;
-  height: auto;
   border-radius: 16px;
   overflow: hidden;
   background: #fff;
   border: 1px solid #e6e6e6;
-  transition: transform 0.4s ease, opacity 0.4s ease;
-  opacity: 0;
-  pointer-events: none;
-  display: none;
   position: relative;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
 }
 
 .aboutus-card img {
   width: 100%;
-  height: 260px;
+  height: 400px;
   object-fit: cover;
   transition: transform 0.4s ease;
 }
@@ -132,38 +106,21 @@
   padding: 20px;
   display: flex;
   align-items: flex-end;
-  transition: opacity 0.3s ease;
   font-size: 1rem;
   font-weight: 500;
+  transition: opacity 0.3s ease;
 }
 
 .aboutus-card:hover .overlay {
   opacity: 1;
 }
 
-/* Positioning Styles - active card */
-.aboutus-card.center {
-  transform: scale(1);
-  opacity: 1;
-  filter: none;
-  display: block;
-  pointer-events: auto;
-  z-index: 2;
-}
-
-.aboutus-card.left,
-.aboutus-card.right {
-  opacity: 0.5;
-  transform: scale(0.95);
-  display: block;
-  pointer-events: none;
-  z-index: 1;
-}
-
-.aboutus-card.hidden {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
+.aboutus-swiper {
+  --swiper-pagination-color: var(--crimson-red);
+  --swiper-pagination-bullet-inactive-color: #d1d5db;
+  --swiper-pagination-bullet-inactive-opacity: 1;
+  --swiper-pagination-bullet-size: 10px;
+  --swiper-pagination-bullet-horizontal-gap: 6px;
 }
 
 /*ABOUTUS END*/
@@ -367,7 +324,7 @@
 
 .news-content h3 {
   font-size: 1.2rem;
-  color: var(--dark-text);
+  color: var(--crimson-red);
   margin-bottom: 10px;
 }
 
@@ -413,22 +370,6 @@
   margin: 0 auto;
 }
 
-.client-btn {
-  background-color: var(--light-bg);
-  color: var(--crimson-red);
-  border: none;
-  padding: 14px 28px;
-  font-weight: bold;
-  font-size: 1rem;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.client-btn:hover {
-  background-color: rgb(192, 192, 192);
-}
-
 .our-clients .section-label {
   font-weight: 600;
   font-size: 0.9rem;
@@ -451,35 +392,20 @@
   margin-bottom: 30px;
 }
 
-.client-marquee {
-  overflow: hidden;
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  padding: 20px 0;
+.client-btn {
+  background-color: var(--light-bg);
+  color: var(--crimson-red);
+  border: none;
+  padding: 14px 28px;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
 }
 
-.client-track {
-  display: flex;
-  gap: 60px;
-  flex-wrap: nowrap;
-  width: fit-content;
-}
-
-.client-track img {
-  max-height: 5rem;
-  object-fit: contain;
-  filter: brightness(0) invert(1);
-  transition: transform 0.3s ease;
-}
-
-.client-track img:hover {
-  transform: scale(1.05);
-}
-
-/* Only apply animation if more than 5 logos */
-.client-track.scrolling {
-  animation: scrollLeft 20s linear infinite;
+.client-btn:hover {
+  background-color: rgb(192, 192, 192);
 }
 /*END CLIENT*/
 
@@ -616,93 +542,4 @@ textarea {
   border-radius: 6px;
   text-align: center;
   font-size: 0.95rem;
-}
-
-/* Animations */
-@keyframes scrollLeft {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
-}
-
-@keyframes bounce {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-6px);
-  }
-}
-
-/* Animations end */
-
-/* mobile version */
-@media (max-width: 800px) {
-  .aboutus-title {
-    font-size: 2.5rem;
-    text-align: center;
-  }
-
-  .aboutus-heading {
-    font-size: 1.5rem;
-    text-align: center;
-  }
-
-  .slide-title,
-  .sticky-title,
-  .approach-title {
-    font-size: 2rem;
-    text-align: center;
-  }
-
-  .slide-content {
-    flex-direction: column;
-    gap: 30px;
-    align-items: center;
-    text-align: center;
-  }
-
-  .image-wrapper {
-    width: 100%;
-  }
-
-  .image-frame img {
-    width: 100%;
-  }
-
-  .client-track {
-    gap: 30px;
-  }
-
-  .home-our-clients .client-logos {
-    padding: 40px 20px;
-  }
-
-  .home-news-section {
-    padding-left: 40px;
-  }
-
-  .news-card {
-    flex: 0 0 80%;
-  }
-
-  .contact-layout {
-    flex-direction: column;
-    gap: 30px;
-    align-items: center;
-  }
-
-  .contact-form-wrapper {
-    max-width: 100%;
-    width: 100%;
-  }
-
-  .form-row {
-    flex-direction: column;
-    gap: 10px;
-  }
 }

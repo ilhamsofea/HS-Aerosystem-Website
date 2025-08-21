@@ -79,7 +79,7 @@ const journeyData: Milestone[] = [
     date: "End of 2024",
     title: "AS9100 Certification Achieved",
     description: "Officially recognized as compliant with AS9100 standards.",
-    img: "/assets/default/default2.jpg",
+    img: "/assets/Journey/AS9100D.jpg",
     position: "left",
     status: "completed",
   },

@@ -2,29 +2,15 @@ import "./Home.css";
 import Footer from "../components/Footer/Footer";
 import newsData from "../data/newsData";
 import { aboutusPic } from "../data/homeData";
-import { useState, useMemo, useEffect } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
-
-//  Our Clients Logos
-const clientLogos = [
-  "https://static.wixstatic.com/media/58d4da_05e93af3775642978dde831b88722959~mv2.png/v1/fill/w_244,h_69,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/collinsaero.png",
-  // Add more client logo here when available
-];
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 const Home = () => {
-  const [slideIndex, setSlideIndex] = useState(0);
-
-  const handleNext = () => {
-    setSlideIndex((prev) => (prev - 1 + aboutusPic.length) % aboutusPic.length);
-  };
-
-  const handlePrev = () => {
-    setSlideIndex((prev) => (prev + 1) % aboutusPic.length);
-  };
-
-  // Our Clients animation
-  const shouldScroll = useMemo(() => clientLogos.length > 5, []); //only scroll if client > 5
-
   // Contact Us form logics
   const [submitted, setSubmitted] = useState(false);
   const [formKey, setFormKey] = useState(0);
@@ -89,35 +75,29 @@ const Home = () => {
           <Link to="/aboutus" className="section-link">
             Learn more about us →
           </Link>
-          <div className="aboutus-nav">
-            <button onClick={handleNext}>&larr;</button>
-            <button onClick={handlePrev}>&rarr;</button>
-          </div>
         </div>
 
-        <div className="aboutus-slider">
-          {aboutusPic.map((item, index) => {
-            let className = "aboutus-card";
-            const lastIndex =
-              (slideIndex - 1 + aboutusPic.length) % aboutusPic.length;
-
-            if (index === slideIndex) {
-              className += " center";
-            } else if (index === lastIndex) {
-              className += " left";
-            } else {
-              className += " hidden";
-            }
-
-            return (
-              <div key={index} className={className}>
-                <img src={item.img} loading="lazy" alt={item.title} />
-                <div className="overlay">
-                  <p>{item.title}</p>
+        <div className="aboutus-carousel">
+          <Swiper
+            className="aboutus-swiper"
+            modules={[Navigation, Pagination]}
+            navigation
+            pagination={{ clickable: true }}
+            loop={true}
+            spaceBetween={20}
+            slidesPerView={1}
+          >
+            {aboutusPic.map((item, index) => (
+              <SwiperSlide key={index}>
+                <div className="aboutus-card">
+                  <img src={item.img} loading="lazy" alt={item.title} />
+                  <div className="overlay">
+                    <p>{item.title}</p>
+                  </div>
                 </div>
-              </div>
-            );
-          })}
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </section>
 
@@ -193,14 +173,6 @@ const Home = () => {
           <Link to="/customer">
             <button className="client-btn">Find Out More</button>
           </Link>
-
-          {/* <div className="client-marquee">
-            <div className={`client-track ${shouldScroll ? "scrolling" : ""}`}>
-              {clientLogos.map((logo, index) => (
-                <img key={index} src={logo} alt={`Client ${index + 1}`} />
-              ))}
-            </div>
-          </div> */}
         </div>
       </section>
 

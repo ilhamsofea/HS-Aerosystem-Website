@@ -32,7 +32,7 @@ export const csrStories = [
   {
     id: 1,
     category: "CSR Story",
-    date: "14 April 2025",
+    date: "14 March 2025",
     images: [
       "/assets/csr/img1.JPG",
       "/assets/csr/img2-2.JPG",
@@ -45,8 +45,7 @@ export const csrStories = [
       "/assets/csr/img9.JPG",
       "/assets/csr/img10-2.JPG",
     ],
-    title: "Together in Kindness: Orphanage Visit",
-    description: "Planted over 1,000 trees in collaboration with local NGOs.",
-    full: "content here",
+    title: "Spreading Joy in Ramadhan: Charity for Anak Asnaf",
+    full: "On 14 March 2025 (Friday), our team carried out a Ramadhan Charity Program at Pertubuhan Asnaf Murni, Nusari Bayu, dedicated to supporting anak asnaf (children in need). This initiative was part of our ongoing Corporate Social Responsibility (CSR) efforts to give back to the community, especially during the holy month of Ramadhan. The program included a structured event flow with meaningful activities, fulfilling both the requested needs of the organization and providing assistance aligned with our planned budget. Beyond the financial support, the event emphasized compassion, togetherness, and the spirit of sharing, aiming to uplift the children and bring joy to their lives during this blessed season.",
   },
 ];
