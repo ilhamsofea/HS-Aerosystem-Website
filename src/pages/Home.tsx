@@ -20,7 +20,7 @@ const Home = () => {
 
     const form = e.currentTarget;
     const formData = new FormData(form);
-    formData.append("access_key", "239b6e19-cd81-411e-ae75-a870be8b6036");
+    formData.append("access_key", "7bd9726d-7189-4fe1-95f0-cb3814fb9dc1");
 
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
@@ -120,11 +120,11 @@ const Home = () => {
             <h2>Best Employee of the Month</h2>
             <div className="employee-content">
               <div className="employee-photo">
-                <img src="/assets/Team/default.jpg" />
+                <img src="/assets/Home/aimi2.jpg" />
               </div>
               <div className="employee-details">
-                <h4>Muhammad Annas bin Mohd Kamil</h4>
-                <p className="employee-role">Lead NC Programmer</p>
+                <h4>Aimi Hazwani binti Saijan</h4>
+                <p className="employee-role">Procurement Manager</p>
                 <p className="employee-quote">
                   <em>
                     “Every challenge is an opportunity to build something

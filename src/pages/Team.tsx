@@ -72,9 +72,9 @@ function Team() {
             <h2>{selectedMember.name}</h2>
             <p>{selectedMember.title}</p>
 
-            {selectedMember.bio && (
+            {/* {selectedMember.bio && (
               <p className="modal-bio">{selectedMember.bio}</p>
-            )}
+            )} */}
 
             {selectedMember.email && (
               <p className="modal-contact">

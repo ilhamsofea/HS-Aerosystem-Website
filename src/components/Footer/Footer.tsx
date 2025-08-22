@@ -66,13 +66,13 @@ function Footer() {
             <h4>Our People</h4>
             <ul>
               <li>
-                <Link to="/recognition">Employee Recognition</Link>
+                {/* <Link to="/recognition">Employee Recognition</Link> */}
               </li>
               <li>
                 <Link to="/csr">Corporate Social Responsibility</Link>
               </li>
               <li>
-                <Link to="/hear">Hear From Our Employee</Link>
+                {/* <Link to="/hear">Hear From Our Employee</Link> */}
               </li>
             </ul>
           </div>
@@ -104,7 +104,8 @@ function Footer() {
       </div>
 
       <div className="footer-bottom">
-        <p>© 2025</p>
+        <p>© 2025 HS Aerosystem</p>
+        <p>All Rights Reserved</p>
       </div>
     </footer>
   );

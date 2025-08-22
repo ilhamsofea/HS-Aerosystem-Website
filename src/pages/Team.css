@@ -48,7 +48,6 @@
   padding-top: 100px;
 }
 
-
 .team-card {
   flex: 1 1 220px;
   max-width: 260px;
@@ -162,7 +161,6 @@
 
 /* Responsive */
 @media (max-width: 800px) {
-
   /* Section */
   .team-section {
     padding: 50px 20px;
@@ -239,5 +237,3 @@
     right: 12px;
   }
 }
-
-

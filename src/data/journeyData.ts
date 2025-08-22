@@ -106,7 +106,7 @@ const journeyData: Milestone[] = [
     description:
       "Advanced accreditation process for aerospace special processes.",
     position: "right",
-    status: "planned",
+    status: "completed",
   },
   {
     date: "Sometime in 2025",

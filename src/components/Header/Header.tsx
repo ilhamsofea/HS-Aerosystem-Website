@@ -224,7 +224,7 @@ function Header() {
                 <>
                   <h3 className="expanded-title">Our People</h3>
                   <ul className="submenu-list">
-                    <li>
+                    {/* <li>
                       <Link
                         to="/recognition"
                         onClick={() => {
@@ -234,7 +234,7 @@ function Header() {
                       >
                         Employee Recognition
                       </Link>
-                    </li>
+                    </li> */}
                     <li>
                       <Link
                         to="/csr"
@@ -247,7 +247,7 @@ function Header() {
                       </Link>
                     </li>
 
-                    <li>
+                    {/* <li>
                       <Link
                         to="/hear"
                         onClick={() => {
@@ -257,7 +257,7 @@ function Header() {
                       >
                         Hear From Our Employees
                       </Link>
-                    </li>
+                    </li> */}
                     <li>
                       <Link
                         to="/career"
@@ -336,10 +336,9 @@ function Header() {
           )}
         </div>
         <div className="sidebar-footer">
-          <p>© 2025 Sofea</p>
+          <p>© 2025 HS Aerosystem</p>
           <p>
-            <Link to="/privacy">Privacy Policy</Link>
-          </p>
+All Rights Reserved          </p>
         </div>
       </aside>
     </>
