@@ -1,0 +1,83 @@
+.interns-hero {
+  position: relative;
+  min-height: 100vh;
+  overflow-y: auto;
+  background: url("/assets/InternsExperience/hero.JPG") center/cover no-repeat;
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+  animation: fadeUp 1s ease forwards;
+}
+
+.interns-section {
+  padding: 4rem 2rem;
+  background: var(--light-bg);
+  color: var(--dark-text);
+  text-align: left;
+}
+
+.interns-section h1 {
+  font-size: 3.5rem;
+  color: var(--crimson-red);
+  margin-bottom: 0.5rem;
+}
+
+.interns-section p {
+  font-size: 1.2rem;
+  color: var(--muted-text);
+  margin-bottom: 2.5rem;
+}
+
+.interns-experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.intern-exp-card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column; /* stack photo + text */
+}
+
+.intern-photo img {
+  width: 100%;
+  height: auto;           /* let height adjust automatically */
+  max-height: 350px;      /* optional: prevent huge tall images */
+  object-fit: contain;    /* 🔥 no cropping, full image fits */
+  display: block;
+  margin: 0 auto;         /* centers image if it has extra space */
+  background: #f9f9f9;    /* adds neutral bg if image doesn’t fill */
+  border-bottom: 1px solid #eee; /* subtle separation from text */
+}
+
+
+.intern-text {
+  padding: 1.5rem 2rem;
+  text-align: left;       /* 🔥 force details to left */
+}
+
+.intern-exp-card h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--dark-text);
+}
+
+.intern-role {
+  font-weight: 500;
+  color: var(--muted-text);
+  margin-bottom: 1rem;
+}
+
+.intern-text p {
+  margin-bottom: 0.8rem;
+  line-height: 1.6;
+}

@@ -21,6 +21,7 @@ import Csr from "./pages/Csr";
 import CsrDetails from "./pages/CsrDetail";
 import Hear from "./pages/Hear";
 import Career from "./pages/Career";
+import InternsExperience from "./pages/InternsExperience";
 
 function App() {
   return (
@@ -47,6 +48,8 @@ function App() {
         <Route path="/csr/:id" element={<CsrDetails />} />
         <Route path="/hear" element={<Hear />} />
         <Route path="/career" element={<Career />} />
+        <Route path="/interns" element={<InternsExperience />} />
+
       </Routes>
     </>
   );

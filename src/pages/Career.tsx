@@ -2,6 +2,7 @@ import "./Career.css";
 import Footer from "../components/Footer/Footer";
 import { hrContacts } from "../data/careerData";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 interface Vacancy {
   Position: string;
@@ -64,7 +65,7 @@ function Career() {
               </p>
             </div>
             <div className="career-image">
-              <img src="/assets/Career/hs2.JPG" alt="Company culture" />
+              <img src="/assets/Career/cover1.JPG" alt="Company culture" />
             </div>
           </div>
         </div>
@@ -75,7 +76,7 @@ function Career() {
         <div className="container student-grid">
           <div className="student-img">
             <img
-              src="/assets/Career/hs3.JPG"
+              src="/assets/Career/cover2.JPG"
               alt="Student & Graduate Experience"
             />
           </div>
@@ -86,9 +87,10 @@ function Career() {
               graduate programs. Gain real-world experience, mentorship, and
               opportunities to work on impactful projects.
             </p>
-            <a href="/career#opportunities" className="student-btn">
-              Explore Opportunities
-            </a>
+
+            <Link to="/interns" className="student-btn">
+              Explore More
+            </Link>
           </div>
         </div>
       </section>

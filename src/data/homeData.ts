@@ -2,7 +2,7 @@
 export const aboutusPic = [
   {
     category: "images",
-    img: "/assets/Home/hs3.JPG",
+    img: "/assets/Home/team.jpg",
     title: "Our Team",
   },
   {
@@ -21,11 +21,13 @@ export const aboutusPic = [
     title: "Sheet Metal Bending",
   },
 
-  {
-    category: "images",
-    img: "/assets/Home/model1.JPG",
-    title: "??",
-  },
 ];
+
+export const bestEmployee = {
+  name: "Ahmad Bakhtiar Bin Mohd Kamar Arpin",
+  role: "Chargeman",
+  photo: "/assets/Home/bakhtiar.jpg",
+  quote: "Every challenge is an opportunity to build something better.",
+};
 
 

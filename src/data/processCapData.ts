@@ -30,7 +30,7 @@ const processCapData: ProcessCapItem[] = [
       "4 Axis Horizontal Machining",
       "Tool Presetter",
     ],
-    image: "./assets/ProcessCap/cnc2.JPG",
+    image: "./assets/ProcessCap/cnc.jpg",
     alt: "CNC Machining",
   },
   {

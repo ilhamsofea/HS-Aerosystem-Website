@@ -1,7 +1,7 @@
 import "./Home.css";
 import Footer from "../components/Footer/Footer";
 import newsData from "../data/newsData";
-import { aboutusPic } from "../data/homeData";
+import { aboutusPic, bestEmployee } from "../data/homeData";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -117,19 +117,16 @@ const Home = () => {
 
           <div className="career-employee-highlight">
             <p className="employee-subtitle">EMPLOYEE SPOTLIGHT</p>
-            <h2>Best Employee of the Month</h2>
+            <h2>Best Employee of the Quarter</h2>
             <div className="employee-content">
               <div className="employee-photo">
-                <img src="/assets/Home/aimi2.jpg" />
+                <img src={bestEmployee.photo} alt={bestEmployee.name} />
               </div>
               <div className="employee-details">
-                <h4>Aimi Hazwani binti Saijan</h4>
-                <p className="employee-role">Procurement Manager</p>
+                <h4>{bestEmployee.name}</h4>
+                <p className="employee-role">{bestEmployee.role}</p>
                 <p className="employee-quote">
-                  <em>
-                    “Every challenge is an opportunity to build something
-                    better.”
-                  </em>
+                  <em>“{bestEmployee.quote}”</em>
                 </p>
               </div>
             </div>
